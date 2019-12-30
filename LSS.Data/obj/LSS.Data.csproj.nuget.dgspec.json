@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MyRepo\\LSS\\LSS.Data\\LSS.Data.csproj": {}
+    "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj": {}
   },
   "projects": {
-    "F:\\MyRepo\\LSS\\LSS.Data\\LSS.Data.csproj": {
+    "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyRepo\\LSS\\LSS.Data\\LSS.Data.csproj",
+        "projectUniqueName": "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj",
         "projectName": "LSS.Data",
-        "projectPath": "F:\\MyRepo\\LSS\\LSS.Data\\LSS.Data.csproj",
-        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
-        "outputPath": "F:\\MyRepo\\LSS\\LSS.Data\\obj\\",
+        "projectPath": "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj",
+        "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Code\\LSS\\LSS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,11 +41,31 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\MyRepo\\LSS\\LSS.Infratructure\\LSS.Infratructure.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infratructure.csproj": {}
   },
   "projects": {
-    "F:\\MyRepo\\LSS\\LSS.Infratructure\\LSS.Infratructure.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infratructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\MyRepo\\LSS\\LSS.Infratructure\\LSS.Infratructure.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infratructure.csproj",
         "projectName": "LSS.Infratructure",
-        "projectPath": "F:\\MyRepo\\LSS\\LSS.Infratructure\\LSS.Infratructure.csproj",
-        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
-        "outputPath": "F:\\MyRepo\\LSS\\LSS.Infratructure\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infratructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

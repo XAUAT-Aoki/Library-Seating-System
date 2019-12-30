@@ -1,0 +1,16 @@
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.deps.json
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.dll
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.pdb
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfoInputs.cache
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfo.cs
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
+C:\Users\DELL\Source\Repos\framework.web\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb
+D:\Program Code\LSS\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.deps.json
+D:\Program Code\LSS\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.dll
+D:\Program Code\LSS\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.pdb
+D:\Program Code\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csprojAssemblyReference.cache
+D:\Program Code\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfoInputs.cache
+D:\Program Code\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfo.cs
+D:\Program Code\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
+D:\Program Code\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb

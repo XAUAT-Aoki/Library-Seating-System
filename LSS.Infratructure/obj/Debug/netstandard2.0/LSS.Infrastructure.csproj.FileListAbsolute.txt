@@ -1,0 +1,16 @@
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.deps.json
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
+C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
+D:\Program Code\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.deps.json
+D:\Program Code\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+D:\Program Code\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+D:\Program Code\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+D:\Program Code\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
+D:\Program Code\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
+D:\Program Code\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
+D:\Program Code\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
