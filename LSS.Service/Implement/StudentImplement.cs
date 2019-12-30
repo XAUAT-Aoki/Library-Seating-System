@@ -146,10 +146,7 @@ namespace LSS.Service
             return true;
         }
 
-
-
-
-
+       
         public void TimeOut() {
             Timer timer = new Timer();
             timer.Enabled = true;
@@ -187,7 +184,63 @@ namespace LSS.Service
                     //}
                 }
             }
+        }
+        public DateTime ClockIn(Clock clock)
+        {
+            //1. 先匹配是否是本人扫码打卡
 
+            //邮箱查询学号  使用 ServiceUnit.getIdByEmail  方法   
+            //学号查询正在使用中的订单  使用 sm.GetUsingOrder() 方法
+            //从订单集中查询是否有clock.seatid 
+            Order order=new Order();
+            //foreach（var temp in List<Order>）
+            //{
+            //    if(temp.seatid==clock.seatid)
+            //    {
+            //        order = temp;
+            //    }
+            //}
+            if(order==null)
+            {
+                //没有关于这张桌子的订单，返回 0
+            }
+            else
+            {
+                //继续向下判断
+            }
+
+            //2. 是否在指定时间内打卡
+
+            //将回传的 clock.clocktime 与 对应订单中的打卡时间比对，判断是否在指定的时间范围内，
+            // 使用 sm.IsTrueTime() 方法，传入实际打卡时间与预定打卡时间，返回 true/false
+
+            //3. 是否在指定地点打卡
+
+            //根据座位号查询图书馆号，使用 sm.GetLIdBySId（） 方法，传入座位 ID，返回图书馆ID
+            //根据图书馆号查询对应的经纬度信息与误差 使用 sm.GetLibraryById() 获取图书馆对象
+            //将回传的定位信息与查询到的位置信息对比，判断是否在指定误差内
+
+
+            //4. 打卡成功后刷新下次打卡时间，并返回下次打卡时间
+            //int seconds = (Int64)(开始时间 - 结束时间).totalmillseconds / 1000;
+            //if (seconds < 14400)
+            //{//中间不再打卡
+
+            //    //返回0
+            //}
+            //else if (seconds > 14400 && seconds < 28800)
+            //{ //中间打1次的卡
+
+
+            //}
+            //else {//中间打2次卡 
+            
+            //}
+            
+            
+            //打卡失败，返回0.
+
+            return new DateTime(0);
         }
 
     }

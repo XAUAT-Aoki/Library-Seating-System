@@ -100,6 +100,22 @@ namespace LSS.UI.Controllers
             bool isSucceed=studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration);
             return View();
         }
+        /// <summary>
+        /// 打卡操作，传入一个json，封装为对象，进行操作
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ClockIn()
+        {
+
+            var str = HttpContext.Request.Form["msg"];
+
+            Clock clock = JsonConvert.DeserializeObject<Clock>(str);
+
+            DateTime nexttime = studentimpl.ClockIn(clock);
+
+            return View();
+        }
+
 
     }
 }

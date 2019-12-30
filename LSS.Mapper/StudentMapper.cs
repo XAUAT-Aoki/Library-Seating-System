@@ -151,5 +151,37 @@ namespace LSS.Mapper
         {
             //根据ID直接改变订单状态
         }
+
+        /// <summary>
+        /// 返回打卡时间是否在指定时间范围内
+        /// </summary>
+        /// <param name="now">实际打卡时间</param>
+        /// <param name="predict">预计打卡时间</param>
+        /// <returns></returns>
+        public bool IsTrueTime(DateTime now,DateTime predict)
+        {
+            //实际打卡时间必须在预定打卡时间开始后半小时之内
+            return true;
+        }
+
+        /// <summary>
+        /// 根据座位 ID 在座位表内查询对应的图书馆号
+        /// </summary>
+        /// <param name="seatId">座位 ID</param>
+        /// <returns>返回图书馆 ID</returns>
+        public string GetLIdBySId(string seatId)
+        {
+            return "";
+        }
+
+        /// <summary>
+        /// 根据图书馆 ID 返回一个图书馆对象
+        /// </summary>
+        /// <param name="libraryId">图书馆 ID</param>
+        /// <returns>图书馆对象</returns>
+        public Library GetLibraryById(string libraryId)
+        {
+            return new Library();
+        }
     }
 }

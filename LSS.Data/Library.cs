@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSS.Data
 {
-    class Library
+    public class Library
     {
     }
 }
