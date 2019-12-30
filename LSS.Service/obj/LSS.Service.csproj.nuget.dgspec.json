@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj": {
+    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj",
         "projectName": "LSS.Data",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +66,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Threading.Timer": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -78,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
         "projectName": "LSS.Infrastructure",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -136,6 +148,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Threading.Timer": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -152,14 +172,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj": {
+    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
         "projectName": "LSS.Mapper",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -178,11 +198,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj"
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj"
               },
-              "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
               }
             }
           }
@@ -217,6 +237,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Threading.Timer": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -233,14 +261,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj": {
+    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj",
         "projectName": "LSS.Service",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -259,14 +287,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj"
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj"
               },
-              "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
               },
-              "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj"
+              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj"
               }
             }
           }
@@ -301,6 +329,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Threading.Timer": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

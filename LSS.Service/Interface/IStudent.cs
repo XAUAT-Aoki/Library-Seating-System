@@ -3,6 +3,7 @@ using LSS.Data;
 using System.Collections.Generic;
 using LSS.Infrastructure.Utility;
 
+
 namespace LSS.Service
 {
     interface IStudent
@@ -24,6 +25,8 @@ namespace LSS.Service
 
 
         List<Seat> Leisure(Condition condition);
+
+        bool ReserveSeat(int date, string seatid, DateTime nowtime, int duration);
 
     }
 }

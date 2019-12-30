@@ -10,9 +10,12 @@
       "LSS.Mapper/1.0.0": {
         "dependencies": {
           "LSS.Data": "1.0.0",
+          "LSS.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "LSS.Mapper.dll": {}
@@ -233,6 +236,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "System.Buffers/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
@@ -313,10 +324,21 @@
       },
       "LSS.Data/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.0"
+          "LSS.Infrastructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.0",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "LSS.Data.dll": {}
+        }
+      },
+      "LSS.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "LSS.Infrastructure.dll": {}
         }
       }
     }
@@ -481,6 +503,13 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "System.Buffers/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -538,6 +567,11 @@
       "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
     },
     "LSS.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LSS.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

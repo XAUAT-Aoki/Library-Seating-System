@@ -6,3 +6,11 @@ C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard
 C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
 C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
 C:\Users\DELL\Source\Repos\framework.web\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.deps.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb

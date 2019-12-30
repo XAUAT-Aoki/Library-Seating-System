@@ -6,13 +6,14 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Data\LSS.Data.csproj" />
-    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Infratructure\LSS.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Mapper\LSS.Mapper.csproj" />
-    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Service\LSS.Service.csproj" />
+    <ProjectReference Include="..\LSS.Data\LSS.Data.csproj" />
+    <ProjectReference Include="..\LSS.Infratructure\LSS.Infrastructure.csproj" />
+    <ProjectReference Include="..\LSS.Mapper\LSS.Mapper.csproj" />
+    <ProjectReference Include="..\LSS.Service\LSS.Service.csproj" />
   </ItemGroup>
 
 

@@ -10,6 +10,7 @@ namespace LSS.Infrastructure.Utility
 
     public class Condition
     {
+        public int date { get; set; }
         public string Place { get; set; }
 
         public int Floor { get; set; }
@@ -20,4 +21,6 @@ namespace LSS.Infrastructure.Utility
         //时间块
         public int TimeBulk { get; set; }
     }
+
+   
 }

@@ -45,3 +45,4 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Data.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructure.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
