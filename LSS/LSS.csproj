@@ -4,6 +4,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Data\LSS.Data.csproj" />
+    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Infratructure\LSS.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Mapper\LSS.Mapper.csproj" />
+    <ProjectReference Include="..\..\..\..\Source\Repos\framework.web\LSS.Service\LSS.Service.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

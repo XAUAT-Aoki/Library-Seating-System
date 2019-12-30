@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {}
+    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+    "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj",
         "projectName": "LSS.Infrastructure",
-        "projectPath": "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Code\\LSS\\LSS.Infratructure\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,10 +62,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
             }
           },
           "imports": [

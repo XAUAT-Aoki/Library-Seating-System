@@ -13,18 +13,3 @@ C:\Users\DELL\Source\Repos\framework.web\LSS.Service\bin\Debug\netstandard2.0\LS
 C:\Users\DELL\Source\Repos\framework.web\LSS.Service\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
 C:\Users\DELL\Source\Repos\framework.web\LSS.Service\bin\Debug\netstandard2.0\LSS.Data.pdb
 C:\Users\DELL\Source\Repos\framework.web\LSS.Service\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.deps.json
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.dll
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.pdb
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Data.dll
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Mapper.dll
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Data.pdb
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
-D:\Program Code\LSS\LSS.Service\bin\Debug\netstandard2.0\LSS.Mapper.pdb
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csprojAssemblyReference.cache
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfoInputs.cache
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfo.cs
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csproj.CopyComplete
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.dll
-D:\Program Code\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.pdb

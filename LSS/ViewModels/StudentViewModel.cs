@@ -27,5 +27,17 @@ namespace LSS.UI.ViewModels
 
     }
 
-    
+    public class ReserveSeatViewModel {
+
+
+        public string seatid { get; set; }
+        public int date { get; set; }
+        public DateTime nowtime { get; set; }
+
+        public int duration { get; set; }
+
+    }
+
+
+
 }

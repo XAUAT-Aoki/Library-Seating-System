@@ -229,6 +229,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LSS.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Newtonsoft.Json": "12.0.3"
         },
@@ -728,23 +729,23 @@
     },
     "LSS.Data/1.0.0": {
       "type": "project",
-      "path": "../LSS.Data/LSS.Data.csproj",
-      "msbuildProject": "../LSS.Data/LSS.Data.csproj"
+      "path": "../../../../Source/Repos/framework.web/LSS.Data/LSS.Data.csproj",
+      "msbuildProject": "../../../../Source/Repos/framework.web/LSS.Data/LSS.Data.csproj"
     },
     "LSS.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../LSS.Infratructure/LSS.Infrastructure.csproj",
-      "msbuildProject": "../LSS.Infratructure/LSS.Infrastructure.csproj"
+      "path": "../../../../Source/Repos/framework.web/LSS.Infratructure/LSS.Infrastructure.csproj",
+      "msbuildProject": "../../../../Source/Repos/framework.web/LSS.Infratructure/LSS.Infrastructure.csproj"
     },
     "LSS.Mapper/1.0.0": {
       "type": "project",
-      "path": "../LSS.Mapper/LSS.Mapper.csproj",
-      "msbuildProject": "../LSS.Mapper/LSS.Mapper.csproj"
+      "path": "../../../../Source/Repos/framework.web/LSS.Mapper/LSS.Mapper.csproj",
+      "msbuildProject": "../../../../Source/Repos/framework.web/LSS.Mapper/LSS.Mapper.csproj"
     },
     "LSS.Service/1.0.0": {
       "type": "project",
-      "path": "../LSS.Service/LSS.Service.csproj",
-      "msbuildProject": "../LSS.Service/LSS.Service.csproj"
+      "path": "../../../../Source/Repos/framework.web/LSS.Service/LSS.Service.csproj",
+      "msbuildProject": "../../../../Source/Repos/framework.web/LSS.Service/LSS.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -757,23 +758,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\王奔\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Code\\LSS\\LSS\\LSS.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS\\LSS.csproj",
       "projectName": "LSS",
-      "projectPath": "D:\\Program Code\\LSS\\LSS\\LSS.csproj",
-      "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Code\\LSS\\LSS\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS\\LSS.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -786,17 +787,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj"
             },
-            "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj"
             },
-            "D:\\Program Code\\LSS\\LSS.Mapper\\LSS.Mapper.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Mapper\\LSS.Mapper.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj"
             },
-            "D:\\Program Code\\LSS\\LSS.Service\\LSS.Service.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Service\\LSS.Service.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Service\\LSS.Service.csproj"
             }
           }
         }

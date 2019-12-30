@@ -268,15 +268,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
@@ -367,8 +358,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.0",
-          "Newtonsoft.Json": "12.0.3"
+          "Microsoft.EntityFrameworkCore": "3.1.0"
         },
         "compile": {
           "bin/placeholder/LSS.Data.dll": {}
@@ -381,8 +371,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.1.0",
-          "Newtonsoft.Json": "12.0.3"
+          "Microsoft.EntityFrameworkCore": "3.1.0"
         },
         "compile": {
           "bin/placeholder/LSS.Infrastructure.dll": {}
@@ -929,37 +918,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
     "System.Buffers/4.4.0": {
       "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
       "type": "package",
@@ -1264,28 +1222,27 @@
       "Microsoft.EntityFrameworkCore >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
-      "NETStandard.Library >= 2.0.3",
-      "Newtonsoft.Json >= 12.0.3"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\王奔\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Code\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj",
       "projectName": "LSS.Mapper",
-      "projectPath": "D:\\Program Code\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
-      "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Code\\LSS\\LSS.Mapper\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\LSS.Mapper.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Mapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1298,11 +1255,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Data\\LSS.Data.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Data\\LSS.Data.csproj"
             },
-            "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+            "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Source\\Repos\\framework.web\\LSS.Infratructure\\LSS.Infrastructure.csproj"
             }
           }
         }
@@ -1337,10 +1294,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[12.0.3, )"
           }
         },
         "imports": [

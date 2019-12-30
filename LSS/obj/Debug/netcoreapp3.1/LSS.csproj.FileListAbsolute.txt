@@ -1,46 +1,47 @@
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.exe
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.deps.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.runtimeconfig.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.runtimeconfig.dev.json
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.pdb
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Views.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Views.pdb
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.csprojAssemblyReference.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.Manifest.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.xml
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.AssemblyInfoInputs.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.AssemblyInfo.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.TagHelpers.input.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.TagHelpers.output.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorCoreGenerate.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorTargetAssemblyInfo.cache
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorTargetAssemblyInfo.cs
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.Views.pdb
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.dll
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.pdb
-D:\Program Code\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.csproj.CopyComplete
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Data.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructure.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.dll
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Data.pdb
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructure.pdb
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.pdb
-D:\Program Code\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.exe
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.deps.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.runtimeconfig.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Views.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Views.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.Manifest.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.xml
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.AssemblyInfo.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.TagHelpers.input.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.TagHelpers.output.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorCoreGenerate.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorTargetAssemblyInfo.cache
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorTargetAssemblyInfo.cs
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.Views.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.csproj.CopyComplete
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Data.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructure.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Data.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructure.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.pdb
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.pdb

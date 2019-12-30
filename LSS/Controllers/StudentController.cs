@@ -70,22 +70,36 @@ namespace LSS.UI.Controllers
             return View();
         }
 
-        
+        /// <summary>
+        /// 空闲座位查询
+        /// </summary>
+        /// <returns>查询出的座位列表视图</returns>
         public IActionResult Leisure() {
 
            
             //str前端传入的查询条件信息
             var str=HttpContext.Request.Form["msg"];
             //将str反序列化为Condition对象（工具类中）
-
+            Condition condition = JsonConvert.DeserializeObject<Condition>(str);
 
             //进行service处理
-            List<Seat> list = studentimpl.Leisure(new Condition());
+            List<Seat> list = studentimpl.Leisure(condition);
+
+            //对每一个座位对象的状态字段进行处理显示
 
             return View();
         }
+        /// <summary>
+        /// 使用视图接受数据，进行预定座位
+        /// </summary>
+        /// <param name="seatVM">预定座位视图对象</param>
+        /// <returns>返回预定是否成功页面</returns>
+        public IActionResult ReserveSeat(ReserveSeatViewModel seatVM) {
 
 
+            bool isSucceed=studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration);
+            return View();
+        }
 
     }
 }
