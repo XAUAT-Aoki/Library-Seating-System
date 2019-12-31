@@ -116,6 +116,34 @@ namespace LSS.UI.Controllers
             return View();
         }
 
+        //=====================================================================================================================
+
+        public IActionResult CancelOrder(string orderid) {
+
+            bool flag = studentimpl.CancleOrder(orderid);
+
+
+            //返回退订成功或失败的页面
+            return View();
+        
+        }
+
+        /// <summary>
+        /// 修改邮箱
+        /// </summary>
+        /// <param name="newemail">新邮箱</param>
+        /// <returns>返回成功页面</returns>
+        public IActionResult ChangePassword(string newemail)
+        {
+
+            studentimpl.ChangeEmail(newemail);
+
+            return View();
+
+        }
+
+
+
 
     }
 }

@@ -129,6 +129,8 @@ namespace LSS.Mapper
             //订单id（图书馆号+层号+座位号+系统时间）
         }
 
+
+
         /// <summary>
         /// 根据seatid获取该seat对象
         /// </summary>
@@ -147,7 +149,7 @@ namespace LSS.Mapper
         /// 根据ID直接改变订单状态
         /// </summary>
         /// <param name="oid">订单ID</param>
-        public void ChangeOrderState(object oid)
+        public void ChangeOrderState(object oid,int operation)
         {
             //根据ID直接改变订单状态
         }
@@ -182,6 +184,72 @@ namespace LSS.Mapper
         public Library GetLibraryById(string libraryId)
         {
             return new Library();
+        }
+
+        /// <summary>
+        /// 根据id查询订单
+        /// </summary>
+        /// <param name="orderid">订单id</param>
+        /// <returns>返回订单对象</returns>
+        public Order GetOrder(string orderid)
+        {
+            //根据id查询一个订单记录，并返回Order对象
+
+            return new Order();
+        }
+
+        public bool ChangeEmail(string username, string newemail)
+        {
+            //正则表达匹配用户名，学号true
+            bool flag = MapperUnit.IsStudentId(username);
+
+            if (flag)
+            {
+
+                //修改对应邮箱，返回true
+
+                return true;
+
+            }
+            else {
+
+                //修改邮箱，返回false
+                return false;
+            }
+
+        }
+        /// <summary>
+        /// 修改学生的积分
+        /// </summary>
+        /// <param name="a">目标值</param>
+        public void ResetGlory(int a)
+        {
+            //将所有学生的积分值都修改为a
+        }
+
+        /// <summary>
+        /// 根据学号获取学生的信誉积分
+        /// </summary>
+        /// <param name="stuId">学号</param>
+        /// <returns>信誉积分</returns>
+        public int GetGlory( string stuId)
+        {
+            return 0;
+        }
+
+        /// <summary>
+        /// 根据学生学号以及传入的代表第二天的参数 data（1），获取第二天的订单
+        /// </summary>
+        /// <param name="stuId">学号</param>
+        /// <param name="data">代表第二天的参数</param>
+        /// <returns>第二天的订单（如果不存在，返回 null）</returns>
+        public Order GetSecondOrder(string  stuId, int data=1)
+        {
+            Order order = null;
+
+            //查询并封装为order对象
+
+            return order;
         }
     }
 }

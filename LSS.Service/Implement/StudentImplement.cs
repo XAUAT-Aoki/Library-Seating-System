@@ -147,44 +147,7 @@ namespace LSS.Service
         }
 
        
-        public void TimeOut() {
-            Timer timer = new Timer();
-            timer.Enabled = true;
-            timer.Interval = 60000;//执行间隔时间,单位为毫秒;此时时间间隔为1分钟  
-            timer.Start();
-            timer.Elapsed += new System.Timers.ElapsedEventHandler(test);
-
-            
-        }
-
-        private void test(object source, ElapsedEventArgs e)
-        {
-
-            if (DateTime.Now.Minute == 00)  //如果当前时间是10点30分
-            {
-                DateTime date = DateTime.Now;
-                //查询订单中正在使用中且未过期，
-                List<Order>list=sm.GetUsingOrder();
-
-                foreach (Order order in list) {
-
-
-                    //并且过期时间<=当前系统时间
-                    //if (date.CompareTo(order.结束时间)) {
-
-                    //    sm.ChangeOrderState(order.Oid);
-
-                    //根据orderid获取username，根据username获取lock
-                    //sm.ModifyInfor(0,0,username,ad);
-
-                    //修改座位状态
-
-                    //sn.SeatInfor(0，处理过的状态,座位ID,开始时间坐标，时长,0);
-
-                    //}
-                }
-            }
-        }
+      
         public DateTime ClockIn(Clock clock)
         {
             //1. 先匹配是否是本人扫码打卡
@@ -242,6 +205,69 @@ namespace LSS.Service
 
             return new DateTime(0);
         }
+
+
+
+        /// <summary>
+        /// 取消订单
+        /// </summary>
+        /// <param name="orderid">订单id</param>
+        /// <returns>是否取消成功</returns>
+        public bool CancleOrder(string orderid)
+        {
+
+            //根据订单ID查找订单
+
+            Order order=sm.GetOrder(orderid);
+
+
+            //判断是否可以退订单（判断依据：订单在此时此刻是否已经开始使用）
+
+            //不可退则直接返回false
+
+            //根据order.studentID修改个人lock锁
+
+            //判断此订单是哪一天，确定date
+            //获取当前个人lock锁字段
+            //sm.getLock(学号);
+            //sm.ModifyInfor(0,date,学号,lock字段);
+
+
+
+            //根据座位idorder.seatid及订单开始结束时间修改座位状态修改
+
+            //根据order。seatid获取座位的状态字段，num为处理过的开始下标，duration为时长，operation为0
+
+            //sm.SeatInfor(date,座位状态（24位）,num,duration,operation);
+
+
+            //修改此订单的状态为违规
+
+            //sm.(orderid,目标值);
+
+            return true;
+        }
+
+
+
+        /// <summary>
+        /// 修改邮箱
+        /// </summary>
+        /// <param name="newemail">新的邮箱</param>
+        /// <returns>返回true</returns>
+        public void ChangeEmail(string newemail)
+        {
+            //从cookie中获取用户名username
+            //bool flag = sm.ChangeEmail(username,newemail);
+
+            //if (!flag) { 
+                
+            //    //修改cookie值为newemail
+
+            //}
+
+        }
+     
 
     }
 }
