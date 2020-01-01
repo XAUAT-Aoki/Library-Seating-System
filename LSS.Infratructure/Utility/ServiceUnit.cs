@@ -29,6 +29,11 @@ namespace LSS.Infrastructure.Utility
 
         }
 
+        public static string getEmailById(string str) {
+
+            return "";
+
+        }
 
     }
 }

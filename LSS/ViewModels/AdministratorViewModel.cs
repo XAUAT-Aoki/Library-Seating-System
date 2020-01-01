@@ -15,4 +15,23 @@ namespace LSS.UI.ViewModels
         [Required, MaxLength(16)]
         public string password { get; set; }
     }
+
+    public class ReferSeatViewModel { 
+        
+        [Required]
+        public string libraryname { get; set; }
+
+        [Required]
+        public int floor { get; set; }
+
+    }
+
+    public class BatchSeatStateViewModel { 
+    
+        public List<string> list { get; set; }
+
+        public int operation { get; set; }
+
+    }
+
 }

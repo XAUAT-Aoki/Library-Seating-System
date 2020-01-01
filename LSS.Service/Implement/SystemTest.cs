@@ -4,6 +4,8 @@ using System.Text;
 using System.Timers;
 using LSS.Data;
 using LSS.Mapper;
+using LSS.Infrastructure.Utility;
+
 
 namespace LSS.Service.Implement
 {
@@ -12,9 +14,14 @@ namespace LSS.Service.Implement
     /// </summary>
     public class SystemTest
     {
-        static int standard = 2;
+
+        private List<string> list = null;
+        private int operation = -1;
+
+        public static int standard = 2;
         StudentMapper sm = new StudentMapper();
         StudentImplement studentimplement = new StudentImplement();
+        AdministratorMapper administratorMapper = new AdministratorMapper();
 
         /// <summary>
         /// 订单自动过期定时查询查询
@@ -66,7 +73,7 @@ namespace LSS.Service.Implement
         //===============================================================================
 
         /// <summary>
-        /// 定时充值信誉积分
+        /// 定时重置信誉积分
         /// </summary>
         public void ResetGlory()
         {
@@ -140,6 +147,55 @@ namespace LSS.Service.Implement
             //    }
             
              
+        }
+
+
+
+        //===============================================================================
+
+        /// <summary>
+        /// 座位状态锁定
+        /// </summary>
+        public void SeatStateLock(List<string> list,int operation)
+        {
+            this.list = list;
+            this.operation = operation;
+
+            if (operation==0) {
+
+                foreach (string seatid in list) {
+
+                    administratorMapper.SeatInfor(seatid, operation);
+                }
+                return;
+            }
+            Timer timer = new Timer();
+            timer.Enabled = true;
+            timer.Interval = 360000;//执行间隔时间,单位为毫秒;此时时间间隔为 1 小时  
+            timer.Start();
+            timer.Elapsed += new System.Timers.ElapsedEventHandler(test3);
+
+        }
+        //将该订单状态置为违规，并扣除该订单对应的学生的信誉积分，同时将订单对应的座位的状态改变，
+        private void test3(object source, ElapsedEventArgs e)
+        {
+            if (DateTime.Now.Hour>=23) {
+
+                foreach (string seatid in list) {
+                    List<string> usernamelist = administratorMapper.GetSIdByOrder(seatid);
+                    foreach (string str in usernamelist) {
+
+                        string email=ServiceUnit.getEmailById(str);
+
+                        ServiceUnit.SendEmail(email,"邮件正文");
+                    }
+
+                    //administratorMapper.SeatInfor(seat.id,operation);
+
+                }
+            
+            }
+
         }
     }
 }

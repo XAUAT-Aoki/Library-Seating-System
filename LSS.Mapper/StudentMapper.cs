@@ -197,7 +197,12 @@ namespace LSS.Mapper
 
             return new Order();
         }
-
+        /// <summary>
+        /// 修改学生邮箱
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="newemail"></param>
+        /// <returns></returns>
         public bool ChangeEmail(string username, string newemail)
         {
             //正则表达匹配用户名，学号true
@@ -251,5 +256,7 @@ namespace LSS.Mapper
 
             return order;
         }
+
+        
     }
 }

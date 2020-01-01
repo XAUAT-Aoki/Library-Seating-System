@@ -32,7 +32,12 @@ namespace LSS.Service
 
             return true;
         }
-
+        /// <summary>
+        /// 用户修改密码
+        /// </summary>
+        /// <param name="oldpassword">旧密码</param>
+        /// <param name="newpassword">新密码</param>
+        /// <returns></returns>
         public bool ChangePassword(string oldpassword, string newpassword)
         {
             //旧密码加密，
