@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LSS.Data\LSS.Data.csproj" />
+    <ProjectReference Include="..\LSS.Infratructure\LSS.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

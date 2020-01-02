@@ -29,6 +29,7 @@ namespace LSS.Mapper
         public bool ChangePassword(string username,string newpassword) {
 
             //直接写密码（管理员表）
+            return false;
 
         }
 
@@ -57,7 +58,7 @@ namespace LSS.Mapper
             return new List<Seat>();
         }
 
-        public bool SetSeatState(object id, int operation)
+        public bool SetSeatState(string id, int operation)
         {
             throw new NotImplementedException();
         }
@@ -79,6 +80,7 @@ namespace LSS.Mapper
         public bool SeatInfor( string seatid, int operation)
         {
             //将座位所有时间的状态修改为operation
+            return false;
         }
 
         /// <summary>
@@ -96,9 +98,10 @@ namespace LSS.Mapper
         /// 修改该学生的积分
         /// </summary>
         /// <param name="studentid">学生id</param>
-        public void AddGlory(string studentid)
+        public bool AddGlory(string studentid)
         {
             //给该学生的信誉积分加1
+            return false;
         }
 
         /// <summary>
@@ -115,9 +118,10 @@ namespace LSS.Mapper
         /// 添加图书馆
         /// </summary>
         /// <param name="library">图书馆对象</param>
-        public void AddLibrary(Library library)
+        public bool AddLibrary(Library library)
         {
             //将除id之外的字段添加进图书馆表中
+            return false;
         }
 
 
@@ -139,9 +143,10 @@ namespace LSS.Mapper
         /// <param name="libraryname">图书馆名称</param>
         /// <param name="startfloor">起始楼层</param>
         /// <param name="endfloor">结束楼层</param>
-        public void AddFloor(string libraryname, int startfloor, int endfloor)
+        public bool AddFloor(string libraryname, int startfloor, int endfloor)
         {
             //修改该图书馆的起始楼层和结束楼层
+            return false;
         }
     }
 

@@ -28,6 +28,9 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Serv
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csproj.CopyComplete
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.dll
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csprojAssemblyReference.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfoInputs.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfo.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.deps.json
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Service.pdb
@@ -37,9 +40,6 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Ma
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Data.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\bin\Debug\netstandard2.0\LSS.Mapper.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csprojAssemblyReference.cache
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfoInputs.cache
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.AssemblyInfo.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.csproj.CopyComplete
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Service\obj\Debug\netstandard2.0\LSS.Service.pdb

@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using LSS.Data;
 using LSS.Infrastructure.Utility;
 using System.Collections;
-
+using LSS.Controllers;
 
 namespace LSS.UI.Controllers
 {
@@ -51,7 +51,9 @@ namespace LSS.UI.Controllers
 
             //判断新密码是否与旧密码和初始密码（123456）相同
             //相同则修改失败
-            studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword);
+            CookieController cookieController = new CookieController();
+            string cookie = cookieController.getCookie("username");
+            studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword,cookie);
             //如果密码修改成功之后，发送提示邮件
 
             return View();
@@ -63,9 +65,10 @@ namespace LSS.UI.Controllers
         /// </summary>
         /// <returns>返回查询出来的个人信息(学生对象)</returns>
         public IActionResult StudentInformation() {
-
+            CookieController cookie = new CookieController();
+            string cookies = cookie.getCookie("username");
             
-            Student student = studentimpl.StudentInformation();
+            Student student = studentimpl.StudentInformation(cookies);
             //对学生对象进行视图封装
             return View();
         }
@@ -95,9 +98,10 @@ namespace LSS.UI.Controllers
         /// <param name="seatVM">预定座位视图对象</param>
         /// <returns>返回预定是否成功页面</returns>
         public IActionResult ReserveSeat(ReserveSeatViewModel seatVM) {
+            CookieController cookie = new CookieController();
+            string cookies = cookie.getCookie("username");
 
-
-            bool isSucceed=studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration);
+            bool isSucceed=studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration,cookies);
             return View();
         }
         /// <summary>
@@ -135,8 +139,9 @@ namespace LSS.UI.Controllers
         /// <returns>返回成功页面</returns>
         public IActionResult ChangePassword(string newemail)
         {
-
-            studentimpl.ChangeEmail(newemail);
+            CookieController cookie = new CookieController();
+            string cookies = cookie.getCookie("username");
+            studentimpl.ChangeEmail(newemail,cookies);
 
             return View();
 

@@ -115,11 +115,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {
-              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
-                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -204,6 +200,9 @@
             "projectReferences": {
               "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
                 "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj"
+              },
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
               }
             }
           }

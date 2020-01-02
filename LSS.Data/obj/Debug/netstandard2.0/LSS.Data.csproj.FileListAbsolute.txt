@@ -20,3 +20,11 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.As
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csproj.CopyComplete
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.deps.json
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfoInputs.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfo.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csprojAssemblyReference.cache

@@ -1,8 +1,190 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "_IndexLayout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- banner -->
+<!-- 幻灯片开始 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h6>欢迎使用图书管座位预定</h6>
+                    <h3>
+                        充分利用
+                        <span>时间</span>
+                    </h3>
+                    <p>为学生提供更优质更舒心的服务，让学生们能沉浸在学习的海洋中.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h6>欢迎使用图书管座位预定</h6>
+                    <h3>
+                        时间
+                        <span>更有效</span>
+                    </h3>
+                    <p>为学生提供更优质更舒心的服务，让学生们能沉浸在学习的海洋中.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h6>欢迎使用图书管座位预定</h6>
+                    <h3>
+                        充分满足
+                        <span>你的</span> 需求
+                    </h3>
+                    <p>为学生提供更优质更舒心的服务，让学生们能沉浸在学习的海洋中.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item item4">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h6>欢迎使用图书管座位预定</h6>
+                    <h3>
+                        让我们营造更好的
+                        <span>学习氛围</span>
+                    </h3>
+                    <p>为学生提供更优质更舒心的服务，让学生们能沉浸在学习的海洋中.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="fa fa-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="fa fa-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!-- The Modal -->
+</div>
+<!-- 幻灯片结束 -->
+<!--//banner -->
+<!-- about -->
+<div class="banner-bottom-w3l" id="about">
+    <div class="container">
+        <div class="title-div">
+            <h3 class="tittle">
+                <span>关于</span>我们
+            </h3>
+            <div class="tittle-style">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">公告</div>
+                    <div class="panel-body">
+                        <div class="panelItem">
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-27/15201.html" id="6543" rel="158"
+                                   class="" target="_blank" title="西安建大召开辅导员工作座谈会" desc="">西安建大召开辅导员工作座谈会</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.27</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-27/15200.html" id="6545" rel="158"
+                                   class="" target="_blank" title="西安建大荣获2018-2019年度陕西省普通高等学校就业信息工作先进集体"
+                                   desc="">西安建大荣获2018-2019年度陕西省普通...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.27</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-27/15197.html" id="6539" rel="158"
+                                   class="" target="_blank" title="西安建大完成2020年硕士研究生招生考试"
+                                   desc="">西安建大完成2020年硕士研究生招生考试</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.27</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/xhyf/2019-12-26/15195.html" id="6537" rel="164"
+                                   class="" target="_blank" title="西安建筑科技大学举办首届“学术三分钟”演讲大赛决赛"
+                                   desc="">西安建筑科技大学举办首届“学术三分钟”演...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.26</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-24/15189.html" id="6531" rel="158"
+                                   class="" target="_blank" title="西安建大荣获第九届陕西高等教育博览会先进集体"
+                                   desc="">西安建大荣获第九届陕西高等教育博览会先进集体</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.24</span>
+                                <!-- <!-- <span class="label label-danger" style="margin-right: 0px;">new</span> -->
+                            </div>
+                        </div>
+                        <!-- 填充内容 -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">新闻</div>
+                    <div class="panel-body">
+                        <div class="panelItem">
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-27/15202.html" id="6544" rel="160"
+                                   class="" target="_blank" title="西安建大召开基层党组织书记抓党建述职评议考核会"
+                                   desc="">西安建大召开基层党组织书记抓党建述职评议考核会</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.26</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-26/15193.html" id="6536" rel="160"
+                                   class="" target="_blank" title="西安建大党委书记苏三庆赴同济大学看望校友吕西林院士"
+                                   desc="">西安建大党委书记苏三庆赴同济大学看望校友吕西林...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.26</span>
+                                <span class="label label-danger" style="margin-right: 0px; float:right;">new</span>
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-24/15188.html" id="6530" rel="160"
+                                   class="" target="_blank" title="【媒体建大】《中国改革报》：在现代书院教育中坚定中华优秀传统文化自信"
+                                   desc="">【媒体建大】《中国改革报》：在现代书院教育中坚...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.24</span>
+
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-24/o15188.html" id="6530" rel="160"
+                                   class="" target="_blank" title="【媒体建大】《中国改革报》：在现代书院教育中坚定中华优秀传统文化自信"
+                                   desc="">【媒体建大】《中国改革报》：在现代书院教育中坚...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.24</span>
+
+                            </div>
+                            <div class="item">
+                                <a href="http://news.xauat.edu.cn/jdyw/2019-12-19/15173.html" id="6513" rel="160"
+                                   class="" target="_blank" title="刘加平院士、郝际平教授分别当选中国建筑金属结构协会名誉会长、会长"
+                                   desc="">刘加平院士、郝际平教授分别当选中国建筑金属结构...</a>
+                                <span class="label label-info"
+                                      style="float: right; margin-left:5px;width: auto;">12.19</span>
+                                <!-- 填充内容 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

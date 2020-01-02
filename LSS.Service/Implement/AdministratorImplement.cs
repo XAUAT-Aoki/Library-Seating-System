@@ -46,7 +46,7 @@ namespace LSS.Service
             string oldPwd = OperateMD5.GetMD5(oldpassword);
             string newPwd = OperateMD5.GetMD5(newpassword);
             string dbOldPwd=administrator.GetPassword(cookie);
-            if(dbOldPwd==oldPwd&& administrator.ChangePassword(cookie, newPwd))
+            if ((dbOldPwd == oldPwd) && (administrator.ChangePassword(cookie, newPwd)))
             {
                 return true;
             }
@@ -65,8 +65,10 @@ namespace LSS.Service
 
         public Seat ReferSeatById(string seatId)
         {
+            #region
             Seat seat=administrator.referSeatById(seatId);
             return seat;
+            #endregion
         }
         /// <summary>
         /// 查询座位
@@ -76,9 +78,11 @@ namespace LSS.Service
         /// <returns></returns>
         public List<Seat> ReferSeatByFloor(string libraryname, int floor)
         {
+            #region
             List<Seat> seatList = new List<Seat>();
             seatList = administrator.ReferSeatByFloor(libraryname, floor);
             return seatList;
+            #endregion
         }
 
         /// <summary>
@@ -88,8 +92,10 @@ namespace LSS.Service
         /// <param name="operation">目标值</param>
         public void SetBatchSeatState(List<string> list, int operation)
         {
+            #region
             SystemTask systemTask = new SystemTask();
             systemTask.SeatStateLock(list, operation);
+            #endregion
         }
 
         /// <summary>
@@ -98,7 +104,9 @@ namespace LSS.Service
         /// <param name="glory">信誉积分基准值</param>
         public void SetAllGlory(int glory)
         {
+            #region
             SystemTask.standard = glory;
+            #endregion
         }
 
         /// <summary>
@@ -108,9 +116,10 @@ namespace LSS.Service
         /// <returns>一个订单</returns>
         public Order GetOrderById(string orderid)
         {
+            #region
             Order order = administrator.GetOrderById(orderid);
-
             return order;
+            #endregion
         }
 
 
@@ -119,9 +128,18 @@ namespace LSS.Service
         /// 修改违规订单学生的积分
         /// </summary>
         /// <param name="studentid">学生的id</param>
-        public void AddGlory(string studentid)
+        public bool AddGlory(string studentid)
         {
-            administrator.AddGlory(studentid);
+            #region
+            if (administrator.AddGlory(studentid))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            #endregion
         }
 
 
@@ -132,21 +150,36 @@ namespace LSS.Service
         /// <returns>是否存在</returns>
         public bool IsExist(string libraryname)
         {
-
+            #region
             List<string> list = administrator.GetAllLibraryName();
-
             //判断list中是否存在libraryname
-
-            return true;
+            foreach(var library in list)
+            {
+                if (library == libraryname)
+                {
+                    return true;
+                }
+            }
+            return false;
+            #endregion
         }
 
         /// <summary>
         /// 添加图书馆
         /// </summary>
         /// <param name="library">图书馆对象</param>
-        public void AddLibrary(Library library)
+        public bool AddLibrary(Library library)
         {
-            administrator.AddLibrary(library);
+            #region
+            if (administrator.AddLibrary(library))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            #endregion
         }
 
 
@@ -157,13 +190,11 @@ namespace LSS.Service
         /// <returns>返回list</returns>
         public List<int> GetFloor(string libraryname)
         {
-
+            #region
             //获取起始楼层和结束楼层
             List<int> list = administrator.GetFloor(libraryname);
-
-
-
             return list;
+            #endregion
         }
 
         /// <summary>
@@ -172,9 +203,18 @@ namespace LSS.Service
         /// <param name="libraryname">图书馆名称</param>
         /// <param name="startfloor">起始楼层</param>
         /// <param name="endfloor">结束楼层</param>
-        public void AddFloor(string libraryname, int startfloor, int endfloor)
+        public bool AddFloor(string libraryname, int startfloor, int endfloor)
         {
-            administrator.AddFloor(libraryname,startfloor,endfloor);
+            #region
+            if (administrator.AddFloor(libraryname, startfloor, endfloor))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            #endregion
         }
     }
 }

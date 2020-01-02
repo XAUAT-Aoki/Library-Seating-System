@@ -19,9 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LSS.Data\LSS.Data.csproj" />
     <ProjectReference Include="..\LSS.Infratructure\LSS.Infrastructure.csproj" />
-    <ProjectReference Include="..\LSS.Mapper\LSS.Mapper.csproj" />
     <ProjectReference Include="..\LSS.Service\LSS.Service.csproj" />
   </ItemGroup>
 

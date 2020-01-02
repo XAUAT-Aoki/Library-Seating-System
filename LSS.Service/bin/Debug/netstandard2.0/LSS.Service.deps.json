@@ -18,6 +18,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.1.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
+          "RestSharp": "106.6.10",
           "System.Threading.Timer": "4.3.0"
         },
         "runtime": {
@@ -309,6 +310,14 @@
           }
         }
       },
+      "RestSharp/106.6.10": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.6.10.0",
+            "fileVersion": "106.6.10.0"
+          }
+        }
+      },
       "System.Buffers/4.4.0": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
@@ -421,7 +430,6 @@
       },
       "LSS.Infrastructure/1.0.0": {
         "dependencies": {
-          "LSS.Mapper": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Threading.Timer": "4.3.0"
@@ -433,6 +441,7 @@
       "LSS.Mapper/1.0.0": {
         "dependencies": {
           "LSS.Data": "1.0.0",
+          "LSS.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Threading.Timer": "4.3.0"
@@ -651,6 +660,13 @@
       "sha512": "sha512-VHPk3Yf7nDt+tZMC1M4oAoc3bgTYsOrap3VTjn//vd91b/nfquAbAeq1k0Lf7mPt8J7imLd9Pbzm50uB5euuZA==",
       "path": "pomelo.jsonobject/2.2.1",
       "hashPath": "pomelo.jsonobject.2.2.1.nupkg.sha512"
+    },
+    "RestSharp/106.6.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x1FM32hjnVOIn+DKtCs2Y4Q2DCUE5KW08NUXUd4GjgKjE+5PE0F6e9XfUg7nILo05M0TA/HRkRD/SeQ8+duOUA==",
+      "path": "restsharp/106.6.10",
+      "hashPath": "restsharp.106.6.10.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",

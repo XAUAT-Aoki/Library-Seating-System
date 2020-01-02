@@ -20,52 +20,62 @@ namespace LSS.Service
         StudentMapper sm = new StudentMapper();
         public bool Login(string user, string password)
         {
-
-            
+            #region
             //明文密码加密
-            string str = OperateMD5.GetMD5(password);
-
+            string md5Pwd = OperateMD5.GetMD5(password);
             //调用MApper中的方法
-
-            //StudentMapper sm = new StudentMapper();
-            //string pwd= sm.GetPasswordById(user);
-
-            return true;
+            string pwd = sm.GetPassword(user);
+            if (pwd == md5Pwd)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            #endregion
         }
         /// <summary>
         /// 用户修改密码
         /// </summary>
         /// <param name="oldpassword">旧密码</param>
         /// <param name="newpassword">新密码</param>
+        /// <param name="cookie">用户名</param>
         /// <returns></returns>
-        public bool ChangePassword(string oldpassword, string newpassword)
+        public bool ChangePassword(string oldpassword, string newpassword, string cookie)
         {
+            #region
             //旧密码加密，
             //新密码加密
             //获取cookie中的用户名
-
-            //根据用户名查询密码
-            //sm.GetPassword();
-
-            //判断查询到的密码是否与旧密码相同
-
-
-            //向数据库中写入新密码
-            //sm.ChangePassword(用户名，新密码);
-
-            return true;
+            string md5OldPwd = OperateMD5.GetMD5(oldpassword);
+            string dbPwd = sm.GetPassword(cookie);
+            if (md5OldPwd == dbPwd)
+            {
+                string md5NewPwd = OperateMD5.GetMD5(newpassword);
+                if (sm.ChangePassword(cookie, md5NewPwd))
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            else
+                return false;
+            #endregion
         }
 
         /// <summary>
         /// 查询学生个人信息
-        /// 
+        /// <paramref name="cookie">用户名</paramref>
         /// </summary>
         /// <returns>学生对象返回给控制层</returns>
-        public Student StudentInformation()
+        public Student StudentInformation(string cookie)
         {
+            #region
             //从cookie中获取用户名
-
-            return sm.StudentInformation("");
+            return sm.StudentInformation(cookie);
+            #endregion
         }
         /// <summary>
         /// 进行空闲座位查询
@@ -74,11 +84,11 @@ namespace LSS.Service
         /// <returns>座位结果集</returns>
         public List<Seat> Leisure(Condition condition)
         {
+            #region
             //在Mapper层中进行查询
-            sm.Leisure(condition);
-
-
-            return new List<Seat>();
+            List<Seat> seatList = sm.Leisure(condition);
+            return seatList;
+            #endregion
         }
 
         /// <summary>
@@ -88,13 +98,15 @@ namespace LSS.Service
         /// <param name="seatid">座位号</param>
         /// <param name="nowtime">开始预定时间</param>
         /// <param name="duration">时间块</param>
+        /// <param name="cookie">用户名</param>
         /// <returns>返回是否预定成功</returns>
-        public bool ReserveSeat(int date, string seatid, DateTime nowtime, int duration)
+        public bool ReserveSeat(int date, string seatid, DateTime nowtime, int duration, string cookie)
         {
-
+            #region
             //从cookie中获取用户名
 
             //由mapper层返回lock字段
+            string datetime = DateTime.Now.ToString("yyy-MM-dd");// 2008-09-04
 
 
             //根据date判断预定哪天的（第一天则>>1,第二天则<<7）
@@ -104,11 +116,6 @@ namespace LSS.Service
 
 
             //不可定则直接返回false
-
-
-
-
-
 
             //根据座位号查座位的状态
 
@@ -128,14 +135,14 @@ namespace LSS.Service
 
 
             //修改座位状态
-            int num =0;
+            int num = 0;
             sm.SeatInfor(
                 date,
                 str,//座位状态信息
                 seatid,//座位id
                 num,//处理后需要修改的状态的开始坐标
                 duration,//时长
-                1 );//1表示状态变为1
+                1);//1表示状态变为1
 
 
             //插入一条订单记录到订单表（id,学号,座位号，订单开始时间，结束时间，打卡时间，订单状态）
@@ -149,18 +156,22 @@ namespace LSS.Service
             sm.SetOrder(new Order());
 
             return true;
+            #endregion
         }
 
-       
-      
-        public DateTime ClockIn(Clock clock)
+
+
+        public DateTime ClockIn(Clock clock)//?
         {
             //1. 先匹配是否是本人扫码打卡
 
-            //邮箱查询学号  使用 ServiceUnit.getIdByEmail  方法   
+            //邮箱查询学号  使用 ServiceUnit.getIdByEmail  方法  
+            string studentId = StudentImplement.getIdByEmail(clock.username);
             //学号查询正在使用中的订单  使用 sm.GetUsingOrder() 方法
+            List<Order> orderList = sm.GetUsingOrder();
+            //orderList.Find(o => o.Tid == clock.seatid);
             //从订单集中查询是否有clock.seatid 
-            Order order=new Order();
+            Order order = new Order();
             //foreach（var temp in List<Order>）
             //{
             //    if(temp.seatid==clock.seatid)
@@ -168,7 +179,7 @@ namespace LSS.Service
             //        order = temp;
             //    }
             //}
-            if(order==null)
+            if (order == null)
             {
                 //没有关于这张桌子的订单，返回 0
             }
@@ -202,10 +213,10 @@ namespace LSS.Service
 
             //}
             //else {//中间打2次卡 
-            
+
             //}
-            
-            
+
+
             //打卡失败，返回0.
 
             return new DateTime(0);
@@ -220,10 +231,9 @@ namespace LSS.Service
         /// <returns>是否取消成功</returns>
         public bool CancleOrder(string orderid)
         {
-
+            #region
             //根据订单ID查找订单
-
-            Order order=sm.GetOrder(orderid);
+            Order order = sm.GetOrder(orderid);
 
 
             //判断是否可以退订单（判断依据：订单在此时此刻是否已经开始使用）
@@ -251,6 +261,7 @@ namespace LSS.Service
             //sm.(orderid,目标值);
 
             return true;
+            #endregion
         }
 
 
@@ -259,20 +270,57 @@ namespace LSS.Service
         /// 修改邮箱
         /// </summary>
         /// <param name="newemail">新的邮箱</param>
+        /// <param name="cookie">用户名</param>
         /// <returns>返回true</returns>
-        public void ChangeEmail(string newemail)
+        public bool ChangeEmail(string newemail, string cookie)
         {
+            #region
             //从cookie中获取用户名username
-            //bool flag = sm.ChangeEmail(username,newemail);
+            if (sm.ChangeEmail(cookie, newemail))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
             //if (!flag) { 
-                
+
             //    //修改cookie值为newemail
 
             //}
-
+            #endregion
         }
-     
+
+
+        /// <summary>
+        /// 根据邮箱查询学号
+        /// </summary>
+        /// <param name="str">邮箱名</param>
+        /// <returns>用户ID</returns>
+        public static string getIdByEmail(string str)
+        {
+            #region
+            StudentMapper mapper = new StudentMapper();
+            Student student = mapper.StudentInformation(str);
+            return student.Sid;
+            #endregion
+        }
+
+        /// <summary>
+        /// 通过学号取邮箱
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string getEmailById(string str)
+        {
+            #region
+            StudentMapper mapper = new StudentMapper();
+            Student student = mapper.StudentInformation(str);
+            return student.Semail;
+            #endregion
+        }
 
     }
 }

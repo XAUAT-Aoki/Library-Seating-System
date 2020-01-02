@@ -18,15 +18,15 @@ namespace LSS.Service
         bool Login(string user,string password);
 
 
-        bool ChangePassword(string oldpassword,string newpassword);
+        bool ChangePassword(string oldpassword,string newpassword, string cookie);
 
 
-        Student StudentInformation();
+        Student StudentInformation(string cookie);
 
 
         List<Seat> Leisure(Condition condition);
 
-        bool ReserveSeat(int date, string seatid, DateTime nowtime, int duration);
+        bool ReserveSeat(int date, string seatid, DateTime nowtime, int duration, string cookie);
 
     }
 }

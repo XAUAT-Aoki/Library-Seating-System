@@ -48,7 +48,7 @@ namespace LSS.UI.Controllers
             //判断新密码是否与旧密码和初始密码（123456）相同
             //相同则修改失败
 
-            administrator.ChangePassword(passwordViewModel.oldpassword,passwordViewModel.newpassword);
+            //administrator.ChangePassword(passwordViewModel.oldpassword,passwordViewModel.newpassword);
 
             return View();
         }

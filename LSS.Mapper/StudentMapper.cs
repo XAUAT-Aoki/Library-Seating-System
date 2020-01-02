@@ -25,10 +25,11 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="user"></param>
         /// <param name="password"></param>
-        public void ChangePassword(string user, string password) {
+        public bool ChangePassword(string user, string password) {
 
             //使用工具方法判断学号/邮箱IsStudentId（）
             //修改对应密码
+            return false;
         }
 
         public Student StudentInformation(string username)
@@ -65,7 +66,12 @@ namespace LSS.Mapper
             //使用try{]catch(){}语句处理转换异常
             return new Condition();
         }
-
+        /// <summary>
+        /// 查询座位状态
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="seatid"></param>
+        /// <returns></returns>
         public string SeatState(int date, string seatid)
         {
 
@@ -83,13 +89,13 @@ namespace LSS.Mapper
         /// <summary>
         /// 修改个人的lock锁
         /// </summary>
-        /// <param name="operation">状态修改的目标值</param>
+        /// <param name="operation">状态修改的目标值  0或1</param>
         /// <param name="date">日期</param>
         /// <param name="username">座位ID</param>
         /// <param name="">lock字段</param>
-        public void ModifyInfor(int operation,int date,string username,byte ad)
+        public bool ModifyInfor(char operation,int date,string username)
         {
-
+            return false;
         }
 
 
@@ -98,11 +104,11 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public byte getLock(string username) {
+        public string getLock(string username) {
 
             //调用正则匹配，进行查询lock字段
 
-            return 1;
+            return "";
         }
         /// <summary>
         /// 修改座位状态
@@ -113,9 +119,10 @@ namespace LSS.Mapper
         /// <param name="num">处理后需要修改的状态的开始坐标</param>
         /// <param name="duration">时长</param>
         /// <param name="operation">目标值</param>
-        public void SeatInfor(int date,string str, string seatid, int num, int duration,int operation)
+        public bool SeatInfor(int date,string str, string seatid, int num, int duration,int operation)
         {
             //将字符串修改之后直接插入座位表
+            return false;
         }
 
 
@@ -123,10 +130,11 @@ namespace LSS.Mapper
         /// 在订单表中插入一条记录
         /// </summary>
         /// <param name="order"></param>
-        public void SetOrder(Order order)
+        public bool SetOrder(Order order)
         {
             //插入一条订单记录到订单表（id,学号,座位号，订单开始时间，结束时间，打卡时间，订单状态）
             //订单id（图书馆号+层号+座位号+系统时间）
+            return false;
         }
 
 
@@ -149,27 +157,11 @@ namespace LSS.Mapper
         /// 根据ID直接改变订单状态
         /// </summary>
         /// <param name="oid">订单ID</param>
-        public void ChangeOrderState(object oid,int operation)
+        public bool ChangeOrderState(object oid,int operation)
         {
             //根据ID直接改变订单状态
+            return false;
         }
-
-        #region  函数弃用
-
-        /// <summary>
-        /// 返回打卡时间是否在指定时间范围内
-        /// </summary>
-        /// <param name="now">实际打卡时间</param>
-        /// <param name="predict">预计打卡时间</param>
-        /// <returns></returns>
-        public bool IsTrueTime(DateTime now,DateTime predict)
-        {
-            //实际打卡时间必须在预定打卡时间开始后半小时之内
-            return true;
-        }
-
-        #endregion
-
 
         /// <summary>
         /// 根据座位 ID 在座位表内查询对应的图书馆号
@@ -207,7 +199,7 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="username"></param>
         /// <param name="newemail"></param>
-        /// <returns></returns>
+        /// <returns></returnsange
         public bool ChangeEmail(string username, string newemail)
         {
             //正则表达匹配用户名，学号true
@@ -232,9 +224,10 @@ namespace LSS.Mapper
         /// 修改学生的积分
         /// </summary>
         /// <param name="a">目标值</param>
-        public void ResetGlory(int a)
+        public bool ResetGlory(int a)
         {
             //将所有学生的积分值都修改为a
+            return true;
         }
 
         /// <summary>
