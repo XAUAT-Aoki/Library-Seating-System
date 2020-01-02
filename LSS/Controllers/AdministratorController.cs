@@ -22,13 +22,18 @@ namespace LSS.UI.Controllers
         /// <summary>
         /// 管理员登录
         /// </summary>
-        /// <param name="administrator">管理员视图对象</param>
+        /// <param name="administrator">管理员对象</param>
         /// <returns>返回成功与否的视图页面</returns>
-        public IActionResult Login(AdministratorViewModel administrator)
+        public IActionResult Login(AdministratorViewModel admin)
         {
-            AdministratorImplement admin = new AdministratorImplement();
+            //AdministratorImplement admin = new AdministratorImplement();
 
-            admin.Login(administrator.username, administrator.password);
+            bool isValid=administrator .Login(admin.username,admin.password);
+            if(isValid)
+            {
+
+            }
+
 
 
 

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj": {}
+    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
+    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj",
+        "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
         "projectName": "LSS.Data",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\obj\\",
+        "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
+        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
+        "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -94,20 +90,20 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj",
         "projectName": "LSS.Infrastructure",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\obj\\",
+        "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
+        "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -119,7 +115,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -176,20 +176,20 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj": {
+    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
+        "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj",
         "projectName": "LSS.Mapper",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\obj\\",
+        "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj",
+        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
+        "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -202,11 +202,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj"
-              },
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj"
               }
             }
           }
@@ -265,20 +262,20 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj": {
+    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj",
+        "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
         "projectName": "LSS.Service",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\LSS.Service.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Service\\obj\\",
+        "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
+        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
+        "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -291,14 +288,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Data\\LSS.Data.csproj"
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\c#文件\\LSS\\LSS.Mapper\\LSS.Mapper.csproj"
+              "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
+                "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj"
               }
             }
           }
@@ -312,6 +309,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -337,6 +338,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
             },
             "System.Threading.Timer": {
               "target": "Package",

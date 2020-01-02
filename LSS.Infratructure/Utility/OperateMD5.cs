@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace LSS.Infrastructure.Utility
@@ -12,8 +13,15 @@ namespace LSS.Infrastructure.Utility
         /// <param name="user">字符串</param>
         /// <returns>加密后密文字符串</returns>
         public static string GetMD5(string user) {
-
-            return "";
+            MD5 md5 = MD5.Create();
+            byte[] originStr = Encoding.UTF8.GetBytes(user);
+            byte[] hashStr = md5.ComputeHash(originStr);
+            StringBuilder sb = new StringBuilder();
+            foreach (byte b in hashStr)
+            {
+                sb.Append(b.ToString("x2"));
+            }
+            return sb.ToString();
         }
     }
 }

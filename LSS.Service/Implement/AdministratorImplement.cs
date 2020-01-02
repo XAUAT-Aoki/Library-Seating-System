@@ -4,15 +4,13 @@ using LSS.Mapper;
 using LSS.Infrastructure.Utility;
 using LSS.Data;
 using LSS.Service.Implement;
-
-
+using Microsoft.AspNetCore.Http;
+using RestSharp;
 
 namespace LSS.Service
 {
     public class AdministratorImplement
     {
-
-
         AdministratorMapper administrator = new AdministratorMapper();
 
         /// <summary>
@@ -23,14 +21,17 @@ namespace LSS.Service
         /// <returns>返回是否登录成功</returns>
         public bool Login(string username, string password)
         {
-
             //明文密码加密
             string str = OperateMD5.GetMD5(password);
-            AdministratorMapper adminmapper = new AdministratorMapper();
-
-            adminmapper.GetPassword(username);
-
-            return true;
+            string adminPwd=administrator.GetPassword(username);
+            if (str == adminPwd)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -39,17 +40,24 @@ namespace LSS.Service
         /// <param name="oldpassword">旧密码</param>
         /// <param name="newpassword">新密码</param>
         /// <returns></returns>
-        public bool ChangePassword(string oldpassword, string newpassword)
+        public bool ChangePassword(string oldpassword, string newpassword,string cookie)
         {
             //旧密码加密，
             //新密码加密
-            //获取cookie中的用户名
+            string oldPwd = OperateMD5.GetMD5(oldpassword);
+            string newPwd = OperateMD5.GetMD5(newpassword);
 
             //根据用户名查询密码
-            //administrator.GetPassword();
-
+            string dbOldPwd=administrator.GetPassword(cookie);
             //判断查询到的密码是否与旧密码相同
-
+            if(dbOldPwd==oldPwd)
+            {
+                administrator.ChangePassword(cookie, newPwd);
+            }
+            else
+            {
+                return false;
+            }
 
             //向数据库中写入新密码
             //administrator.ChangePassword(用户名，新密码);
