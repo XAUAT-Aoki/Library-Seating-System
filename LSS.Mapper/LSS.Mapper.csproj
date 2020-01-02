@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LSS.Data\LSS.Data.csproj" />
-    <ProjectReference Include="..\LSS.Infratructure\LSS.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

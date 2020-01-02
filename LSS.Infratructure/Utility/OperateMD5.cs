@@ -19,7 +19,7 @@ namespace LSS.Infrastructure.Utility
             StringBuilder sb = new StringBuilder();
             foreach (byte b in hashStr)
             {
-                sb.Append(b.ToString("x2"));
+                sb.Append(b.ToString("x4"));//x4代表64位
             }
             return sb.ToString();
         }

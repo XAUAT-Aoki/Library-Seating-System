@@ -17,8 +17,8 @@ namespace LSS.Mapper
         /// <returns>密文密码</returns>
         public string GetPassword(string user)
         {
-
             //根据对应的数据查询密码
+
             return "";
         }
         /// <summary>
@@ -26,7 +26,7 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="username">管理员名</param>
         /// <param name="newpassword">新密码</param>
-        public void ChangePassword(string username,string newpassword) {
+        public bool ChangePassword(string username,string newpassword) {
 
             //直接写密码（管理员表）
 
@@ -57,7 +57,7 @@ namespace LSS.Mapper
             return new List<Seat>();
         }
 
-        public void SetSeatState(object id, int operation)
+        public bool SetSeatState(object id, int operation)
         {
             throw new NotImplementedException();
         }
@@ -76,7 +76,7 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="seatid">座位id</param>
         /// <param name="operation">目标值</param>
-        public void SeatInfor( string seatid, int operation)
+        public bool SeatInfor( string seatid, int operation)
         {
             //将座位所有时间的状态修改为operation
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Text.RegularExpressions;
 
 namespace LSS.Infrastructure.Utility
 {
@@ -15,8 +15,9 @@ namespace LSS.Infrastructure.Utility
         public static bool IsStudentId(string str) {
 
             //进行正则匹配
-
-            return true;
+            Regex RegEmail = new Regex("^[\\w-]+@[\\w-]+\\.(com|net|org|edu|mil|tv|biz|info)$");
+            Match m = RegEmail.Match(str);
+            return !m.Success;
         }
 
     }

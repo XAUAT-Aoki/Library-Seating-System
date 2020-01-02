@@ -42,41 +42,31 @@ namespace LSS.Service
         /// <returns></returns>
         public bool ChangePassword(string oldpassword, string newpassword,string cookie)
         {
-            //旧密码加密，
-            //新密码加密
+            #region
             string oldPwd = OperateMD5.GetMD5(oldpassword);
             string newPwd = OperateMD5.GetMD5(newpassword);
-
-            //根据用户名查询密码
             string dbOldPwd=administrator.GetPassword(cookie);
-            //判断查询到的密码是否与旧密码相同
-            if(dbOldPwd==oldPwd)
+            if(dbOldPwd==oldPwd&& administrator.ChangePassword(cookie, newPwd))
             {
-                administrator.ChangePassword(cookie, newPwd);
+                return true;
             }
             else
             {
                 return false;
             }
-
-            //向数据库中写入新密码
-            //administrator.ChangePassword(用户名，新密码);
-
-            return true;
+            #endregion
         }
 
         /// <summary>
         /// 根据id查询座位
         /// </summary>
-        /// <param name="seatid">座位id</param>
+        /// <param name="seatId">座位id</param>
         /// <returns>返回座位对象或空对象</returns>
 
-        public Seat ReferSeatById(string seatid)
+        public Seat ReferSeatById(string seatId)
         {
-
-            administrator.referSeatById(seatid);
-
-            return new Seat();
+            Seat seat=administrator.referSeatById(seatId);
+            return seat;
         }
         /// <summary>
         /// 查询座位
@@ -86,12 +76,9 @@ namespace LSS.Service
         /// <returns></returns>
         public List<Seat> ReferSeatByFloor(string libraryname, int floor)
         {
-
-            List<Seat> list = new List<Seat>();
-
-            list = administrator.ReferSeatByFloor(libraryname, floor);
-
-            return list;
+            List<Seat> seatList = new List<Seat>();
+            seatList = administrator.ReferSeatByFloor(libraryname, floor);
+            return seatList;
         }
 
         /// <summary>
@@ -101,9 +88,8 @@ namespace LSS.Service
         /// <param name="operation">目标值</param>
         public void SetBatchSeatState(List<string> list, int operation)
         {
-            SystemTest systemTest = new SystemTest();
-            systemTest.SeatStateLock(list, operation);
-
+            SystemTask systemTask = new SystemTask();
+            systemTask.SeatStateLock(list, operation);
         }
 
         /// <summary>
@@ -112,7 +98,7 @@ namespace LSS.Service
         /// <param name="glory">信誉积分基准值</param>
         public void SetAllGlory(int glory)
         {
-            SystemTest.standard = glory;
+            SystemTask.standard = glory;
         }
 
         /// <summary>
