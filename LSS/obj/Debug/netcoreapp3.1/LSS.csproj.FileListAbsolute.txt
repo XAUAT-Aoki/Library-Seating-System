@@ -12,7 +12,6 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Views.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.Manifest.cache
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\staticwebassets\LSS.StaticWebAssets.xml
-C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cache
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.RazorAssemblyInfo.cs
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.AssemblyInfoInputs.cache
@@ -46,3 +45,9 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Infrastructur
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Mapper.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\LSS.Service.pdb
 C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DELL\Desktop\c#文件\LSS\LSS\obj\Debug\netcoreapp3.1\LSS.MvcApplicationPartsAssemblyInfo.cache

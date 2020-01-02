@@ -69,7 +69,7 @@ namespace LSS.UI.Controllers
         /// <returns>查询出的座位页面</returns>
         public IActionResult ReferSeatByFloor(ReferSeatViewModel referSeatViewModel) {
 
-            List<Seat> list = administrator.ReferSeatViewModel(referSeatViewModel.libraryname, referSeatViewModel.floor);
+            List<Seat> list = administrator.ReferSeatByFloor(referSeatViewModel.libraryname, referSeatViewModel.floor);
 
 
             return View();
@@ -100,6 +100,94 @@ namespace LSS.UI.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 根据订单id查询订单
+        /// </summary>
+        /// <param name="orderid">订单id</param>
+        /// <returns>返回查询到的订单</returns>
+        public IActionResult GetOrderById(string orderid) {
+
+
+            Order order=administrator.GetOrderById(orderid);
+
+
+            return View();
+        }
+
+
+        /// <summary>
+        /// 修改违规订单，学生积分恢复加1
+        /// </summary>
+        /// <param name="studentid">学生id</param>
+        /// <returns>修改成功页面</returns>
+        public IActionResult AddGlory(string studentid) {
+
+            administrator.AddGlory(studentid);
+            return View();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="libraryname"></param>
+        /// <returns></returns>
+        public IActionResult IsExist(string libraryname) {
+
+            bool flag = administrator.IsExist(libraryname);
+
+
+            //如果该图书馆名称已经存在，则需要重新输入一个名称
+            //如果该图书馆名称不存在，则需要返回输入数据页面
+            return View();
+        }
+
+        /// <summary>
+        /// 添加图书馆
+        /// </summary>
+        /// <param name="administratorViewModel"></param>
+        /// <returns></returns>
+        public IActionResult AddLibrary(AdministratorViewModel administratorViewModel) {
+
+            Library library = new Library();
+
+            //将ViewModel中的对于属性都赋值给library
+
+
+            administrator.AddLibrary(library);
+
+
+            return View();
+        }
+
+
+
+        /// <summary>
+        /// 查询图书馆的起始楼层和终止楼层
+        /// </summary>
+        /// <param name="libraryname">图书馆名称</param>
+        /// <returns>返回修改成功页面</returns>
+        public IActionResult GetFloor(string libraryname) {
+
+
+            List<int> list=administrator.GetFloor(libraryname);
+
+            return View();
+        }
+
+
+        /// <summary>
+        /// 添加图书馆的楼层
+        /// </summary>
+        /// <param name="addFloorViewModel">楼层视图</param>
+        /// <returns>添加成功页面</returns>
+        public IActionResult AddFloor(AddFloorViewModel addFloorViewModel) {
+
+
+            administrator.AddFloor(addFloorViewModel.libraryname,addFloorViewModel.startfloor,addFloorViewModel.endfloor);
+
+            return View();
+        
+        }
 
     }
 }

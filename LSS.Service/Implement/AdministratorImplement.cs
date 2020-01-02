@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using LSS.Mapper;
 using LSS.Infrastructure.Utility;
 using LSS.Data;
 using LSS.Service.Implement;
+
+
 
 namespace LSS.Service
 {
@@ -65,7 +66,7 @@ namespace LSS.Service
         public Seat ReferSeatById(string seatid)
         {
 
-            administrator.eferSeatById(seatid);
+            administrator.referSeatById(seatid);
 
             return new Seat();
         }
@@ -75,12 +76,12 @@ namespace LSS.Service
         /// <param name="libraryname"></param>
         /// <param name="floor"></param>
         /// <returns></returns>
-        public List<Seat> ReferSeatViewModel(string libraryname, int floor)
+        public List<Seat> ReferSeatByFloor(string libraryname, int floor)
         {
 
             List<Seat> list = new List<Seat>();
 
-            list=administrator.ReferSeatViewModel(libraryname,floor);
+            list = administrator.ReferSeatByFloor(libraryname, floor);
 
             return list;
         }
@@ -93,7 +94,7 @@ namespace LSS.Service
         public void SetBatchSeatState(List<string> list, int operation)
         {
             SystemTest systemTest = new SystemTest();
-            systemTest.SeatStateLock(list,operation);
+            systemTest.SeatStateLock(list, operation);
 
         }
 
@@ -104,6 +105,82 @@ namespace LSS.Service
         public void SetAllGlory(int glory)
         {
             SystemTest.standard = glory;
+        }
+
+        /// <summary>
+        /// 按照订单id查询订单
+        /// </summary>
+        /// <param name="orderid">订单id</param>
+        /// <returns>一个订单</returns>
+        public Order GetOrderById(string orderid)
+        {
+            Order order = administrator.GetOrderById(orderid);
+
+            return order;
+        }
+
+
+
+        /// <summary>
+        /// 修改违规订单学生的积分
+        /// </summary>
+        /// <param name="studentid">学生的id</param>
+        public void AddGlory(string studentid)
+        {
+            administrator.AddGlory(studentid);
+        }
+
+
+        /// <summary>
+        /// 判断该图书馆名称是否存在
+        /// </summary>
+        /// <param name="libraryname">图书馆名称</param>
+        /// <returns>是否存在</returns>
+        public bool IsExist(string libraryname)
+        {
+
+            List<string> list = administrator.GetAllLibraryName();
+
+            //判断list中是否存在libraryname
+
+            return true;
+        }
+
+        /// <summary>
+        /// 添加图书馆
+        /// </summary>
+        /// <param name="library">图书馆对象</param>
+        public void AddLibrary(Library library)
+        {
+            administrator.AddLibrary(library);
+        }
+
+
+        /// <summary>
+        /// 查找图书馆的起始和结束楼层
+        /// </summary>
+        /// <param name="libraryname">图书馆名称</param>
+        /// <returns>返回list</returns>
+        public List<int> GetFloor(string libraryname)
+        {
+
+            //获取起始楼层和结束楼层
+            List<int> list = administrator.GetFloor(libraryname);
+
+
+
+            return list;
+        }
+
+        /// <summary>
+        /// 修改该图书馆的起始楼层和结束楼层
+        /// </summary>
+        /// <param name="libraryname">图书馆名称</param>
+        /// <param name="startfloor">起始楼层</param>
+        /// <param name="endfloor">结束楼层</param>
+        public void AddFloor(string libraryname, int startfloor, int endfloor)
+        {
+            administrator.AddFloor(libraryname,startfloor,endfloor);
         }
     }
 }

@@ -154,6 +154,8 @@ namespace LSS.Mapper
             //根据ID直接改变订单状态
         }
 
+        #region  函数弃用
+
         /// <summary>
         /// 返回打卡时间是否在指定时间范围内
         /// </summary>
@@ -165,6 +167,9 @@ namespace LSS.Mapper
             //实际打卡时间必须在预定打卡时间开始后半小时之内
             return true;
         }
+
+        #endregion
+
 
         /// <summary>
         /// 根据座位 ID 在座位表内查询对应的图书馆号
