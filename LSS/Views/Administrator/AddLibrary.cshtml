@@ -1,0 +1,196 @@
+﻿@page
+@model LSS.Views.Administrator.AddLibraryModel
+@{
+    Layout = "_IndexLayout";
+
+}
+<style>
+    #nameError {
+        color: red;
+        text-align: center;
+        display: none;
+    }
+
+    #floorError {
+        color: red;
+        text-align: center;
+        display: none;
+    }
+</style>
+<div class="container" style="opacity: 0.6;">
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a href="index.html">首页</a>
+                    <span>| |</span>
+                </li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 15px;">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-success leftSidebar" id="leftSidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">快捷菜单</h3>
+                </div>
+                <div class="panel-body">
+                    <a id="" href="" class="list-group-item">订单查询</a>
+                    <a id="" href="" class="list-group-item">查看个人信息</a>
+                    <a id="" href="" class="list-group-item">密码修改</a>
+                    <a id="" href="" class="list-group-item">申诉</a>
+                    <a id="top" href="" class="list-group-item">回到顶部</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="container" id="studentInformation">
+                <div class="page-header" style="margin-top: 15px;">
+                    <h1><small>添加图书馆</small></h1>
+                </div>
+                <form class="form-horizontal" asp-controller="Administrator" asp-action="AddLibrary">
+                    <div class="form-group">
+                        <label for="libraryName" class="col-sm-2 control-label">图书馆名</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control auth" id="libraryName" name="libraryname" placeholder="请输入图书馆名">
+                        </div>
+                        <span class="col-sm-2" id="nameError">图书馆名重复!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="libraryLongitude" class="col-sm-2 control-label">经度</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="libraryLongitude" name="longititude" placeholder="请输入图书馆经度">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="libraryLatitude" class="col-sm-2 control-label">纬度</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="libraryLatitude" name="latitude" placeholder="请输入图书馆纬度">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="libraryError" class="col-sm-2 control-label">经纬度误差</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="libraryError" name="Error" placeholder="请输入经纬度误差">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="libraryStartFloor" class="col-sm-2 control-label">起始楼层</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="libraryStartFloor" name="StartFloor" placeholder="请输入图书馆起始楼层">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="libraryEndFloor" class="col-sm-2 control-label">终止楼层</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control auth" id="libraryEndFloor" name="EndFloor"
+                                   placeholder="请输入图书馆终止楼层">
+                        </div>
+                        <span class="col-sm-2" id="floorError">终止楼层需大于起始楼层!</span>
+                    </div>
+
+                    <div class="submitInformation" style="margin-top: 50px;">
+                        <div class="col-sm-4"></div>
+                        <button type="submit" id="addLibraryBtn" class="btn btn-success col-sm-4">
+                            确认添加
+                        </button>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/numscroller-1.0.js"></script>
+<script src="~/js/jquery.flexisel.js"></script>
+<script src="~/js/SmoothScroll.min.js"></script>
+<script src="~/js/move-top.js"></script>
+<script src="~/js/easing.js"></script>
+<script src="~/js/checkStudentOrder.js"></script>
+<script>
+    var startfloor = 1;
+    var endfloor;
+    var re;
+    $("#libraryName").blur(function () {
+        $(this).data({
+            "s": 0
+        }); //设置初始值，当后端未返回时，前端无法进行修改
+        var name = $("#libraryName").val();
+        //发送图书馆名到后端  IsExist(string libraryname)
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/IsExist',
+            data: { "libraryname": name },
+            success: function (data) {
+                re = data;
+            },
+            error: function (data) {
+                alert("添加失败");
+            }
+        });
+        //返回值re为false时，auth为0，显示图书馆名重名
+        if (re == false) {
+            $(this).data({
+                "s": 0
+            });
+            $("#nameError").show();
+        } else {
+            $(this).data({
+                "s": 0
+            });
+            $("#nameError").hide();
+        }
+    });
+    $("#libraryStartFloor").blur(function () {
+        startfloor = parseInt($("#libraryStartFloor").val());
+        if (startfloor <= 0) {
+            startfloor = 1;
+        } else if ($("#libraryStartFloor").val() == "") {
+            startfloor = 1;
+        }
+        $("#libraryStartFloor").val(startfloor);
+    });
+    $("#libraryEndFloor").blur(function () {
+        endfloor = parseInt($("#libraryEndFloor").val());
+        if ($("#libraryEndFloor").val() == "") {
+            endfloor = 1;
+        } else if (endfloor < startfloor) {
+            $(this).data({
+                "s": 0
+            });
+            $("#floorError").show();
+        } else {
+            $(this).data({
+                "s": 1
+            });
+            $("#floorError").hide();
+        }
+        $("#libraryEndFloor").val(endfloor);
+
+    });
+    $("form").submit(function () {
+        // $(".auth").blur();
+        tot = 0;
+        $(".auth").each(function () {
+            tot += $(this).data("s");
+        });
+        if (tot != 1) {
+            return false;
+        } else {
+            return true;
+        }
+    });
+    window.onload(function () {
+        var warning = " @Html.Raw(ViewBag.message)";
+        if (warning.length>0) {
+            alert(warning);
+        }
+    });
+    
+</script>

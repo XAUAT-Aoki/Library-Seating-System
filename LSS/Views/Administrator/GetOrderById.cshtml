@@ -1,0 +1,133 @@
+﻿@page
+@model LSS.Views.Administrator.GetOrderByIdModel
+@{
+    Layout = "_IndexLayout";
+}
+
+<div class="container" style="opacity: 0.6;">
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a href="index.html">首页</a>
+                    <span>| |</span>
+                </li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 15px;">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-success leftSidebar" id="leftSidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">快捷菜单</h3>
+                </div>
+                <div class="panel-body">
+                    <a id="" href="" class="list-group-item">订单查询</a>
+                    <a id="" href="" class="list-group-item">查看个人信息</a>
+                    <a id="" href="" class="list-group-item">密码修改</a>
+                    <a id="" href="" class="list-group-item">申诉</a>
+                    <a id="top" href="" class="list-group-item">回到顶部</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="page-header" style="margin-top: 15px;">
+                <h1><small>订单记录管理</small></h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="请输入订单号查询！" id="orderInput" maxlength="40" autofocus="autofocus">
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-primary btn-sm" id="searchBtn" style="float: right;">查询</button>
+                </div>
+            </div>
+
+
+            <div class="nonlicetOrderList" data-example-id="hoverable-table" style="margin-top: 20px;">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>订单编号</th>
+                            <th>学生姓名</th>
+                            <th>学生学号</th>
+                            <th>开始时间</th>
+                            <th>结束时间</th>
+                            <th>订单状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*<tr>
+                                <td id="orderID">2112212131</td>
+                                <td id="studentName">Aoki</td>
+                                <td id="studentID">123</td>
+                                <td id="orderStartTime">2019-10-21 12:00</td>
+                                <td id="orderEndTime">2019-10-21 13:00</td>
+                                <td><label class="label label-danger">违约</label></td>
+                                <td>
+                                    <button class="modify btn btn-success btn-sm"
+                                            onclick="modifyBtn(1,this)">
+                                        取消违约
+                                    </button>
+                                </td>
+                            </tr>*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $("#searchBtn").click(function () {
+        var OrderId = $("#orderInput").val();
+        sendData(OrderId);
+    });
+    function sendData(OrderId) {
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/GetOrderById',
+            data: { "orderid": OrderId },
+            success: function (data) {
+                if (data == "未查找到订单，请重新输入订单号！") {
+                    alert(data);
+                } else {
+                   // var data = JSON.parse(data);
+                    var orderID = "<td id='orderID'>" + data.OrderId + "</td>"
+                    var studentName = "<td id='studentName'>" + data.sudentName + "</td>"
+                    var stuentID = "<td id = 'studentID'>" + data.studentId + "</td>";
+                    var orderStartTime = "<td id='orderStartTime'>" + data.startTime + "</td>";
+                    var orderEndTime = "<td id='orderEndTime'>" + data.endTime + "</td>";
+                    var orderState;
+                    if (data.orderState == "11") {
+                        orderState = "<td><label class='label label-success'>" + "使用中" + "</label></td>";
+                    } else if (data.orderState == "10") {
+                        orderState = "<td><label class='label label-warning'>" + "使用结束" + "</label></td>";
+                    } else if (data.orderState == "01") {
+                        orderState = "<td><label class='label label-info'>" + "未开始" + "</label></td>";
+                    } else if (data.orderState == "00") {
+                        orderState = "<td><label class='label label-danger'>" + "违约" + "</label></td>";
+                    }
+                    var btn = "<td><button class='modify btn btn-success btn-sm'onclick='modifyBtn(" + data.OrderId+",this)'>取消违约</button></td>"
+                    var tabelBodyStr = "<tr>" + orderID + studentName + stuentID + orderStartTime + orderEndTime + orderState +btn+ "</tr>";
+                    $("tbody").html(tabelBodyStr);
+                }
+            },
+            error: function (data) {
+                alert("修改失败");
+            }
+        });
+    }
+
+    function getTable(str) {
+
+    }
+
+</script>
+

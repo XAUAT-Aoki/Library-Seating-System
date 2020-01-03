@@ -169,7 +169,7 @@ namespace LSS.Service
             string studentId = StudentImplement.getIdByEmail(clock.username);
             //学号查询正在使用中的订单  使用 sm.GetUsingOrder() 方法
             List<Order> orderList = sm.GetUsingOrder();
-            //orderList.Find(o => o.Tid == clock.seatid);
+            //orderList.Find(o => o.Oid == clock.seatid);  ？？ seatid 和Tid
             //从订单集中查询是否有clock.seatid 
             Order order = new Order();
             //foreach（var temp in List<Order>）
@@ -236,7 +236,7 @@ namespace LSS.Service
             Order order = sm.GetOrder(orderid);
 
 
-            //判断是否可以退订单（判断依据：订单在此时此刻是否已经开始使用）
+            //判断是否可以退订单（判断依据：订单在此时此刻是否已经开始使用）开始使用的标志是什么。
 
             //不可退则直接返回false
 

@@ -106,3 +106,6 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\LSS.Views.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\LSS.csproj.CopyComplete
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\LSS.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\LSS.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\AddFloor.cshtml.g.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\AddLibrary.cshtml.g.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\GetOrderById.cshtml.g.cs
