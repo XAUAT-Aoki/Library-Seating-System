@@ -24,11 +24,12 @@ namespace LSS.UI.ViewModels
         [Required]
         public int floor { get; set; }
 
+
     }
 
     public class BatchSeatStateViewModel { 
     
-        public List<string> list { get; set; }
+        public string[] checkID { get; set; }
 
         public int operation { get; set; }
 

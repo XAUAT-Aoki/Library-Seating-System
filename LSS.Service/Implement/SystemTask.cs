@@ -178,33 +178,33 @@ namespace LSS.Service.Implement
         //将该订单状态置为违规，并扣除该订单对应的学生的信誉积分，同时将订单对应的座位的状态改变，
         private void test3  (object source, ElapsedEventArgs e)  
          {
-            //try
-            //{
-            //    if (DateTime.Now.Hour >= 23)
-            //    {
+            try
+            {
+                if (DateTime.Now.Hour >= 23)
+                {
 
-            //        foreach (string seatid in list)
-            //        {
-            //            List<string> usernamelist = administratorMapper.GetSIdByOrder(seatid);
-            //            foreach (string str in usernamelist)
-            //            {
+                    foreach (string seatid in list)
+                    {
+                        List<string> usernamelist = administratorMapper.GetSIdByOrder(seatid);
+                        foreach (string str in usernamelist)
+                        {
 
-            //                string email = ServiceUnit.getEmailById(str);
+                            
 
-            //                ServiceUnit.SendEmail(email, "邮件正文");
-            //            }
+                            
+                        }
 
-            //            //administratorMapper.SeatInfor(seat.id,operation);
+                        
 
-            //        }
+                    }
 
-            //    }
-            //}
-            //catch(Exception ex)
-            //{
-            //    throw ex;
-            //}
-            
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
 
         }
     }

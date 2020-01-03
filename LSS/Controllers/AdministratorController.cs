@@ -56,7 +56,7 @@ namespace LSS.UI.Controllers
             //从 Cookie 中获取当前登录用户用户名
             string Ano=cookie.getCookie("Ano");
             var flag=administrator.ChangePassword(passwordViewModel.oldpassword,passwordViewModel.newpassword,Ano);
-            if(flag)
+            if (flag) 
             {
                 return RedirectToAction("Login", "Home");
             }
@@ -86,32 +86,34 @@ namespace LSS.UI.Controllers
 
             
         }
+     
 
+   
 
         /// <summary>
         /// 根据图书馆和图书馆号查询座位集
         /// </summary>
         /// <param name="referSeatViewModel">图书馆及楼层视图</param>
         /// <returns>查询出的座位页面</returns>
-        public IActionResult ReferSeatByFloor(ReferSeatViewModel referSeatViewModel) {
-
+        public IActionResult ReferSeatByFloor(ReferSeatViewModel referSeatViewModel) 
+        {
             List<Seat> list = administrator.ReferSeatByFloor(referSeatViewModel.libraryname, referSeatViewModel.floor);
-
-
             return View();
         }
 
+
+        [HttpPost]
         /// <summary>
         /// 批量修改座位状态
         /// </summary>
         /// <param name="batchSeatStateViewModel">座位集及目标值视图</param>
         /// <returns>是否修改成功</returns>
-        public IActionResult SetBatchSeatState(BatchSeatStateViewModel batchSeatStateViewModel) {
-
-
-            administrator.SetBatchSeatState(batchSeatStateViewModel.list,batchSeatStateViewModel.operation);
-
-            return View();
+        public bool SetBatchSeatState(BatchSeatStateViewModel batchSeatStateViewModel) {
+            var seatlist = batchSeatStateViewModel.checkID.ToList<string>();
+            if (administrator.SetBatchSeatState(seatlist, batchSeatStateViewModel.operation))
+                return true;
+            else
+                return false;
         }
 
         /// <summary>
@@ -131,11 +133,10 @@ namespace LSS.UI.Controllers
         /// </summary>
         /// <param name="orderid">订单id</param>
         /// <returns>返回查询到的订单</returns>
-        public IActionResult GetOrderById(string orderid) {
-
+        public IActionResult GetOrderById(string orderid)
+        {
 
             Order order=administrator.GetOrderById(orderid);
-
 
             return View();
         }

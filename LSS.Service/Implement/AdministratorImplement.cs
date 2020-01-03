@@ -12,13 +12,6 @@ namespace LSS.Service
     public class AdministratorImplement
     {
         AdministratorMapper administrator = new AdministratorMapper();
-
-
-
-
-
-
-
         
         /// <summary>
         /// 登录服务实现
@@ -50,7 +43,7 @@ namespace LSS.Service
             //string newPwd = OperateMD5.GetMD5(newpassword);
             string dbOldPwd=administrator.GetPassword(cookie);
             if ((dbOldPwd == oldpassword) && (administrator.ChangePassword(cookie, newpassword)))
-            {
+            {               
                 return true;
             }
             else
@@ -101,11 +94,20 @@ namespace LSS.Service
         /// </summary>
         /// <param name="list">座位集合</param>
         /// <param name="operation">目标值</param>
-        public void SetBatchSeatState(List<string> list, int operation)
+        public bool SetBatchSeatState(List<string> list, int operation)
         {
             #region
             SystemTask systemTask = new SystemTask();
-            systemTask.SeatStateLock(list, operation);
+            try
+            {
+                systemTask.SeatStateLock(list, operation);
+                return true;
+            }
+            catch(Exception)
+            {
+                return false;
+            }
+            
             #endregion
         }
 

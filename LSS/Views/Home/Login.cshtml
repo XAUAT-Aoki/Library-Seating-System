@@ -46,14 +46,14 @@
 
             <div class="hide">
                 <div class="administrator_login">
-                    <form action="@Url.Action("Login","Administrator")" method="POST" class="administrator" id="loginForm2">
-                        <div>
-                            <input type="text" id="username1" class="username" name="username" placeholder="工号" autocapitalize="off">
-                        </div>
-                        <div>
-                            <input type="password" name="password" class="password" placeholder="密码" autocomplete="off">
-                        </div>
-                        <button id="submit" type="submit">登录</button>
+                    <form asp-controller="Administrator" asp-action="Login" class="administrator" id="loginForm2">
+                    <div>
+                        <input type="text" id="username1" class="username" name="username" placeholder="工号" autocapitalize="off">
+                    </div>
+                    <div>
+                        <input type="password"  name="password" class="password" placeholder="密码" autocomplete="off">
+                    </div>
+                    <button id="submit" type="submit">登录</button>
                     </form>
                 </div>
             </div>
@@ -68,4 +68,6 @@
 </body>
 
 </html>
+
+
 
