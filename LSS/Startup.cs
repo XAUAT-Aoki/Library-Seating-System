@@ -46,7 +46,7 @@ namespace LSS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Administrator}/{action=GetOrderById}/{id?}");
+                    pattern: "{controller=Administrator}/{action=ChangePassword}/{id?}");
             });
         }
     }

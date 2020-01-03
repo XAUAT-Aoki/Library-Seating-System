@@ -180,7 +180,7 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS\bin\Debug\netcoreapp3.1\ru\Microsoft.Co
 F:\XAUAT-Aoki\Library-Seating-System\LSS\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\ChangePasswordView.cshtml.g.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Index.cshtml.g.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\ReferSeatByIdView.cshtml.g.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\ChangePassword.cshtml.g.cs

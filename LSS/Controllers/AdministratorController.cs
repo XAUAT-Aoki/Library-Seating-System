@@ -19,7 +19,7 @@ namespace LSS.UI.Controllers
             return View();
         }
 
-        public IActionResult ChangePasswordView()
+        public IActionResult ChangePassword()
         {
             return View();
         }
@@ -33,12 +33,13 @@ namespace LSS.UI.Controllers
 
         CookieController cookie = new CookieController();
 
-        [HttpPost]
+
         /// <summary>
         /// 管理员登录
         /// </summary>
         /// <param name="administrator">管理员对象</param>
         /// <returns>返回成功与否的视图页面</returns>
+        [HttpPost]
         public IActionResult Login(AdministratorViewModel admin)
         {          
             bool isValid=administrator.Login(admin.username,admin.password);
@@ -52,7 +53,7 @@ namespace LSS.UI.Controllers
                 return RedirectToAction("Login", "Home");
             }          
         }
-
+        [HttpPost]
         public IActionResult ChangePassword(PasswordViewModel passwordViewModel)
         {
             //从 Cookie 中获取当前登录用户用户名
@@ -145,24 +146,16 @@ namespace LSS.UI.Controllers
         [HttpPost]
         public IActionResult GetOrderById(string orderid)
         {
-            //Order order = administrator.GetOrderById(orderid);
+            Order order = administrator.GetOrderById(orderid);
             GetOrderByIdViewModel orderVM = new GetOrderByIdViewModel();
-            //orderVM.OrderId = order.Oid;
-            //orderVM.startTime = order.Ostime;
-            //orderVM.endTime = order.Oetime;
-            //orderVM.orderState = order.Ostate;
-            //StudentImplement stu = new StudentImplement();
-            //Student student = stu.StudentInformation(order.Sid);
-            //orderVM.sudentName = student.Sname;
-            //orderVM.studentId = student.Sid;
-            orderVM.OrderId = "123";
-            //orderVM.startTime = ;
-            //orderVM.endTime = order.Oetime;
-            orderVM.orderState = "01";
-            //StudentImplement stu = new StudentImplement();
-            //Student student = stu.StudentInformation(order.Sid);
-            orderVM.sudentName = "Aoki";
-            orderVM.studentId = "1233424";
+            orderVM.OrderId = order.Oid;
+            orderVM.startTime = order.Ostime;
+            orderVM.endTime = order.Oetime;
+            orderVM.orderState = order.Ostate;
+            StudentImplement stu = new StudentImplement();
+            Student student = stu.StudentInformation(order.Sid);
+            orderVM.sudentName = student.Sname;
+            orderVM.studentId = student.Sid;
             if (orderVM != null)
             {
                 return Json(orderVM);
@@ -171,8 +164,6 @@ namespace LSS.UI.Controllers
             {
                 return Json("未查找到订单，请重新输入订单号！");
             }
-            
-            
         }
 
 
