@@ -27,7 +27,6 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfo.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csprojAssemblyReference.cache
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.deps.json
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.dll
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\bin\Debug\netstandard2.0\LSS.Data.pdb
@@ -36,3 +35,4 @@ D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\obj\D
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.AssemblyInfo.cs
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.dll
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Data\obj\Debug\netstandard2.0\LSS.Data.csprojAssemblyReference.cache

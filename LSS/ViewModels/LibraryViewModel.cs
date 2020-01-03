@@ -8,24 +8,24 @@ namespace LSS.UI.ViewModels
 {
     public class LibraryViewModel
     {
-        [Required,MaxLength(30)]
+        [Required,MaxLength(100)]
         public string libraryname { get; set; }
 
 
-        [Required,MinLength(1)]
+        [Required]
         public int StartFloor { get; set; }
 
-        [Required,MaxLength(20)]
+        [Required]
         public int EndFloor { get; set; }
 
         //经度
-        [Required, MaxLength(10)]
+        [Required,MaxLength(10)]
         public string longititude { get; set; }
 
-        [Required, MaxLength(10)]
+        [Required,MaxLength(10)]
         public string latitude { get; set; }
 
-        [Required, MaxLength(5)]
+        [Required,MaxLength(5)]
         public string Error { get; set; }
 
     }

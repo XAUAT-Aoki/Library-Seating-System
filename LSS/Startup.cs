@@ -46,7 +46,7 @@ namespace LSS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Administrator}/{action=Index}/{id?}");
             });
         }
     }

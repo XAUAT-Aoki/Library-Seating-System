@@ -28,13 +28,14 @@ namespace LSS.UI.Controllers
 
         StudentImplement studentimpl = new StudentImplement();
 
-        public IActionResult Login(StudentViewModel student) {
+        public IActionResult Login(StudentViewModel student)
+        {
 
             //判断是否是第一次登录，并返回相应的页面
 
 
 
-            studentimpl.Login(student.username,student.password);
+            studentimpl.Login(student.username, student.password);
 
             //判断是否登录成功
             //成功之后将账号（学号或邮箱）写入cookie
@@ -47,27 +48,29 @@ namespace LSS.UI.Controllers
         /// </summary>
         /// <param name="passwordviewmodel">密码试图</param>
         /// <returns>返回修改成功与否的页面</returns>
-        public IActionResult ChangePassword(PasswordViewModel passwordviewmodel) {
+        public IActionResult ChangePassword(PasswordViewModel passwordviewmodel)
+        {
 
             //判断新密码是否与旧密码和初始密码（123456）相同
             //相同则修改失败
             CookieController cookieController = new CookieController();
             string cookie = cookieController.getCookie("username");
-            studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword,cookie);
+            studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword, cookie);
             //如果密码修改成功之后，发送提示邮件
 
             return View();
-        
+
         }
-      
+
         /// <summary>
         /// 查询学生个人信息
         /// </summary>
         /// <returns>返回查询出来的个人信息(学生对象)</returns>
-        public IActionResult StudentInformation() {
+        public IActionResult StudentInformation()
+        {
             CookieController cookie = new CookieController();
             string cookies = cookie.getCookie("username");
-            
+
             Student student = studentimpl.StudentInformation(cookies);
             //对学生对象进行视图封装
             return View();
@@ -77,11 +80,12 @@ namespace LSS.UI.Controllers
         /// 空闲座位查询
         /// </summary>
         /// <returns>查询出的座位列表视图</returns>
-        public IActionResult Leisure() {
+        public IActionResult Leisure()
+        {
 
-           
+
             //str前端传入的查询条件信息
-            var str=HttpContext.Request.Form["msg"];
+            var str = HttpContext.Request.Form["msg"];
             //将str反序列化为Condition对象（工具类中）
             Condition condition = JsonConvert.DeserializeObject<Condition>(str);
 
@@ -97,11 +101,12 @@ namespace LSS.UI.Controllers
         /// </summary>
         /// <param name="seatVM">预定座位视图对象</param>
         /// <returns>返回预定是否成功页面</returns>
-        public IActionResult ReserveSeat(ReserveSeatViewModel seatVM) {
+        public IActionResult ReserveSeat(ReserveSeatViewModel seatVM)
+        {
             CookieController cookie = new CookieController();
             string cookies = cookie.getCookie("username");
 
-            bool isSucceed=studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration,cookies);
+            bool isSucceed = studentimpl.ReserveSeat(seatVM.date, seatVM.seatid, seatVM.nowtime, seatVM.duration, cookies);
             return View();
         }
         /// <summary>
@@ -122,14 +127,15 @@ namespace LSS.UI.Controllers
 
         //=====================================================================================================================
 
-        public IActionResult CancelOrder(string orderid) {
+        public IActionResult CancelOrder(string orderid)
+        {
 
             bool flag = studentimpl.CancleOrder(orderid);
 
 
             //返回退订成功或失败的页面
             return View();
-        
+
         }
 
         /// <summary>
@@ -141,7 +147,7 @@ namespace LSS.UI.Controllers
         {
             CookieController cookie = new CookieController();
             string cookies = cookie.getCookie("username");
-            studentimpl.ChangeEmail(newemail,cookies);
+            studentimpl.ChangeEmail(newemail, cookies);
 
             return View();
 

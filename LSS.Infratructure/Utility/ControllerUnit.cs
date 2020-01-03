@@ -21,6 +21,19 @@ namespace LSS.Infrastructure.Utility
         //时间块
         public int TimeBulk { get; set; }
     }
+    public class LibraryToShow
+    {
+        //图书馆名
+        public string libraryName { get; set; }
+        /// <summary>
+        ///开始楼层
+        /// </summary>
+        public int startFloor { get; set; }
+        //结束楼层
+        public int endFloor { get; set; }
+
+    }
+
 
    
 }

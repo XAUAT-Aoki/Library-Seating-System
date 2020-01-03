@@ -6,5 +6,6 @@ namespace LSS.Service
 {
     interface ILibrary
     {
+        
     }
 }

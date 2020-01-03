@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "adminManageSeatInfo";
+    
 }
 
 <!-- 学生个人信息页面 -->
@@ -136,36 +137,34 @@
                     <div class="panel-heading" style="float: left;">
                         <h3 class="panel-title">地点</h3>
                     </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <select class="form-control" id="selectPlace" onchange="getValueOfPlace()">
-                                    <option value="南山图书馆">南山图书馆</option>
-                                    <option value="学府城图书馆">学府城图书馆</option>
-                                    <option value="本部图书馆">本部图书馆</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-2">
-                                <select class="form-control select" id="selectFloor" onchange="getValueOfFloor()">
+   
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="selectPlace" onchange="getValueOfPlace()">
+                                        <option value="南山图书馆">南山图书馆</option>
+                                        <option value="学府城图书馆">学府城图书馆</option>
+                                        <option value="本部图书馆">本部图书馆</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select" id="selectFloor" onchange="getValueOfFloor()">
+                                        <option value="1">1楼</option>
+                                        <option value="2">2楼</option>
+                                        <option value="3">3楼</option>
+                                        <option value="4">4楼</option>
+                                        <option value="5">5楼</option>
+                                    </select>
+                                </div>
 
-                                    <option value="1">1楼</option>
-                                    <option value="2">2楼</option>
-                                    <option value="3">3楼</option>
-                                    <option value="4">4楼</option>
-                                    <option value="5">5楼</option>
-
-
-                                </select>
-                            </div>
-                            <form id="" asp-controller="Administrator" asp-action="ReferSeatById" method="post">
                                 <div class="col-sm-2">
                                     <input type="text" class="form-control" name="seatid" placeholder="请输入座位号">
                                 </div>
                                 <div class="col-sm-2">
                                     <button class="btn btn-primary btn-sm">查询</button>
                                 </div>
-                            </form>
-                        </div>
+                   
+                </div>
                     </div>
                 </div>
                 <div class="row">

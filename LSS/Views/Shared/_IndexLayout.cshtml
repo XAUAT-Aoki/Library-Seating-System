@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
-
     <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome -->
     <link href="~/css/font-awesome.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="bottom_header_right">
 
                 <div class="header-top-righ">
-                    <a href='@Url.Action("Login","Home")'>
+                    <a asp-controller="Home" asp-action="Login">
                         <span class="fa fa-sign-out" aria-hidden="true"></span>登录
                     </a>
                 </div>
@@ -50,7 +50,7 @@
                         <a class="navbar-brand" href="index.html">
                             <h1>
                                 <span class="fa fa-leanpub" aria-hidden="true"></span>我的图书馆
-                                <label>Education &Study </label>
+                                <label>Education & Study </label>
                             </h1>
                         </a>
                     </div>
@@ -59,36 +59,23 @@
                         <nav class="link-effect-2" id="link-effect-2">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="index.html" class="effect-3">主页</a>
+                                    <a href="index.html" class="effect-3">联系我们</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" class="effect-3">关于 我们</a>
+                                    <a href="about.html" class="effect-3">用户申诉</a>
                                 </li>
                                 <li>
-                                    <a href="courses.html" class="effect-3">课程</a>
+                                    <a href="courses.html" class="effect-3">修改密码</a>
                                 </li>
                                 <li>
-                                    <a href="join.html" class="effect-3">加入 我们</a>
+                                    <a href="join.html" class="effect-3">查看信息</a>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        Pages
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li>
-                                            <a href="icons.html">网页图标</a>
-                                        </li>
-                                        <li>
-                                            <a href="codes.html">简码</a>
-                                        </li>
-                                    </ul>
+
+                                <li>
+                                    <a href="Gallery.html" class="effect-3">座位预订</a>
                                 </li>
                                 <li>
-                                    <a href="Gallery.html" class="effect-3">展览馆</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" class="effect-3">联系 我们</a>
+                                    <a href="contact.html" class="effect-3">主页</a>
                                 </li>
                             </ul>
                         </nav>
@@ -99,7 +86,9 @@
             </nav>
         </div>
     </div>
+
     @RenderBody()
+
     <!-- footer -->
     <div class="mkl_footer">
         <div class="sub-footer">
@@ -107,10 +96,7 @@
                 <div class="mkls_footer_grid">
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>地点:</h4>
-                        <p>
-                            西安建筑科技大学,
-                            <br> 草堂校区
-                        </p>
+                        <p>西安建筑科技大学图书馆</p>
                     </div>
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>联系方式:</h4>
@@ -124,7 +110,7 @@
                     </div>
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>开放时间 :</h4>
-                        <p>每日：8：00—23：00</p>
+                        <p>每日：8：00--23：00</p>
 
                     </div>
                     <div class="clearfix"> </div>
@@ -135,16 +121,19 @@
                             <a href="index.html">主页</a>
                         </li>
                         <li>
-                            <a href="about.html"> 关于我们</a>
+                            <a href="about.html"> 座位预订</a>
                         </li>
                         <li>
-                            <a href="courses.html">课程</a>
+                            <a href="courses.html">查看信息</a>
                         </li>
                         <li>
-                            <a href="join.html">加入 我们</a>
+                            <a href="join.html">修改密码</a>
                         </li>
                         <li>
-                            <a href="contact.html">联系 我们</a>
+                            <a href="join.html">用户申诉</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">联系我们</a>
                         </li>
                     </ul>
                 </div>
@@ -158,6 +147,7 @@
     <script src="~/js/bootstrap.min.js"></script>
     <!-- stats numscroller-js-file -->
     <script src="~/js/numscroller-1.0.js"></script>
+    <script src="~/js/studentIndex.js"></script>
 </body>
 
 </html>

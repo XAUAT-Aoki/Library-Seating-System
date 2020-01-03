@@ -12,6 +12,7 @@ namespace LSS.UI.Controllers
 {
     public class AdministratorController : Controller
     {
+        AdministratorImplement administrator = new AdministratorImplement();
         public IActionResult Index()
         {
             return View();
@@ -24,10 +25,11 @@ namespace LSS.UI.Controllers
 
         public IActionResult ReferSeatByIdView()
         {
+            administrator.
             return View();
         }
 
-        AdministratorImplement administrator = new AdministratorImplement();
+        
 
         CookieController cookie = new CookieController();
 
@@ -135,9 +137,7 @@ namespace LSS.UI.Controllers
         /// <returns>返回查询到的订单</returns>
         public IActionResult GetOrderById(string orderid)
         {
-
             Order order=administrator.GetOrderById(orderid);
-
             return View();
         }
 

@@ -31,7 +31,7 @@ $(document).ready(function () {
 		messages: {
 			username: {
 				required: "必须填写用户名",
-				minlength: "用户名至少为3个字符",
+				minlength: "用户名至少为6个字符",
 				maxlength: "用户名至多为32个字符",
 				remote: "用户名已存在",
 			},
