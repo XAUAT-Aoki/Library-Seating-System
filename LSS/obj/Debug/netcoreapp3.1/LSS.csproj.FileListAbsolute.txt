@@ -184,3 +184,4 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Adm
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\ReferSeatByIdView.cshtml.g.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\ChangePassword.cshtml.g.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminIndexLayout.cshtml.g.cs

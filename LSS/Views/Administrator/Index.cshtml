@@ -1,292 +1,127 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+    Layout = "_AdminIndexLayout";
 }
 
-<!-- 管理主页 -->
-<!DOCTYPE html>
-<html lang="zh-CN">
+<style>
+    .col-md-10 .row .col-sm-6 .card1 {
+        width: 200px;
+        height: 200px;
+        background-image: url("/images/6.jpg");
+        margin-left: 20px;
+        margin-bottom: 15px;
+        float: left;
+    }
 
-<head>
-    <title>Home</title>
-    <!-- meta-tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="" />
-    <!-- //meta-tags -->
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- font-awesome -->
-    <link href="~/css/font-awesome.css" rel="stylesheet">
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="../dist/ResizeSensor.js"></script> -->
-    <script type="text/javascript" src="~/js/theia-sticky-sidebar.min.js"></script>
-    <style>
-        .col-md-10 .row .col-sm-6 .card1 {
-            width: 200px;
-            height: 200px;
-            background-image: url("/images/1.jpg");
-            margin-left: 20px;
-            margin-bottom: 15px;
-            float: left;
-        }
+    .col-md-10 .row .col-sm-6 .card {
+        width: 200px;
+        height: 200px;
+        background-image: url("/images/6.jpg");
+        margin-left: 20px;
+        margin-bottom: 15px;
+        float: right;
+    }
 
-        .col-md-10 .row .col-sm-6 .card {
-            width: 200px;
-            height: 200px;
-            background-image: url("/images/.jpg");
-            margin-left: 20px;
-            margin-bottom: 15px;
-            float: right;
-        }
+    .row {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-        .row {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .col-md-10 .row .col-sm-6 .cardtext {
+        font: black;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
 
-        .col-md-10 .row .col-sm-6 .cardtext {
-            font: black;
-            font-size: 25px;
+        .col-md-10 .row .col-sm-6 .cardtext p {
             text-align: center;
-            margin-top: 50px;
+            font-size: 25px;
         }
-
-            .col-md-10 .row .col-sm-6 .cardtext p {
-                text-align: center;
-                font-size: 25px;
-            }
-    </style>
-</head>
-
-<body>
-    <!-- header -->
-    <div class="header-top">
-        <div class="container">
-            <div class="bottom_header_left">
-                <p>
-                    <span class="fa fa-map-marker" aria-hidden="true"></span>New Kampshire Mshinon, USA
-                </p>
-            </div>
-            <div class="bottom_header_right">
-                <div class="bottom-social-icons">
-                    <a class="facebook" href="#">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                    <a class="twitter" href="#">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                    <a class="pinterest" href="#">
-                        <span class="fa fa-pinterest-p"></span>
-                    </a>
-                    <a class="linkedin" href="#">
-                        <span class="fa fa-linkedin"></span>
-                    </a>
-                </div>
-                <div class="header-top-righ">
-                    <a href="login.html">
-                        <span class="fa fa-sign-out" aria-hidden="true"></span>LogOut
-                    </a>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="clearfix"> </div>
+</style>
+<div class="container" style="opacity: 0.6;">
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a href="index.html">首页</a>
+                    <span>| |</span>
+                </li>
+                <li>系统概况</li>
+            </ul>
         </div>
     </div>
-    <div class="header">
-        <div class="content white">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <h1>
-                                <span class="fa fa-leanpub" aria-hidden="true"></span>Best Study
-                                <label>Education & Courses</label>
-                            </h1>
-                        </a>
-                    </div>
-                    <!--/.navbar-header-->
-                    <!-- this is  a test -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <nav class="link-effect-2" id="link-effect-2">
-                            <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="index.html" class="effect-3">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="effect-3">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="courses.html" class="effect-3">Courses</a>
-                                </li>
-                                <li>
-                                    <a href="join.html" class="effect-3">Join Us</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        Pages
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li>
-                                            <a href="icons.html">Web Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="codes.html">Short Codes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="Gallery.html" class="effect-3">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" class="effect-3">Contact Us</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!--/.navbar-collapse-->
-                    <!--/.navbar-->
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div class="container" style="opacity: 0.6;">
-        <div class="services-breadcrumb">
-            <div class="inner_breadcrumb">
-                <ul class="short_ls">
-                    <li>
-                        <a href="index.html">首页</a>
-                        <span>| |</span>
-                    </li>
-                    <li>Gallery</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+</div>
 
-    <div class="container" style="margin-top: 15px;">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="panel panel-success leftSidebar" id="leftSidebar">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">快捷菜单</h3>
-                    </div>
-                    <div class="panel-body">
-                        <a id="ChangePwd" href="@Url.Action("ChangePasswordView","Administrator")" class="list-group-item">修改个人密码</a>
-                        <a id="SearchSeat" href="@Url.Action("ReferSeatByIdView","Administrator")" class="list-group-item">获取座位信息</a>
-                        <a id="" href="" class="list-group-item">菜单1</a>
-                        <a id="" href="" class="list-group-item">菜单1</a>
-                        <a id="top" href="" class="list-group-item">回到顶部</a>
-                    </div>
+<div class="container" style="margin-top: 15px;">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-success leftSidebar" id="leftSidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">快捷菜单</h3>
+                </div>
+                <div class="panel-body">
+                    <a id="" href="" class="list-group-item">返回首页</a>
+                    <a id="" href="" class="list-group-item">查看学生信息</a>
+                    <a id="" href="" class="list-group-item">密码修改</a>
+                    <a id="" href="" class="list-group-item">查询预订信息</a>
+                    <a id="" href="" class="list-group-item">查询座位</a>
+                    <a id="top" href="" class="list-group-item">回到顶部</a>
                 </div>
             </div>
-            <div class="col-md-10">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            系统概况
-                        </h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card" id="CurrentOrderNum">
-                                    <!-- 正在使用订单 -->
-                                    <div class="cardtext">
-                                        正在使用订单：<p id="CurrentOrderNum">14</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card1" id="">
-                                    <!-- 所有订单数 -->
-                                    <div class="cardtext">
-                                        订单数：<p id="AllOrderNum">12</p>
-                                    </div>
-
+        </div>
+        <div class="col-md-10">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        系统概况
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" id="CurrentOrderNum">
+                                <!-- 正在使用订单 -->
+                                <div class="cardtext">
+                                    正在使用订单：<p id="CurrentOrderNum">14</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card" id="violateOrderNum">
-                                    <!-- 违约订单 -->
-                                    <div class="cardtext">
-                                        违约订单：<p id="violateOrderNum">11</p>
-                                    </div>
-
+                        <div class="col-sm-6">
+                            <div class="card1" id="">
+                                <!-- 所有订单数 -->
+                                <div class="cardtext">
+                                    订单数：<p id="AllOrderNum">12</p>
                                 </div>
+
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card1" id="OrderNum">
-                                    <!-- 预约订单数 -->
-                                    <div class="cardtext">
-                                        预约订单：<p id="violateOrderNum">13</p>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" id="violateOrderNum">
+                                <!-- 违约订单 -->
+                                <div class="cardtext">
+                                    违约订单：<p id="violateOrderNum">11</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card1" id="OrderNum">
+                                <!-- 预约订单数 -->
+                                <div class="cardtext">
+                                    预约订单：<p id="violateOrderNum">13</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>>
-    <!-- 空闲座位菜单结束 -->
-    <!-- footer -->
-    <div class="mkl_footer">
-        <div class="sub-footer">
-            <div class="container">
-                <div class="mkls_footer_grid">
-                    <div class="col-xs-4 mkls_footer_grid_left">
-                        <h4>Location:</h4>
-                        <p>
-                            educa mfdflimbg 1235, Ipswich,
-                            <br> Foxhall Road, USA
-                        </p>
-                    </div>
-                    <div class="col-xs-4 mkls_footer_grid_left">
-                        <h4>Mail Us:</h4>
-                        <p>
-                            <span>Phone : </span>001 234 5678
-                        </p>
-                        <p>
-                            <span>Email : </span>
-                            <a href="mailto:info@example.com">mail@example.com</a>
-                        </p>
-                    </div>
-                    <div class="col-xs-4 mkls_footer_grid_left">
-                        <h4>Opening Hours:</h4>
-                        <p>Working days : 8am-10pm</p>
-                        <p>
-                            Sunday
-                            <span>(closed)</span>
-                        </p>
-                    </div>
-                    <div class="clearfix"> </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <!--/footer -->
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/numscroller-1.0.js"></script>
-    <script src="~/js/jquery.flexisel.js"></script>
-    <script src="~/js/SmoothScroll.min.js"></script>
-    <script src="~/js/move-top.js"></script>
-    <script src="~/js/easing.js"></script>
-    <script src="~/js/checkStudentOrder.js"></script>
-</body>
-
-
-</html>
-
+</div>
+<script src="~/js//checkStudentOrder.js"></script>
