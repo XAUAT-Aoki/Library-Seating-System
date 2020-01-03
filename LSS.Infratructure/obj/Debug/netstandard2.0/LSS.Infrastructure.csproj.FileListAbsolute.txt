@@ -20,4 +20,3 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache

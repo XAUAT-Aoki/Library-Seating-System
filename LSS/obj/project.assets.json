@@ -6960,23 +6960,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\王奔\\.nuget\\packages\\": {},
+    "C:\\Users\\Aoki\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS\\LSS.csproj",
+      "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS\\LSS.csproj",
       "projectName": "LSS",
-      "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS\\LSS.csproj",
-      "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS\\obj\\",
+      "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS\\LSS.csproj",
+      "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
+      "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6989,11 +6989,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+            "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+              "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
             },
-            "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj": {
-              "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj"
+            "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj": {
+              "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj"
             }
           }
         }

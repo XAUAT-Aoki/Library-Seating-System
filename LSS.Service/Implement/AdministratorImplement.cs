@@ -69,7 +69,7 @@ namespace LSS.Service
         public Seat ReferSeatById(string seatId)
         {
             #region
-            Seat seat=administrator.referSeatById(seatId);
+            Seat seat=administrator.ReferSeatById(seatId);
             if(seat!=null)
             {
                 return seat;
@@ -91,7 +91,7 @@ namespace LSS.Service
         {
             #region
             List<Seat> seatList = new List<Seat>();
-            seatList = administrator.ReferSeatByFloor(libraryname, floor);
+            seatList = administrator.ReferSeatViewModel(libraryname, floor);
             return seatList;
             #endregion
         }

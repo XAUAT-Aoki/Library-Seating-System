@@ -86,8 +86,9 @@ namespace LSS.Service
         {
             #region
             //在Mapper层中进行查询
-            List<Seat> seatList = sm.Leisure(condition);
-            return seatList;
+            //List<Seat> seatList = sm.Leisure(condition);
+            //return seatList;
+            return new List<Seat>();
             #endregion
         }
 
@@ -135,14 +136,14 @@ namespace LSS.Service
 
 
             //修改座位状态
-            int num = 0;
-            sm.SeatInfor(
-                date,
-                str,//座位状态信息
-                seatid,//座位id
-                num,//处理后需要修改的状态的开始坐标
-                duration,//时长
-                1);//1表示状态变为1
+            //int num = 0;
+            //sm.SeatInfor(
+            //    date,
+            //    str,//座位状态信息
+            //    seatid,//座位id
+            //    num,//处理后需要修改的状态的开始坐标
+            //    duration,//时长
+            //    1);//1表示状态变为1
 
 
             //插入一条订单记录到订单表（id,学号,座位号，订单开始时间，结束时间，打卡时间，订单状态）

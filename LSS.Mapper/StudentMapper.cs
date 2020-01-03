@@ -3,6 +3,7 @@ using LSS.Data;
 using Microsoft.EntityFrameworkCore;
 using LSS.Infrastructure.Utility;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LSS.Mapper
 {
@@ -87,15 +88,15 @@ namespace LSS.Mapper
         /// </summary>
         /// <param name="condition"></param>
         /// <returns></returns>
-        /* public List<Seat> Leisure(Condition condition)
-         {
-             Condition StartCondition = LeisureDeal(condition);
-             //判断是否是当天的日期
-             //如果开始时间和结束时间为null，则查询开始时间不小于6点，结束时间不大于23点
-             //如果输入condition.TimeBulk是0，则使用“111111111111111”
-             //对condition.data进行日期判断
-             return new List<Seat>();
-         }*/
+        public List<Seat> Leisure(Condition condition)
+        {
+            //Condition StartCondition = LeisureDeal(condition);
+            //判断是否是当天的日期
+            //如果开始时间和结束时间为null，则查询开始时间不小于6点，结束时间不大于23点
+            //如果输入condition.TimeBulk是0，则使用“111111111111111”
+            //对condition.data进行日期判断
+            return new List<Seat>();
+        }
         #endregion
         #region 5.不懂  未完成
         /*  /// <summary>
