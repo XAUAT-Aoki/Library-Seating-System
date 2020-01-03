@@ -37,3 +37,16 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Inf
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.deps.json
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.pdb
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.pdb
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csprojAssemblyReference.cache
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfoInputs.cache
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfo.cs
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb

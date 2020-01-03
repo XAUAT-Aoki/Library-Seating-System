@@ -19,7 +19,8 @@ namespace LSS.Mapper
         {
             //根据对应的数据查询密码
 
-            return "";
+
+            return "160000001";
         }
         /// <summary>
         /// 向管理员表中写入该管理员的新密码

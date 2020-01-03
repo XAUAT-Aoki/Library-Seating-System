@@ -1,0 +1,71 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html
+          PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ZH" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Aoki-login</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="~/css/login.css" />
+
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>图书馆座位预定系统</h1>
+        <div class="connect">
+            <p>Welcome</p>
+        </div>
+        <div class="tab">
+            <ul class="tab_menu">
+                <li class="selected">学生登录</li>
+                <li>管理员登录</li>
+            </ul>
+        </div>
+        <div class="tab_box">
+            <div class="student_form">
+                <div class="student_login">
+                    <form action="" method="POST" class="student" id="loginForm1">
+                        <div>
+                            <input type="text" id="username" class="username" name="username" placeholder="学号/邮箱" autocapitalize="off">
+                        </div>
+                        <div>
+                            <input type="password" name="password" class="password" placeholder="密码" autocomplete="off">
+                        </div>
+                        <button id="submit" type="submit">登录</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="hide">
+                <div class="administrator_login">
+                    <form action="@Url.Action("Login","Administrator")" method="POST" class="administrator" id="loginForm2">
+                        <div>
+                            <input type="text" id="username1" class="username" name="username" placeholder="工号" autocapitalize="off">
+                        </div>
+                        <div>
+                            <input type="password" name="password" class="password" placeholder="密码" autocomplete="off">
+                        </div>
+                        <button id="submit" type="submit">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/common.js"></script>
+        <!--背景图片自动更换-->
+        <script src="~/js/supersized.3.2.7.min.js"></script>
+        <script src="~/js/supersized-init.js"></script>
+        <!--表单验证-->
+        <script src="~/js/jquery.validate.min.js?var1.14.0"></script>
+</body>
+
+</html>
+

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using LSS.UI.ViewModels;
 using LSS.Service;
 using LSS.Data;
+using LSS.Controllers;
 
 namespace LSS.UI.Controllers
 {
@@ -16,41 +17,54 @@ namespace LSS.UI.Controllers
             return View();
         }
 
+        public IActionResult ChangePasswordView()
+        {
+            return View();
+        }
+
+        public IActionResult ReferSeatByIdView()
+        {
+            return View();
+        }
+
         AdministratorImplement administrator = new AdministratorImplement();
 
+        CookieController cookie = new CookieController();
 
+        [HttpPost]
         /// <summary>
         /// 管理员登录
         /// </summary>
         /// <param name="administrator">管理员对象</param>
         /// <returns>返回成功与否的视图页面</returns>
         public IActionResult Login(AdministratorViewModel admin)
-        {
-            //AdministratorImplement admin = new AdministratorImplement();
-
-            bool isValid=administrator .Login(admin.username,admin.password);
+        {          
+            bool isValid=administrator.Login(admin.username,admin.password);
             if(isValid)
             {
-
+                cookie.setCookie("Ano", admin.username);
+                return RedirectToAction("Index", "Administrator");
             }
-
-
-
-
-
-            return View();
-
+            else
+            {
+                return RedirectToAction("Login", "Home");
+            }          
         }
 
-        public IActionResult ChangePassword(PasswordViewModel passwordViewModel) {
-
-
-            //判断新密码是否与旧密码和初始密码（123456）相同
-            //相同则修改失败
-
-            //administrator.ChangePassword(passwordViewModel.oldpassword,passwordViewModel.newpassword);
-
-            return View();
+        public IActionResult ChangePassword(PasswordViewModel passwordViewModel)
+        {
+            //从 Cookie 中获取当前登录用户用户名
+            string Ano=cookie.getCookie("Ano");
+            var flag=administrator.ChangePassword(passwordViewModel.oldpassword,passwordViewModel.newpassword,Ano);
+            if(flag)
+            {
+                return RedirectToAction("Login", "Home");
+            }
+            else
+            {
+                return RedirectToAction("ChangePasswordView", "Administrator");
+            }
+            
         }
 
         /// <summary>
@@ -60,10 +74,17 @@ namespace LSS.UI.Controllers
         /// <returns></returns>
         public IActionResult ReferSeatById(string seatid) {
 
-
             Seat seat = administrator.ReferSeatById(seatid);
+            if(seat!=null)
+            {
+                return View();
+            }
+            else
+            {
+                return View();
+            }
 
-            return View();
+            
         }
 
 
