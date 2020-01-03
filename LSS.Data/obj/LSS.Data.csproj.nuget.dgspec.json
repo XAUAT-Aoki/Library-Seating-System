@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {}
+    "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {}
   },
   "projects": {
-    "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
+    "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
+        "projectUniqueName": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
         "projectName": "LSS.Data",
-        "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
-        "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
-        "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\obj\\",
+        "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj",
+        "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

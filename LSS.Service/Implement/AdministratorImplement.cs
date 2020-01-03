@@ -13,6 +13,13 @@ namespace LSS.Service
     {
         AdministratorMapper administrator = new AdministratorMapper();
 
+
+
+
+
+
+
+        
         /// <summary>
         /// 登录服务实现
         /// </summary>
@@ -21,17 +28,13 @@ namespace LSS.Service
         /// <returns>返回是否登录成功</returns>
         public bool Login(string username, string password)
         {
-            //明文密码加密
-            string str = OperateMD5.GetMD5(password);
+            //明文密码加密ture;
+            //string str = OperateMD5.GetMD5(password);
             string adminPwd=administrator.GetPassword(username);
-            if (str == adminPwd)
-            {
+            if (adminPwd == password)
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
 
         /// <summary>
@@ -43,10 +46,10 @@ namespace LSS.Service
         public bool ChangePassword(string oldpassword, string newpassword,string cookie)
         {
             #region
-            string oldPwd = OperateMD5.GetMD5(oldpassword);
-            string newPwd = OperateMD5.GetMD5(newpassword);
+            //string oldPwd = OperateMD5.GetMD5(oldpassword);
+            //string newPwd = OperateMD5.GetMD5(newpassword);
             string dbOldPwd=administrator.GetPassword(cookie);
-            if ((dbOldPwd == oldPwd) && (administrator.ChangePassword(cookie, newPwd)))
+            if ((dbOldPwd == oldpassword) && (administrator.ChangePassword(cookie, newpassword)))
             {
                 return true;
             }
@@ -67,7 +70,15 @@ namespace LSS.Service
         {
             #region
             Seat seat=administrator.referSeatById(seatId);
-            return seat;
+            if(seat!=null)
+            {
+                return seat;
+            }
+            else
+            {
+                return null;
+            }
+           
             #endregion
         }
         /// <summary>

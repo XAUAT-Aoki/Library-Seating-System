@@ -1685,23 +1685,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aoki\\.nuget\\packages\\": {},
+    "C:\\Users\\王奔\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
+      "projectUniqueName": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
       "projectName": "LSS.Service",
-      "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
-      "packagesPath": "C:\\Users\\Aoki\\.nuget\\packages\\",
-      "outputPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Service\\obj\\",
+      "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Service\\LSS.Service.csproj",
+      "packagesPath": "C:\\Users\\王奔\\.nuget\\packages\\",
+      "outputPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Aoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\王奔\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1714,14 +1714,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
-              "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj"
+            "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj": {
+              "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Data\\LSS.Data.csproj"
             },
-            "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
-              "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
+            "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj": {
+              "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Infratructure\\LSS.Infrastructure.csproj"
             },
-            "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
-              "projectPath": "F:\\XAUAT-Aoki\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj"
+            "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj": {
+              "projectPath": "D:\\Program Code\\LSS\\Library-Seating-System\\Library-Seating-System\\LSS.Mapper\\LSS.Mapper.csproj"
             }
           }
         }

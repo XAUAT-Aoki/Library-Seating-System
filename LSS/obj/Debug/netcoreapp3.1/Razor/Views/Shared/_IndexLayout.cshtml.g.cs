@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\_ViewImports.cshtml"
+#line 1 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\_ViewImports.cshtml"
 using LSS;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\_ViewImports.cshtml"
+#line 2 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\_ViewImports.cshtml"
 using LSS.Models;
 
 #line default
@@ -145,7 +145,17 @@ using LSS.Models;
             <div class=""bottom_header_right"">
 
                 <div class=""header-top-righ"">
-                    <a href=""login.html"">
+                    <a");
+                BeginWriteAttribute("href", " href=\'", 964, "\'", 998, 1);
+#nullable restore
+#line 29 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\Shared\_IndexLayout.cshtml"
+WriteAttributeValue("", 971, Url.Action("Login","Home"), 971, 27, false);
+
+#line default
+#line hidden
+#nullable disable
+                EndWriteAttribute();
+                WriteLiteral(@">
                         <span class=""fa fa-sign-out"" aria-hidden=""true""></span>登录
                     </a>
                 </div>
@@ -160,15 +170,15 @@ using LSS.Models;
                 <div class=""container"">
                     <div class=""navbar-header"">
                         <button type=""button"" class=""navbar-toggle"" data-toggle=""collapse""
-                                data-t");
-                WriteLiteral(@"arget=""#bs-example-navbar-collapse-1"">
+                                data-target=""#bs-example-navbar-collapse-1"">
                             <span class=""sr-only"">Toggle navigation</span>
                             <span class=""icon-bar""></span>
                             <span class=""icon-bar""></span>
                             <span class=""icon-bar""></span>
                         </button>
                         <a class=""navbar-brand"" href=""index.html"">
-                            <h1>
+                   ");
+                WriteLiteral(@"         <h1>
                                 <span class=""fa fa-leanpub"" aria-hidden=""true""></span>我的图书馆
                                 <label>Education &Study </label>
                             </h1>
@@ -179,15 +189,15 @@ using LSS.Models;
                         <nav class=""link-effect-2"" id=""link-effect-2"">
                             <ul class=""nav navbar-nav"">
                                 <li class=""active"">
-                   ");
-                WriteLiteral(@"                 <a href=""index.html"" class=""effect-3"">主页</a>
+                                    <a href=""index.html"" class=""effect-3"">主页</a>
                                 </li>
                                 <li>
                                     <a href=""about.html"" class=""effect-3"">关于 我们</a>
                                 </li>
                                 <li>
                                     <a href=""courses.html"" class=""effect-3"">课程</a>
-                                </li>
+                                ");
+                WriteLiteral(@"</li>
                                 <li>
                                     <a href=""join.html"" class=""effect-3"">加入 我们</a>
                                 </li>
@@ -198,8 +208,7 @@ using LSS.Models;
                                     </a>
                                     <ul class=""dropdown-menu"" role=""menu"">
                                         <li>
-      ");
-                WriteLiteral(@"                                      <a href=""icons.html"">网页图标</a>
+                                            <a href=""icons.html"">网页图标</a>
                                         </li>
                                         <li>
                                             <a href=""codes.html"">简码</a>
@@ -207,7 +216,8 @@ using LSS.Models;
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href=""Gallery.html"" class=""effect-3"">展览馆</a>
+                ");
+                WriteLiteral(@"                    <a href=""Gallery.html"" class=""effect-3"">展览馆</a>
                                 </li>
                                 <li>
                                     <a href=""contact.html"" class=""effect-3"">联系 我们</a>
