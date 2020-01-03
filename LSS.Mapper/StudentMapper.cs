@@ -23,8 +23,7 @@ namespace LSS.Mapper
             var student = "";
             using (var context = new LSSDataContext())
             {
-                MapperUnit h = new MapperUnit();
-                if (h.IsStudentId(user)) student = context.Student.Single(b => b.Sid == user).Spassword;
+                if (MapperUnit.IsStudentId(user)) student = context.Student.Single(b => b.Sid == user).Spassword;
                 else student = context.Student.Single(b => b.Semail == user).Spassword;
             }
             return student;
@@ -42,7 +41,6 @@ namespace LSS.Mapper
             //修改对应密码
             Student student = null;
             bool flag = false;
-            MapperUnit h = new MapperUnit();
             using (var dbContext = new LSSDataContext())
             {
                 //修改数据库信息最好有一些事务操作
@@ -50,7 +48,7 @@ namespace LSS.Mapper
                 {
                     try
                     {//学号
-                        if (h.IsStudentId(user)) student = dbContext.Student.Where(x => x.Sid == user).ToList().First();
+                        if (MapperUnit.IsStudentId(user)) student = dbContext.Student.Where(x => x.Sid == user).ToList().First();
                         else student = dbContext.Student.Where(x => x.Semail == user).ToList().First();
                         student.Spassword = password;
                         dbContext.Student.Update(student);
@@ -76,8 +74,7 @@ namespace LSS.Mapper
             Student student = null;
             using (var dbContext = new LSSDataContext())
             {
-                MapperUnit h = new MapperUnit();
-                if (h.IsStudentId(username)) student = dbContext.Student.Where(x => x.Sid == username).ToList().First();
+                if (MapperUnit.IsStudentId(username)) student = dbContext.Student.Where(x => x.Sid == username).ToList().First();
                 else student = dbContext.Student.Where(x => x.Semail == username).ToList().First();
             }
             return student;
@@ -184,8 +181,7 @@ namespace LSS.Mapper
             using (var dbContext = new LSSDataContext())
             {
                 Student state = new Student();
-                MapperUnit h = new MapperUnit();
-                if (h.IsStudentId(username))
+                if (MapperUnit.IsStudentId(username))
                     state = dbContext.Student.Where(x => x.Sid == username).FirstOrDefault();
                 else
                     state = dbContext.Student.Where(x => x.Semail == username).FirstOrDefault();
@@ -375,10 +371,9 @@ namespace LSS.Mapper
         /// <returns></returns>
         public bool ChangeEmail(string username, string newemail)
         {
-            MapperUnit h = new MapperUnit();
             bool flags = false;
             //正则表达匹配用户名，学号true
-            bool flag = h.IsStudentId(username);
+            bool flag = MapperUnit.IsStudentId(username);
             Student s = new Student();
             using (var context = new LSSDataContext())
             {
