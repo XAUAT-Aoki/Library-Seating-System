@@ -8,7 +8,7 @@ namespace LSS.Infrastructure.Utility
     {
         public string username { get; set; }
 
-        public int seatid { get; set; }
+        public string seatid { get; set; }
 
         public DateTime clocktime { get; set; }
         //经度

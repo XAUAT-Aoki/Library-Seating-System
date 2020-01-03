@@ -170,6 +170,11 @@ namespace LSS.Mapper
                 }
             }
         }
+
+        public List<Order> GetUsingOrderBySid(string studentId)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
         #region 8.查询lock锁状态     已完成
         /// <summary>
@@ -226,6 +231,11 @@ namespace LSS.Mapper
             }
             return true;
             //将字符串修改之后直接插入座位表
+        }
+
+        public void ChangeClockTime(string oid, string v)
+        {
+            throw new NotImplementedException();
         }
         #endregion
         #region 10.订单增加一条数据【已完成】
