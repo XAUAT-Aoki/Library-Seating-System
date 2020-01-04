@@ -75,8 +75,10 @@ namespace LSS.Mapper
             Student student = null;
             using (var dbContext = new LSSDataContext())
             {
-                if (MapperUnit.IsStudentId(username)) student = dbContext.Student.Where(x => x.Sid == username).ToList().First();
-                else student = dbContext.Student.Where(x => x.Semail == username).ToList().First();
+                if (MapperUnit.IsStudentId(username)) 
+                    student = dbContext.Student.Where(x => x.Sid == username).ToList().First();
+                else 
+                    student = dbContext.Student.Where(x => x.Semail == username).ToList().First();
             }
             return student;
         }
@@ -95,7 +97,26 @@ namespace LSS.Mapper
             //如果开始时间和结束时间为null，则查询开始时间不小于6点，结束时间不大于23点
             //如果输入condition.TimeBulk是0，则使用“111111111111111”
             //对condition.data进行日期判断
-            return new List<Seat>();
+            int TimeBulk = condition.EndTime - condition.StartTime;
+
+            string Object= new String('0',TimeBulk);
+
+            var AllSeats = new List<Seat>();
+
+            var Result= new List<Seat>();
+
+            using (var dbcontext=new LSSDataContext())
+            {
+                AllSeats = dbcontext.Seat.ToList();
+            }
+
+            foreach(var temp in AllSeats)
+            {
+                if (temp.Tstate.Substring(condition.StartTime+(condition.date*24) - 1, TimeBulk) == Object)
+                    Result.Add(temp);
+            }
+
+            return Result;
         }
         #endregion
         #region 5.不懂  未完成
@@ -171,10 +192,6 @@ namespace LSS.Mapper
             }
         }
 
-        public List<Order> GetUsingOrderBySid(string studentId)
-        {
-            throw new NotImplementedException();
-        }
         #endregion
         #region 8.查询lock锁状态     已完成
         /// <summary>
@@ -233,10 +250,7 @@ namespace LSS.Mapper
             //将字符串修改之后直接插入座位表
         }
 
-        public void ChangeClockTime(string oid, string v)
-        {
-            throw new NotImplementedException();
-        }
+
         #endregion
         #region 10.订单增加一条数据【已完成】
         /// <summary>
@@ -500,6 +514,96 @@ namespace LSS.Mapper
         #endregion
         #endregion
 
-        
+        #region 21.修改下次打卡时间 已完成
+        /// <summary>
+        /// 修改下次打卡时间
+        /// </summary>
+        /// <param name="oid">订单id</param>
+        /// <param name="v">打卡时间的string类型</param>
+        public bool ChangeClockTime(string oid, string v)
+        {
+            bool flag = false;
+            using (var dbContext = new LSSDataContext())
+            {
+                Order order = new Order();
+                order = dbContext.Order.FirstOrDefault(x => x.Oid == oid);
+                if (order != null)
+                {
+                    DateTime ka2 = Convert.ToDateTime(v);
+                    order.Octime = ka2;
+                    dbContext.Update(order);
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+        #endregion
+        #region 22.根据用户名查询该用户目前正在使用的订单 已完成
+        /// <summary>
+        /// 根据用户名查询该用户目前正在使用的订单，（判断依据：系统时间大于开始时间小于下次打卡时间（后延半小时的误差））
+        /// </summary>
+        /// <param name="studentid"></param>
+        /// <returns></returns>
+        public List<Order> GetUsingOrderBySid(string studentid)
+        {
+            using (var dbContext = new LSSDataContext())
+            {
+                List<Order> Olist = new List<Order>();
+                DateTime dtToday = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                var queryable = (from list in dbContext.Order
+                                 where dtToday >= list.Ostime && dtToday <= list.Oetime && list.Sid == studentid
+                                 select list).GetEnumerator();
+                while (queryable.MoveNext()) Olist.Add(queryable.Current);
+                return Olist;
+            }
+        }
+        #endregion
+        #region 23.修改学生得信誉积分，每次修改减1 已完成
+        /// <summary>
+        /// 修改学生得信誉积分，每次修改减1
+        /// </summary>
+        /// <param name="sid">学生学号</param>
+        /// <returns></returns>
+        public bool DuctGlory(string sid)
+        {
+            bool flag = false;
+            using (var dbContext = new LSSDataContext())
+            {
+                Student student = new Student();
+                student = dbContext.Student.FirstOrDefault(x => x.Sid == sid);
+                if (student != null)
+                {
+                    student.Svalue = student.Svalue + 1;
+                    dbContext.Update(student);
+                    dbContext.SaveChanges();
+                    flag = true;
+                }
+            }
+            return flag;
+        }
+        #endregion
+        #region 24.根据学号查询该学生的email 已完成
+        /// <summary>
+        /// 根据学号查询该学生的email
+        /// </summary>
+        /// <param name="id">学号</param>
+        /// <returns>返回email</returns>
+        public string getEmailById(string id)
+        {
+            string str = null;
+            using (var dbContext = new LSSDataContext())
+            {
+                Student student = dbContext.Student.FirstOrDefault(x => x.Sid == id);
+                if (student != null)
+                {
+                    str = student.Semail;
+                }
+            }
+            return str;
+        }
+        #endregion
+
+
+
     }
 }

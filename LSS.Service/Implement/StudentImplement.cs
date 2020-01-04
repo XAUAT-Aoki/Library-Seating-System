@@ -22,10 +22,11 @@ namespace LSS.Service
         {
             #region
             //明文密码加密
-            string md5Pwd = OperateMD5.GetMD5(password);
+            // string md5Pwd = OperateMD5.GetMD5(password);
             //调用MApper中的方法
-            string pwd = sm.GetPassword(user);
-            if (pwd == md5Pwd)
+            // string pwd = sm.GetPassword(user);
+            var pwd = sm.GetPassword(user);
+            if(pwd!=null)
             {
                 return true;
             }
@@ -48,12 +49,12 @@ namespace LSS.Service
             //旧密码加密，
             //新密码加密
             //获取cookie中的用户名
-            string md5OldPwd = OperateMD5.GetMD5(oldpassword);
+            //string md5OldPwd = OperateMD5.GetMD5(oldpassword);
             string dbPwd = sm.GetPassword(cookie);
-            if (md5OldPwd == dbPwd)
+            if (oldpassword == dbPwd)
             {
-                string md5NewPwd = OperateMD5.GetMD5(newpassword);
-                if (sm.ChangePassword(cookie, md5NewPwd))
+               // string md5NewPwd = OperateMD5.GetMD5(newpassword);
+                if (sm.ChangePassword(cookie, newpassword))
                 {
                     return true;
                 }
@@ -86,9 +87,9 @@ namespace LSS.Service
         {
             #region
             //在Mapper层中进行查询
-            //List<Seat> seatList = sm.Leisure(condition);
+            List<Seat> seatList = sm.Leisure(condition);
             //return seatList;
-            return new List<Seat>();
+            return seatList;
             #endregion
         }
 
@@ -205,7 +206,7 @@ namespace LSS.Service
 
 
             //邮箱查询学号  使用 ServiceUnit.getIdByEmail  方法  
-            string studentId = StudentImplement.getIdByEmail(clock.username);
+            string studentId = getIdByEmail(clock.username);
             //学号查询正在使用中的订单  使用 sm.GetUsingOrder() 方法
             List<Order> orderList = sm.GetUsingOrderBySid(studentId);
             //orderList.Find(o => o.Tid .Equals(clock.seatid));
@@ -419,7 +420,7 @@ namespace LSS.Service
         /// </summary>
         /// <param name="str">邮箱名</param>
         /// <returns>用户ID</returns>
-        public static string getIdByEmail(string str)
+        public  string getIdByEmail(string str)
         {
             #region
             StudentMapper mapper = new StudentMapper();
@@ -433,7 +434,7 @@ namespace LSS.Service
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string getEmailById(string str)
+        public  string getEmailById(string str)
         {
             #region
             StudentMapper mapper = new StudentMapper();

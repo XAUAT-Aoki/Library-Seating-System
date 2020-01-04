@@ -62,15 +62,17 @@ namespace LSS.Service
         public Seat ReferSeatById(string seatId)
         {
             #region
-            Seat seat=administrator.ReferSeatById(seatId);
-            if(seat!=null)
-            {
-                return seat;
-            }
-            else
-            {
-                return null;
-            }
+            //Seat seat=administrator.referSeatById(seatId);
+            //if(seat!=null)
+            //{
+            //    return seat;
+            //}
+            //else
+            //{
+            //    return null;
+            //}
+
+            return null;
            
             #endregion
         }
@@ -83,9 +85,9 @@ namespace LSS.Service
         public List<Seat> ReferSeatByFloor(string libraryname, int floor)
         {
             #region
-            List<Seat> seatList = new List<Seat>();
-            seatList = administrator.ReferSeatViewModel(libraryname, floor);
-            return seatList;
+            //List<Seat> seatList = new List<Seat>();
+            //seatList = administrator.ReferSeatByFloor(libraryname, floor);
+            return new List<Seat>();
             #endregion
         }
 
@@ -229,5 +231,8 @@ namespace LSS.Service
             }
             #endregion
         }
+
+
+    
     }
 }

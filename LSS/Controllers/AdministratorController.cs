@@ -25,7 +25,7 @@ namespace LSS.UI.Controllers
 
         public IActionResult ReferSeatByIdView()
         {
-            administrator.
+            
             return View();
         }
 

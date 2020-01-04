@@ -15,9 +15,30 @@ namespace LSS.UI.Controllers
 {
     public class StudentController : Controller
     {
+
+
+        StudentImplement studentimpl = new StudentImplement();
+
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult ChangePassWordView()
+        {
+            return View();
+        }
+
+
+        /// <summary>
+        /// 查询学生个人信息
+        /// </summary>
+        /// <returns>返回查询出来的个人信息(学生对象)</returns>
+        public IActionResult studentInfor()
+        {
+            Request.Cookies.TryGetValue("username", out string cookie);
+            var student=studentimpl.StudentInformation(cookie);           
+            return View(student);
         }
         /// <summary>
         /// 功能：登录
@@ -26,70 +47,95 @@ namespace LSS.UI.Controllers
         /// 
         /// <returns>返回一个视图页面（成功、失败）</returns>
 
-        StudentImplement studentimpl = new StudentImplement();
 
+       // CookieController cookie = new CookieController();
+
+
+
+        [HttpPost]
         public IActionResult Login(StudentViewModel student)
         {
-
-            //判断是否是第一次登录，并返回相应的页面
-
-
-
-            studentimpl.Login(student.username, student.password);
+            
+            //判断是否是第一次登录，并返回相应的页面            
+            if(studentimpl.Login(student.username, student.password))
+            {
+                if (student.username == student.password)
+                {
+                    
+                    this.Response.Cookies.Append("username", student.username);
+                    return RedirectToAction("ChangePassWordView", "Student"); 
+                }
+                else
+                {
+                    this.Response.Cookies.Append("username", student.username);
+                    return RedirectToAction("Index","Student");
+                }
+                
+            }
+            else
+            {
+                return  RedirectToAction("Login","Home");
+            }
 
             //判断是否登录成功
             //成功之后将账号（学号或邮箱）写入cookie
-
-
-            return View();
         }
+
+        [HttpPost]
         /// <summary>
         /// 修改密码
         /// </summary>
         /// <param name="passwordviewmodel">密码试图</param>
         /// <returns>返回修改成功与否的页面</returns>
+        
         public IActionResult ChangePassword(PasswordViewModel passwordviewmodel)
         {
 
             //判断新密码是否与旧密码和初始密码（123456）相同
             //相同则修改失败
-            CookieController cookieController = new CookieController();
-            string cookie = cookieController.getCookie("username");
-            studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword, cookie);
+            //CookieController cookieController = new CookieController();
+            Request.Cookies.TryGetValue("username",out string cookie);
+            if(studentimpl.ChangePassword(passwordviewmodel.oldpassword, passwordviewmodel.newpassword, cookie))
+            {
+               var Email=studentimpl.getEmailById(cookie);
+                ServiceUnit.SendEmail(Email, "密码修改成功");
+                return RedirectToAction("Login","Home");
+            }
+            else
+            {
+                return Content("<script>alert('修改失败');history.go(-1);</script>", "text/html;charset=UTF-8");
+            }
             //如果密码修改成功之后，发送提示邮件
 
-            return View();
-
         }
 
-        /// <summary>
-        /// 查询学生个人信息
-        /// </summary>
-        /// <returns>返回查询出来的个人信息(学生对象)</returns>
-        public IActionResult StudentInformation()
-        {
-            CookieController cookie = new CookieController();
-            string cookies = cookie.getCookie("username");
+        
 
-            Student student = studentimpl.StudentInformation(cookies);
-            //对学生对象进行视图封装
-            return View();
-        }
-
+        [HttpPost]
         /// <summary>
         /// 空闲座位查询
         /// </summary>
         /// <returns>查询出的座位列表视图</returns>
-        public IActionResult Leisure()
+        public IActionResult Leisure(QuerySeatView query)
         {
 
 
+
             //str前端传入的查询条件信息
-            var str = HttpContext.Request.Form["msg"];
+            //var str = HttpContext.Request.Form["msg"];
             //将str反序列化为Condition对象（工具类中）
-            Condition condition = JsonConvert.DeserializeObject<Condition>(str);
+            //Condition condition = JsonConvert.DeserializeObject<Condition>(str);
 
             //进行service处理
+            var condition = new Condition
+            {
+                Place = query.Libraryname,
+                Floor = query.Floor,
+                date = query.dateSelect,
+                StartTime = query.timeSelect1,
+                EndTime = query.timeSelect
+            };
+
             List<Seat> list = studentimpl.Leisure(condition);
 
             //对每一个座位对象的状态字段进行处理显示

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +9,15 @@ namespace LSS.Controllers
 {
     public class CookieController : Controller
     {
+         
         /// <summary>
         /// 设置cookie
         /// </summary>
         /// <param name="cookie">要设置的cookie</param>
         /// <returns>设置成功返回true</returns>
-        public bool setCookie(string key, string value)
+        public void setCookie(string key, string value)
         {
-            try
-            {
-                HttpContext.Response.Cookies.Append(key, value);
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            this.Response.Cookies.Append(key, value);
         }
         /// <summary>
         /// 获取cookie
@@ -33,7 +27,7 @@ namespace LSS.Controllers
         public string getCookie(string key)
         {
             string cookie = "";
-            HttpContext.Request.Cookies.TryGetValue(key, out cookie);
+            Request.Cookies.TryGetValue(key, out cookie);
             return cookie;
         }
         /// <summary>

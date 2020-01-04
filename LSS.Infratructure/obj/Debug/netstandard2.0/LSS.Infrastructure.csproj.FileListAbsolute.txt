@@ -21,3 +21,11 @@ F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.deps.json
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
+D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb

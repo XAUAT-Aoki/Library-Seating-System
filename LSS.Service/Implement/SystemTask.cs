@@ -28,6 +28,7 @@ namespace LSS.Service.Implement
         /// </summary>
         public void TimeOut()
         {
+            #region
             Timer timer = new Timer();
             timer.Enabled = true;
             timer.Interval = 60000;//执行间隔时间,单位为毫秒;此时时间间隔为1分钟  
@@ -50,25 +51,34 @@ namespace LSS.Service.Implement
 
 
                     //并且过期时间<=当前系统时间
-                    //if (date.CompareTo(order.结束时间)) {
+                    if (date.CompareTo(order.Oetime) < 0)
+                    {
 
-                    //    sm.ChangeOrderState(order.Oid,目标值);
+                        sm.ChangeOrderState(order.Oid, "10");
 
-                    //根据orderid获取username，根据username获取lock
-                    //sm.ModifyInfor(0,0,username,ad);
+                        // 根据orderid获取username，根据username获取lock
 
-                    //修改座位状态
+                        string username = order.Sid;
 
-                    //sn.SeatInfor(0，处理过的状态,座位ID,开始时间坐标，时长,0);
+                        bool flag = sm.ModifyInfor('0', 0, username);
+
+                        //修改座位状态
+
+                        //sm.SeatInfor(0，处理过的状态, 座位ID, 开始时间坐标，时长, 0);
+
+                    }
+
+                    //if (date.CompareTo(order.Ostime) <= 0) {
+
+                    //    sm.ChangeOrderState(order.Oid,"11");
 
                     //}
-
-
-                    //同时判断订单开始时间是否小于等于当前时间，如果是，则将符合要求的订单的状态置为正在使用
+                    //同时判断订单开始时间是否小于等于当前时间，如果否，则将符合要求的订单的状态置为正在使用
                     //使用  sm.ChangeOrderState(order.Oid,目标值);
                 }
             }
         }
+        #endregion
 
         //===============================================================================
 
@@ -77,6 +87,7 @@ namespace LSS.Service.Implement
         /// </summary>
         public void ResetGlory()
         {
+            #region
             Timer timer = new Timer();
             timer.Enabled = true;
             timer.Interval = 1800000;//执行间隔时间,单位为毫秒;此时时间间隔为30分钟
@@ -94,15 +105,16 @@ namespace LSS.Service.Implement
                 sm.ResetGlory(standard);
             }
         }
-
+        #endregion
 
         //===============================================================================
 
-            /// <summary>
-            /// 定时检测违规
-            /// </summary>
+        /// <summary>
+        /// 定时检测违规
+        /// </summary>
         public void MisInfor()
         {
+            #region
             Timer timer = new Timer();
             timer.Enabled = true;
             timer.Interval = 6000;//执行间隔时间,单位为毫秒;此时时间间隔为1分钟  
@@ -115,56 +127,68 @@ namespace LSS.Service.Implement
         {
             List<Order> orders = sm.GetUsingOrder();
             DateTime currenttime = DateTime.Now;
-            //foreach(var temp in orders)
-            //{
-            //    if((currenttime-订单打卡时间)>30 min)
-            //        {
+            foreach (Order order in orders)
+            {
+                string DBclock = order.Octime.ToString();
+                DateTime dateTime = Convert.ToDateTime(DBclock);
+                if ((dateTime.AddMinutes(30) - currenttime).TotalSeconds < 0)
+                {
 
 
 
-            //        // 订单置为违规使用   sm.ChangeOrderState(order.Oid,目标值);
-            //        // 扣除学生信誉积分  sm.DuctGlory(string stuId);
-            //        //同时判断扣除后的信誉积分是否大于 0，如果大于 0 ，不做处理。否则，判断是否有第二天的订单，如果有，则取消第二天订单。
-            //        if(sm.GetGlory(string stuId)<=0)
-            //        {
-            //            //查询第二天是否有订单
-            //            var result=sm.GetSecondOrder(stuId,1);
-            //            if(result!=null)
-            //            {
-            //                //取消第二天的订单
-            //                 studentimplement.CancleOrder(result.Oid);
+                    // 订单置为违规使用   
+                    sm.ChangeOrderState(order.Oid, "00");
+                    // 扣除学生信誉积分  
+                    sm.DuctGlory(order.Sid);
+                    //同时判断扣除后的信誉积分是否大于 0，如果大于 0 ，不做处理。否则，判断是否有第二天的订单，如果有，则取消第二天订单。
+                    if (sm.GetGlory(order.Sid) <= 0)
+                    {
+                        //查询第二天是否有订单
+                        Order result = sm.GetSecondOrder(order.Sid, 1);
+                        if (result != null)
+                        {
+                            //取消第二天的订单
+                            studentimplement.CancleOrder(result.Oid);
 
-            //            }
-            //        }
-           //          sm.SeatState(0, result.Sid);  获取座位的状态字段
-            //        //修改第一天订单对应的座位的状态
-            //        sm.SeatInfor(0, //代表第一天
-            //                   state,//座位的状态字段
-            //                   result.Sid, //订单中的座位 ID
-            //                   num,//处理后的订单开始下标
-            //                   endtime - starttime,//订单时长
-            //                   0);//目标值
-            //    }
-            
-             
+                        }
+                    }
+                    sm.SeatState(0, order.Sid); //获取座位的状态字段
+                    string ostime = order.Ostime.ToString();
+                    DateTime starttime = Convert.ToDateTime(ostime);
+                    string oetime = order.Oetime.ToString();
+                    DateTime endtime = Convert.ToDateTime(oetime);
+                    //修改第一天订单对应的座位的状态int date, string seatid, int num, int duration, char operation)
+                    sm.SeatInfor(0, //代表第一天
+                                    //state,//座位的状态字段
+                               order.Tid, //订单中的座位 ID
+                               currenttime.Hour,//处理后的订单开始下标
+                               endtime.Hour - currenttime.Hour - 1,//订单时长
+                               '0');//目标值
+                }
+
+
+            }
+
         }
-
-
+        #endregion
 
         //===============================================================================
 
         /// <summary>
         /// 座位状态锁定
         /// </summary>
-        public void SeatStateLock(List<string> list,int operation)
+        public void SeatStateLock(List<string> list, int operation)
         {
+            #region
             this.list = list;
             this.operation = operation;
-            if (operation==0) {
+            if (operation == 0)
+            {
 
-                foreach (string seatid in list) {
+                foreach (string seatid in list)
+                {
 
-                    administratorMapper.SeatInfor(seatid, operation);
+                    bool flag = administratorMapper.SeatInfor(seatid, operation);
                 }
                 return;
             }
@@ -176,8 +200,8 @@ namespace LSS.Service.Implement
 
         }
         //将该订单状态置为违规，并扣除该订单对应的学生的信誉积分，同时将订单对应的座位的状态改变，
-        private void test3  (object source, ElapsedEventArgs e)  
-         {
+        private void test3(object source, ElapsedEventArgs e)
+        {
             try
             {
                 if (DateTime.Now.Hour >= 23)
@@ -189,12 +213,14 @@ namespace LSS.Service.Implement
                         foreach (string str in usernamelist)
                         {
 
-                            
+                            string email = sm.getEmailById(str);
 
-                            
+                            string text = "您有一个座位预定出现了一点问题，图书馆该区域暂时休整，请您另行预定";
+
+                            ServiceUnit.SendEmail(email, text);
                         }
 
-                        
+                        administratorMapper.SeatInfor(seatid, operation);
 
                     }
 
@@ -205,7 +231,11 @@ namespace LSS.Service.Implement
                 throw ex;
             }
 
-
         }
+        #endregion
     }
+
 }
+
+
+

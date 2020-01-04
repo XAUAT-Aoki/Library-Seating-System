@@ -15,11 +15,11 @@ namespace LSS.Infrastructure.Utility
 
         public int Floor { get; set; }
 
-        public DateTime StartTime { get; set; }
+        public int StartTime { get; set; }
 
-        public DateTime EndTime { get; set; }
+        public int EndTime { get; set; }
         //时间块
-        public int TimeBulk { get; set; }
+        //public int TimeBulk { get; set; }
     }
     public class LibraryToShow
     {

@@ -10,7 +10,7 @@ namespace LSS.Mapper
     public class AdministratorMapper
     {
 
-         #region 1.查询管理员密码 已完成
+        #region 1.查询管理员密码 已完成
         /// <summary> 
         /// 
         /// 查询密码
@@ -21,7 +21,15 @@ namespace LSS.Mapper
         {
             using (var context = new LSSDataContext())
             {
-                return context.Administor.Single(b => b.Aid == user).Apassword;
+                var infor = context.Administor.FirstOrDefault(u => u.Aid == user);
+                if(infor!=null)
+                {
+                    return infor.Apassword;
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
         #endregion
