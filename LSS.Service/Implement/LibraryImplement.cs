@@ -19,9 +19,9 @@ namespace LSS.Service
             AdministratorMapper administratorMapper = new AdministratorMapper();
             AdministratorImplement administrator = new AdministratorImplement();
             List<string> library = administratorMapper.GetAllLibraryName();
-            LibraryToShow libraryToShow = new LibraryToShow();
             foreach(var tmp in library)
             {
+                LibraryToShow libraryToShow = new LibraryToShow();
                 List<int> floor = administrator.GetFloor(tmp);
                 libraryToShow.libraryName = tmp;
                 libraryToShow.startFloor = floor[0];

@@ -13,11 +13,12 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LS
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.deps.json
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfoInputs.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.AssemblyInfo.cs
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.dll
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.pdb
 F:\XAUAT-Aoki\Library-Seating-System\LSS.Infratructure\obj\Debug\netstandard2.0\LSS.Infrastructure.csprojAssemblyReference.cache

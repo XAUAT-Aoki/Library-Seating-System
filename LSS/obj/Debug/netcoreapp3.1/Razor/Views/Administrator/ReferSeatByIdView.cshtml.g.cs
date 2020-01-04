@@ -26,31 +26,31 @@ using LSS.Models;
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e4", @"/Views/Administrator/ReferSeatByIdView.cshtml")]
+#nullable restore
+#line 1 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+using LSS.Infrastructure.Utility;
+
+#line default
+#line hidden
+#nullable disable
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19d3319e0ed907c5d12403f6407f0f2dffe6eb27", @"/Views/Administrator/ReferSeatByIdView.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c5f7e316f3020425f5e88aba2b45efe16aee2f34", @"/Views/_ViewImports.cshtml")]
-    public class Views_Administrator_ReferSeatByIdView : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
+    public class Views_Administrator_ReferSeatByIdView : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<LibraryToShow>>
     {
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/bootstrap.min.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", new global::Microsoft.AspNetCore.Html.HtmlString("text/css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("media", new global::Microsoft.AspNetCore.Html.HtmlString("all"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/style.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/font-awesome.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_6 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "南山图书馆", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_7 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "学府城图书馆", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_8 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "本部图书馆", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_9 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "1", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_10 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "2", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_11 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "3", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_12 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "4", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_13 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "5", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_14 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/bootstrap.min.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_15 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/numscroller-1.0.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_16 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/jquery.flexisel.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_17 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/SmoothScroll.min.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_18 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/move-top.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_19 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/easing.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_20 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/checkStudentOrder.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Administrator", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString(""), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("list-group-item"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "ChangePassword", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "GetOrderById", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_6 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "ReferSeatByIdView", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_7 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/bootstrap.min.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_8 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/numscroller-1.0.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_9 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/jquery.flexisel.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_10 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/SmoothScroll.min.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_11 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/move-top.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_12 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/easing.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_13 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/checkStudentOrder.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -71,103 +71,193 @@ using LSS.Models;
                 return __backed__tagHelperScopeManager;
             }
         }
-        private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
-        private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
-        private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-            WriteLiteral("\r\n");
 #nullable restore
 #line 2 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
   
     ViewData["Title"] = "adminManageSeatInfo";
-    
+    Layout = "_AdminIndexLayout";
 
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("\r\n<!-- 学生个人信息页面 -->\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e410978", async() => {
-                WriteLiteral("\r\n    <title>Home</title>\r\n    <!-- meta-tags -->\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <meta name=\"keywords\"");
-                BeginWriteAttribute("content", " content=\"", 357, "\"", 367, 0);
-                EndWriteAttribute();
-                WriteLiteral(" />\r\n    <!-- //meta-tags -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e411673", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e413026", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_4);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    <!-- font-awesome -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e414408", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_5);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(@"
-    <script type=""text/javascript"" src=""http://code.jquery.com/jquery.min.js""></script>
-    <style>
-        #selectAll {
-            float: left;
-            height: auto;
-            width: auto;
-        }
+            WriteLiteral("\r\n<div class=\"container\" style=\"opacity: 0.6;\">\r\n    <div class=\"services-breadcrumb\">\r\n        <div class=\"inner_breadcrumb\">\r\n            <ul class=\"short_ls\">\r\n                <li>\r\n                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb278840", async() => {
+                WriteLiteral("首页");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_0.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Controller = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
+                    <span>| |</span>
+                </li>
+                <li>查询座位</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-        #closeSeat {
-            float: right;
-            height: auto;
-            width: auto;
-        }
-
-        #openSeat {
-            float: right;
-            height: auto;
-            width: auto;
-        }
-    </style>
+<div class=""container"" style=""margin-top: 15px;"">
+    <div class=""row"">
+        <div class=""col-md-2"">
+            <div class=""panel panel-success leftSidebar"" id=""leftSidebar"">
+                <div class=""panel-heading"">
+                    <h3 class=""panel-title"">快捷菜单</h3>
+                </div>
+                <div class=""panel-body"">
+                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2710731", async() => {
+                WriteLiteral("返回首页");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Controller = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_0.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n                    <a");
+            BeginWriteAttribute("id", " id=\"", 1051, "\"", 1056, 0);
+            EndWriteAttribute();
+            BeginWriteAttribute("href", " href=\"", 1057, "\"", 1064, 0);
+            EndWriteAttribute();
+            WriteLiteral(" class=\"list-group-item\">查看学生信息</a>\r\n                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2712585", async() => {
+                WriteLiteral("密码修改");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Controller = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_4.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2714131", async() => {
+                WriteLiteral("查询预订信息");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Controller = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_5.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_5);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2715679", async() => {
+                WriteLiteral("查询座位");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Controller = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_6.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_6);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n                    <a id=\"top\"");
+            BeginWriteAttribute("href", " href=\"", 1502, "\"", 1509, 0);
+            EndWriteAttribute();
+            WriteLiteral(@" class=""list-group-item"">回到顶部</a>
+                </div>
+            </div>
+        </div>
+        <div class=""col-md-10"">
+            <div class=""page-header"" style=""margin-top: 15px;"">
+                <h1><small>座位信息管理</small></h1>
+            </div>
+            <div class=""panel panel-info"">
+                <div class=""panel-heading"" style=""float: left;"">
+                    <h3 class=""panel-title"">地点</h3>
+                </div>
+                <div class=""panel-body"">
+                    <div class=""row"">
+                        <div class=""col-sm-2"">
+                            <select class=""form-control"" id=""selectPlace"" onchange=""getValueOfPlace()"">
 ");
+#nullable restore
+#line 51 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                 for (var i = 0; i < Model.Count(); i++)
+                                {
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral("                                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2718432", async() => {
+#nullable restore
+#line 53 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                                                     Write(Model[i].libraryName);
+
+#line default
+#line hidden
+#nullable disable
             }
             );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            BeginWriteTagHelperAttribute();
+#nullable restore
+#line 53 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                       WriteLiteral(Model[i].libraryName);
+
+#line default
+#line hidden
+#nullable disable
+            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = __tagHelperStringValueBuffer;
+            __tagHelperExecutionContext.AddTagHelperAttribute("value", __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -175,645 +265,220 @@ using LSS.Models;
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e416756", async() => {
-                WriteLiteral(@"
-    <!-- header -->
-    <div class=""header-top"">
-        <div class=""container"">
-            <div class=""bottom_header_left"">
-                <p>
-                    <span class=""fa fa-map-marker"" aria-hidden=""true""></span>西安建筑科技大学
-                </p>
-            </div>
-
-            <div class=""clearfix""> </div>
-        </div>
-    </div>
-    <div class=""header"">
-        <div class=""content white"">
-            <nav class=""navbar navbar-default"">
-                <div class=""container"">
-                    <div class=""navbar-header"">
-                        <button type=""button"" class=""navbar-toggle"" data-toggle=""collapse""
-                                data-target=""#bs-example-navbar-collapse-1"">
-                            <span class=""sr-only"">Toggle navigation</span>
-                            <span class=""icon-bar""></span>
-                            <span class=""icon-bar""></span>
-                            <span class=""icon-bar""></span>
-                        </button>
-      ");
-                WriteLiteral(@"                  <a class=""navbar-brand"" href=""index.html"">
-                            <h1>
-                                <span class=""fa fa-leanpub"" aria-hidden=""true""></span>我的图书馆
-                                <label>Education &Study </label>
-                            </h1>
-                        </a>
-                    </div>
-                    <!--/.navbar-header-->
-                    <div class=""collapse navbar-collapse"" id=""bs-example-navbar-collapse-1"">
-                        <nav class=""link-effect-2"" id=""link-effect-2"">
-                            <ul class=""nav navbar-nav"">
-                                <li class=""active"">
-                                    <a href=""index.html"" class=""effect-3"">订单查询</a>
-                                </li>
-                                <li>
-                                    <a href=""about.html"" class=""effect-3"">查看个人信息</a>
-                                </li>
-                                <li>
-                                ");
-                WriteLiteral("    <a");
-                BeginWriteAttribute("href", " href=\"", 3185, "\"", 3241, 1);
+            WriteLiteral("\r\n");
 #nullable restore
-#line 88 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
-WriteAttributeValue("", 3192, Url.Action("ChangePasswordView","Administrator"), 3192, 49, false);
+#line 54 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                }
 
 #line default
 #line hidden
 #nullable disable
-                EndWriteAttribute();
-                WriteLiteral(@" class=""effect-3"">密码修改</a>
-                                </li>
-                                <li>
-                                    <a href=""join.html"" class=""effect-3"">申诉</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!--/.navbar-collapse-->
-                    <!--/.navbar-->
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div class=""container"" style=""opacity: 0.6;"">
-        <div class=""services-breadcrumb"">
-            <div class=""inner_breadcrumb"">
-                <ul class=""short_ls"">
-                    <li>
-                        <a href=""index.html"">首页</a>
-                        <span>| |</span>
-                    </li>
-                    <li>Gallery</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class=""container"" style=""margin-top: 15px;"">
-        <div class=""row"">
-            <div class=""col-md-");
-                WriteLiteral(@"2"">
-                <div class=""panel panel-success leftSidebar"" id=""leftSidebar"">
-                    <div class=""panel-heading"">
-                        <h3 class=""panel-title"">快捷菜单</h3>
-                    </div>
-                    <div class=""panel-body"">
-                        <a");
-                BeginWriteAttribute("id", " id=\"", 4559, "\"", 4564, 0);
-                EndWriteAttribute();
-                BeginWriteAttribute("href", " href=\"", 4565, "\"", 4572, 0);
-                EndWriteAttribute();
-                WriteLiteral(" class=\"list-group-item\">订单查询</a>\r\n                        <a");
-                BeginWriteAttribute("id", " id=\"", 4634, "\"", 4639, 0);
-                EndWriteAttribute();
-                BeginWriteAttribute("href", " href=\"", 4640, "\"", 4647, 0);
-                EndWriteAttribute();
-                WriteLiteral(" class=\"list-group-item\">查看个人信息</a>\r\n                        <a");
-                BeginWriteAttribute("id", " id=\"", 4711, "\"", 4716, 0);
-                EndWriteAttribute();
-                BeginWriteAttribute("href", " href=\"", 4717, "\"", 4773, 1);
+            WriteLiteral("                            </select>\r\n                        </div>\r\n                        <div class=\"col-sm-2\" id=\"floor\">\r\n                            <select class=\"form-control select\" id=\"selectFloor\" onchange=\"getValueOfFloor()\">\r\n");
 #nullable restore
-#line 126 "D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
-WriteAttributeValue("", 4724, Url.Action("ChangePasswordView","Administrator"), 4724, 49, false);
+#line 59 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                 for (var i = Model[0].startFloor; i <= (Model[0].endFloor - Model[0].startFloor + 1); i++)
+                                {
 
 #line default
 #line hidden
 #nullable disable
-                EndWriteAttribute();
-                WriteLiteral(" class=\"list-group-item\">密码修改</a>\r\n                        <a");
-                BeginWriteAttribute("id", " id=\"", 4835, "\"", 4840, 0);
-                EndWriteAttribute();
-                BeginWriteAttribute("href", " href=\"", 4841, "\"", 4848, 0);
-                EndWriteAttribute();
-                WriteLiteral(" class=\"list-group-item\">申诉</a>\r\n                        <a id=\"top\"");
-                BeginWriteAttribute("href", " href=\"", 4917, "\"", 4924, 0);
-                EndWriteAttribute();
-                WriteLiteral(@" class=""list-group-item"">回到顶部</a>
+            WriteLiteral("                                    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2721188", async() => {
+#nullable restore
+#line 61 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                               Write(i);
+
+#line default
+#line hidden
+#nullable disable
+                WriteLiteral(" 楼");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+            BeginAddHtmlAttributeValues(__tagHelperExecutionContext, "id", 1, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+#nullable restore
+#line 61 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+AddHtmlAttributeValue("", 2892, i, 2892, 2, false);
+
+#line default
+#line hidden
+#nullable disable
+            EndAddHtmlAttributeValues(__tagHelperExecutionContext);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+#nullable restore
+#line 62 "F:\XAUAT-Aoki\Library-Seating-System\LSS\Views\Administrator\ReferSeatByIdView.cshtml"
+                                }
+
+#line default
+#line hidden
+#nullable disable
+            WriteLiteral(@"                            </select>
+                        </div>
+                            <div class=""col-sm-2"">
+                                <input type=""text"" class=""form-control"" name=""seatid"" id=""seatID"" placeholder=""请输入座位号"">
+                            </div>
+                            <div class=""col-sm-2"">
+                                <button class=""btn btn-primary btn-sm"" id=""SearchSeatBtn"">查询</button>
+                            </div>
                     </div>
                 </div>
             </div>
-            <div class=""col-md-10"">
-                <div class=""page-header"" style=""margin-top: 15px;"">
-                    <h1><small>座位信息管理</small></h1>
-                </div>
-                <div class=""panel panel-info"">
-                    <div class=""panel-heading"" style=""float: left;"">
-                        <h3 class=""panel-title"">地点</h3>
-                    </div>
-   
+            <div class=""row"">
+                <div class=""col-sm-6"">
+                    <div class=""panel panel-info"">
+                        <div class=""panel-heading"" style=""float: left;"">
+                            <h3 class=""panel-title"">状态</h3>
+                        </div>
                         <div class=""panel-body"">
-                            <div class=""row"">
-                                <div class=""col-sm-2"">
-                                    <select class=""form-control"" id=""selectPlace"" onchange=""getValueOfPlace()"">
-                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e423651", async() => {
-                    WriteLiteral("南山图书馆");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_6.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_6);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e424914", async() => {
-                    WriteLiteral("学府城图书馆");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_7.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_7);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e426178", async() => {
-                    WriteLiteral("本部图书馆");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_8.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_8);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(@"
-                                    </select>
-                                </div>
-                                <div class=""col-sm-2"">
-                                    <select class=""form-control select"" id=""selectFloor"" onchange=""getValueOfFloor()"">
-                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e427711", async() => {
-                    WriteLiteral("1楼");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_9.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_9);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e428971", async() => {
-                    WriteLiteral("2楼");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_10.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_10);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e430233", async() => {
-                    WriteLiteral("3楼");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_11.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_11);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e431495", async() => {
-                    WriteLiteral("4楼");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_12.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_12);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e432757", async() => {
-                    WriteLiteral("5楼");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_13.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_13);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(@"
-                                    </select>
-                                </div>
-
-                                <div class=""col-sm-2"">
-                                    <input type=""text"" class=""form-control"" name=""seatid"" placeholder=""请输入座位号"">
-                                </div>
-                                <div class=""col-sm-2"">
-                                    <button class=""btn btn-primary btn-sm"">查询</button>
-                                </div>
-                   
-                </div>
-                    </div>
-                </div>
-                <div class=""row"">
-                    <div class=""col-sm-6"">
-                        <div class=""panel panel-info"">
-                            <div class=""panel-heading"" style=""float: left;"">
-                                <h3 class=""panel-title"">状态</h3>
+                            <div class=""col-sm-4"">
+                                <input type=""radio"" name=""status"">
+                     ");
+            WriteLiteral(@"           <span class=""label label-info"">正在使用</span>
                             </div>
-                            <div class=""panel-body"">
-                                <div class=""col-sm-4"">
-                   ");
-                WriteLiteral(@"                 <input type=""radio"" name=""status"">
-                                    <span class=""label label-info"">正在使用</span>
-                                </div>
-                                <div class=""col-sm-4"">
-                                    <input type=""radio"" name=""status"">
-                                    <span class=""label label-primary"">未使用</span>
-                                </div>
+                            <div class=""col-sm-4"">
+                                <input type=""radio"" name=""status"">
+                                <span class=""label label-primary"">未使用</span>
                             </div>
                         </div>
                     </div>
-                    <div class=""col-sm-6"">
+                </div>
+                <div class=""col-sm-6"">
 
-                        <div class=""panel panel-success"">
-                            <div class=""panel-heading"" style=""float: left;"">
-                                <h3 class=""panel-title"">操作</h3>
+                    <div class=""panel panel-success"">
+                        <div class=""panel-heading"" style=""float: left;"">
+                            <h3 class=""panel-title"">操作</h3>
+                        </div>
+                        <div class=""panel-body"" style=""padding: 13px;"">
+                            <div class=""col-sm-4"">
+                                <button class=""btn btn-primary btn-sm"" id=""closeSeat"">关闭</button>
                             </div>
-                            <div class=""panel-body"" style=""padding: 13px;"">
-
-                                <div class=""col-sm-4"">
-                                    <button class=""btn btn-primary btn-sm"" id=""closeSe");
-                WriteLiteral(@"at"">关闭</button>
-                                </div>
-                                <div class=""col-sm-4"">
-                                    <button class=""btn btn-primary btn-sm"" id=""openSeat"">开放</button>
-                                </div>
-
+                            <div class=""col-sm-4"">
+                                <button");
+            WriteLiteral(@" class=""btn btn-primary btn-sm"" id=""openSeat"">开放</button>
                             </div>
                         </div>
-
-
                     </div>
-                </div>
-                <div class=""libraryList"" data-example-id=""hoverable-table"">
-                    <table class=""table table-hover table-bordered"">
-                        <thead>
-                            <tr>
-                                <th><input type=""checkbox"" id=""selectAll""></th>
-                                <th>座位编号</th>
-                                <th>图书馆名</th>
-                                <th>楼层</th>
-                                <th>状态</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                 ");
-                WriteLiteral(@"           <tr>
-                                <th><input type=""checkbox"" name=""singleStatus"" value=""2-31""></th>
-                                <td>2-31</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class=""label label-danger"">正在使用</label></td>
-                                <td>
-                                    <button class=""modify btn btn-success btn-sm""
-                                            onclick=""modifyBtn(1,this)"">
-                                        开放
-                                    </button>
-                                    <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type=""checkbox"" name=""singleStatus"" value=""2-33""></<input>
-                      ");
-                WriteLiteral(@"          </th>
-                                <td>2-33</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class=""label label-danger"">正在使用</label></td>
-                                <td>
-                                    <button class=""modify btn btn-success btn-sm""
-                                            onclick=""modifyBtn(1,this)"">
-                                        开放
-                                    </button>
-                                    <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type=""checkbox"" name=""singleStatus"" value=""3-34""></<input>
-                                </th>
-                                <td>3-34</td>
-                                <td");
-                WriteLiteral(@">南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class=""label label-danger"">正在使用</label></td>
-                                <td>
-                                    <button class=""modify btn btn-success btn-sm""
-                                            onclick=""modifyBtn(1,this)"">
-                                        开放
-                                    </button>
-                                    <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type=""checkbox"" name=""singleStatus"" value=""2-35""></<input>
-                                </th>
-                                <td>2-35</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><labe");
-                WriteLiteral(@"l class=""label label-danger"">正在使用</label></td>
-                                <td>
-                                    <button class=""modify btn btn-success btn-sm""
-                                            onclick=""modifyBtn(1,this)"">
-                                        开放
-                                    </button>
-                                    <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type=""checkbox"" name=""singleStatus"" value=""2-36""></<input>
-                                </th>
-                                <td>2-36</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class=""label label-danger"">正在使用</label></td>
-                                <td>
-             ");
-                WriteLiteral(@"                       <button class=""modify btn btn-success btn-sm""
-                                            onclick=""modifyBtn(1,this)"">
-                                        开放
-                                    </button>
-                                    <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
 
+
+                </div>
             </div>
-        </div>
-    </div>
-
-
-    <!-- footer -->
-    <div class=""mkl_footer"">
-        <div class=""sub-footer"">
-            <div class=""container"">
-                <div class=""mkls_footer_grid"">
-                    <div class=""col-xs-4 mkls_footer_grid_left"">
-                        <h4>地点:</h4>
-                        <p>
-                            西安建筑科技大学,
-                            <br> 草堂校区
-                        </p>
-                    </div>
+            <div class=""libraryList"" data-example-id=""hoverable-table"">
+                <table class=""table table-hover table-bordered"">
+                    <thead>
+                        <tr>
+                            <th><input type=""checkbox"" id=""selectAll""></th>
+                            <th>座位编号</th>
+                            <th>图书馆名</th>
+                            <th>楼层</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input type=""checkbox"" name=""singleStatus"" value=""2-31""></th>
+                            <td>2-31</td>
+                            <td>南山图书馆</td>
+                            <td>5楼<");
+            WriteLiteral(@"/td>
+                            <td><label class=""label label-danger"">正在使用</label></td>
+                            <td>
+                                <button class=""modify btn btn-success btn-sm""
+                                        onclick=""modifyBtn(1,this)"">
+                                    开放
+                                </button>
+                                <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type=""checkbox"" name=""singleStatus"" value=""2-33""></<input>
+                            </th>
+                            <td>2-33</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class=""label label-danger"">正在使用</label></td>
+                            <td>
+                                <butto");
+            WriteLiteral(@"n class=""modify btn btn-success btn-sm""
+                                        onclick=""modifyBtn(1,this)"">
+                                    开放
+                                </button>
+                                <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type=""checkbox"" name=""singleStatus"" value=""3-34""></<input>
+                            </th>
+                            <td>3-34</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class=""label label-danger"">正在使用</label></td>
+                            <td>
+                                <button class=""modify btn btn-success btn-sm""
+                                        onclick=""modifyBtn(1,this)"">
+                                    开放
             ");
-                WriteLiteral(@"        <div class=""col-xs-4 mkls_footer_grid_left"">
-                        <h4>联系方式:</h4>
-                        <p>
-                            <span>电话 : </span>001 234 5678
-                        </p>
-                        <p>
-                            <span>邮箱 : </span>
-                            <a href=""mailto:info@example.com"">mail@example.com</a>
-                        </p>
-                    </div>
-                    <div class=""col-xs-4 mkls_footer_grid_left"">
-                        <h4>开放时间 :</h4>
-                        <p>每日：8：00—23：00</p>
-                    </div>
-                    <div class=""clearfix""> </div>
-                </div>
+            WriteLiteral(@"                    </button>
+                                <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type=""checkbox"" name=""singleStatus"" value=""2-35""></<input>
+                            </th>
+                            <td>2-35</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class=""label label-danger"">正在使用</label></td>
+                            <td>
+                                <button class=""modify btn btn-success btn-sm""
+                                        onclick=""modifyBtn(1,this)"">
+                                    开放
+                                </button>
+                                <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
+              ");
+            WriteLiteral(@"              </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type=""checkbox"" name=""singleStatus"" value=""2-36""></<input>
+                            </th>
+                            <td>2-36</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class=""label label-danger"">正在使用</label></td>
+                            <td>
+                                <button class=""modify btn btn-success btn-sm""
+                                        onclick=""modifyBtn(1,this)"">
+                                    开放
+                                </button>
+                                <button class=""delete btn btn-danger btn-sm"" onclick=""deleteBtn(1,this)"">关闭</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
         </div>
     </div>
-
-    <!-- footer-->
-
-    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e443398", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_14);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e444499", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_15);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e445600", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_16);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e446701", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_17);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e447802", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_18);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e448903", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_19);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458b7fd96f04ee5a4d3a3771bc0f38e3d665b6e450004", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_20);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(@"
-    <script>
-        // 复选框的全选和全不选
-        // 获得上面的复选框
-        $(""#selectAll"").click(function () {
-            // alert($selectAll.prop(""checked""));
-            if ($(""#selectAll"").prop(""checked"") == true) {
-                // 上面的复选框已被选中
-                $("":checkbox[name='singleStatus']"").prop(""checked"", true);
-            } else {
-                // 上面的复选框没被选中
-                $("":checkbox[name='singleStatus']"").prop(""checked"", false);
-            }
-        });
-
-
-        function getAllChecked() {
-            var checkID = new Array(); //定义一个空数组
-            $(""input[name='singleStatus']:checked"").each(function (i) { //把所有被选中的复选框的值存入数组
-                checkID[i] = $(this).val();
-            });
-            return checkID;
-            
-        }
-        $(""#closeSeat"").click(function () {
-            var checkID = getAllChecked();   
-            
-            $.ajax({
-            type: 'post',
-            url: '/Administrator/SetBatchSeatState',
-                data: {
-           ");
-                WriteLiteral(@"         ""checkID"": checkID,
-                     ""operation"": 0,
-                },
-            success: function (data) {
-                if (data == true) {
-                    alert(""操作成功"");
-                } else {
-                     alert(""操作失败"");
-                }
-            },
-            error: function (data) {
-                alert(""Error！"");
-            }
-        });
-            
-        });
-
-        $(""#openSeat"").click(function () {
-            var checkID = getAllChecked();
-             $.ajax({
-            type: 'post',
-            url: '/Administrator/SetBatchSeatState',
-                 data: {
-                     ""checkID"": checkID,
-                     ""operation"":1,
-                 },
-            success: function (data) {
-                if (data == true) {
-                    alert(""操作成功"");
-                } else {
-                    alert(""操作失败"");
-                }
-            },
-            error: function (data) {
-                alert(""Error！""");
-                WriteLiteral(");\r\n            }\r\n        });\r\n            console.log(checkID);\r\n            //获取到数据，将数据抛到后端\r\n        });\r\n\r\n    </script>\r\n\r\n\r\n\r\n\r\n\r\n");
+</div");
+            WriteLiteral(">\r\n\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2730619", async() => {
             }
             );
-            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper>();
-            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper);
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_7);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {
@@ -821,7 +486,188 @@ WriteAttributeValue("", 4724, Url.Action("ChangePasswordView","Administrator"), 
             }
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\r\n\r\n</html>\r\n\r\n");
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2731659", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_8);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2732699", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_9);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2733739", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_10);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2734780", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_11);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2735821", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_12);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19d3319e0ed907c5d12403f6407f0f2dffe6eb2736862", async() => {
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_13);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
+<script>
+    // 复选框的全选和全不选
+    // 获得上面的复选框
+    $(""#selectAll"").click(function () {
+        // alert($selectAll.prop(""checked""));
+        if ($(""#selectAll"").prop(""checked"") == true) {
+            // 上面的复选框已被选中
+            $("":checkbox[name='singleStatus']"").prop(""checked"", true);
+        } else {
+            // 上面的复选框没被选中
+            $("":checkbox[name='singleStatus']"").prop(""checked"", false);
+        }
+    });
+
+
+    function getAllChecked() {
+        var checkID = []; //定义一个空数组
+        $(""input[name='singleStatus']:checked"").each(function (i) { //把所有被选中的复选框的值存入数组
+            checkID[i] = $(this).val();
+        });
+        return checkID;
+        console.log(checkID);
+    }
+    $(""#closeSeat"").click(function () {
+        var checkID = getAllChecked();
+        console.log(checkID);
+        //获取到数据，将数据抛到后端
+    });
+    $(""#openSeat"").click(function () {
+        var checkID = getAllChecked();
+        console.log(checkID);
+        //获取到数据，将数据抛到后端
+    });
+    var place;
+    var fl");
+            WriteLiteral(@"oor;
+    function getValueOfPlace() { //获取图书馆选择  GetLibraryFloor(string libraryName)
+        $("".form-control.select"").hide();
+        var options = $(""#selectPlace option:selected""); //获取选中的项
+        place = options.text();
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/GetLibraryFloor',
+            data: {
+                ""libraryName"": place
+            },
+            success: function (data) {
+                floorList = data;
+                var str = ""<select class='form-control select' id='selectFloor' onchange='getValueOfFloor()'>"";
+                var replaceBefore = ""<option id='"";
+                var replaceMiddle = ""'>"";
+                var replaceAfter = ""楼</option>""
+                var replaceEnd = ""</select>""
+
+                for (var i = floorList[0]; i < (floorList[1] - floorList[0] + 1); i++) {
+                    var tmp = replaceBefore + i + replaceMiddle + i + replaceAfter;
+                    str += tmp;
+                }
+              ");
+            WriteLiteral(@"  str += replaceEnd;
+                $(""#floor"").html(str);
+            },
+            error: function (data) {
+                alert(""页面刷新失败"");
+            }
+        });
+
+    }
+
+    function getValueOfFloor() { //获取楼层选择
+        var options = $(""#selectFloor option:selected""); //获取选中的项
+        floor = options.text();
+    }
+
+    $(""#SearchSeatBtn"").click(function () {
+        var seatId = $(""#seatID"").val();
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/GetLibraryFloor',
+            data: {
+                ""libraryname"": place,
+                ""floor"": floor,
+                ""seatID"":seatId
+            },
+            success: function (data) {
+                alert(place+seatId+floor);
+            },
+            error: function (data) {
+                alert("""");
+            }
+        });
+    });
+
+
+</script>
+
+");
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
@@ -833,7 +679,7 @@ WriteAttributeValue("", 4724, Url.Action("ChangePasswordView","Administrator"), 
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<dynamic> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<List<LibraryToShow>> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

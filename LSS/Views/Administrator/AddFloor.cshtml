@@ -12,10 +12,10 @@
         <div class="inner_breadcrumb">
             <ul class="short_ls">
                 <li>
-                    <a href="index.html">首页</a>
+                    <a asp-action="Index" asp-controller="Administrator">首页</a>
                     <span>| |</span>
                 </li>
-                <li>Gallery</li>
+                <li>增加楼层</li>
             </ul>
         </div>
     </div>
@@ -29,11 +29,11 @@
                     <h3 class="panel-title">快捷菜单</h3>
                 </div>
                 <div class="panel-body">
-                    <a id="" href="" class="list-group-item">返回首页</a>
+                    <a id="" asp-controller="Administrator" asp-action="Index" class="list-group-item">返回首页</a>
                     <a id="" href="" class="list-group-item">查看学生信息</a>
-                    <a id="" href="" class="list-group-item">密码修改</a>
-                    <a id="" href="" class="list-group-item">查询预订信息</a>
-                    <a id="" href="" class="list-group-item">查询座位</a>
+                    <a id="" asp-controller="Administrator" asp-action="ChangePassword" class="list-group-item">密码修改</a>
+                    <a id="" asp-controller="Administrator" asp-action="GetOrderById" class="list-group-item">查询预订信息</a>
+                    <a id="" asp-controller="Administrator" asp-action="ReferSeatByIdView" class="list-group-item">查询座位</a>
                     <a id="top" href="" class="list-group-item">回到顶部</a>
                 </div>
             </div>
@@ -188,4 +188,5 @@
 
         //传输id到后端，并输出后端返回的数据
     }
+
 </script>

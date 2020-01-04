@@ -244,14 +244,15 @@ namespace LSS.Mapper
         /// <returns>返回所有的图书馆名称集</returns>
         public List<string> GetAllLibraryName()
         {
-            List<string> libraryname = new List<string>();
+            List<string> libraryList = new List<string>();
             Library library = new Library();
             using (var context = new LSSDataContext())
             {
-                libraryname = (from l in context.Library
+                var libraryname = (from l in context.Library
                                select l.Lname).ToList();
+                libraryList = libraryname;
             }
-            return libraryname;
+            return libraryList;
         }
         #endregion
         #region 11.添加图书馆 已完成 
@@ -295,13 +296,12 @@ namespace LSS.Mapper
         public List<int> GetFloor(string libraryname)
         {
             List<int> list = new List<int>();
-            Library library = new Library();
             using (var context = new LSSDataContext())
             {
-                library = context.Library.FirstOrDefault(x => x.Lname == libraryname);
+                Library library = context.Library.FirstOrDefault(x => x.Lname == libraryname);
+                list.Add((int)library.Lsfloor);
+                list.Add((int)library.Lefloor);
             }
-            list[0] = (int)library.Lsfloor;
-            list[1] = (int)library.Lefloor;
             //将图书馆的起始楼层和结束楼层分别放在list的0、1空间中
             return list;
         }

@@ -23,13 +23,7 @@ namespace LSS.UI.Controllers
             return View();
         }
 
-        public IActionResult ReferSeatByIdView()
-        {
-            
-            return View();
-        }
-
-        
+        AdministratorImplement administrator = new AdministratorImplement();
 
         CookieController cookie = new CookieController();
 
@@ -69,6 +63,12 @@ namespace LSS.UI.Controllers
             
         }
 
+        public IActionResult ReferSeatByIdView()
+        {
+            LibraryImplement library = new LibraryImplement();
+            List<LibraryToShow> libraries = library.GetAllLibraryToShows();
+            return View(libraries);
+        }
         /// <summary>
         /// 根据座位号查询特定座位
         /// </summary>
@@ -85,8 +85,18 @@ namespace LSS.UI.Controllers
             {
                 return View();
             }
-
-            
+        }
+        /// <summary>
+        /// 获取图书馆楼层
+        /// </summary>
+        /// <param name="libraryName">图书馆名</param>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult GetLibraryFloor(string libraryName)
+        {
+            AdministratorImplement administrator = new AdministratorImplement();
+            List<int> floor = administrator.GetFloor(libraryName);
+            return Json(floor);
         }
      
 
@@ -180,10 +190,15 @@ namespace LSS.UI.Controllers
             //将ViewModel中的对于属性都赋值给library
 
 
-            administrator.AddLibrary(library);
-
-
-            return View();
+        /// <summary>
+        /// 获取所有图书馆名
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult GetAllLibraryName()
+        {
+            LibraryImplement library = new LibraryImplement();
+            List<LibraryToShow> LibraryList= library.GetAllLibraryToShows();
+            return Json(LibraryList);
         }
 
 

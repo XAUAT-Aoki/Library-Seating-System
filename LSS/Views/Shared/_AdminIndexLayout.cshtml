@@ -46,7 +46,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                             <h1>
                                 <span class="fa fa-leanpub" aria-hidden="true"></span>我的图书馆
                                 <label>Education & Study </label>
@@ -58,7 +58,7 @@
                         <nav class="link-effect-2" id="link-effect-2">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="index.html" class="effect-3">主页</a>
+                                    <a asp-controller="Administrator" asp-action="Index" class="effect-3">主页</a>
                                 </li>
                                 <li>
                                     <a href="about.html" class="effect-3">查询学生信息</a>
@@ -75,22 +75,22 @@
                                             <a href="icons.html">查询座位</a>
                                         </li>
                                         <li>
-                                            <a href="icons.html">增加图书馆</a>
+                                            <a asp-controller="Administrator" asp-action="AddLibrary">增加图书馆</a>
                                         </li>
                                         <li>
-                                            <a href="codes.html">增加楼层</a>
+                                            <a asp-controller="Administrator" asp-action="AddFloor">增加楼层</a>
                                         </li>
                                         <li>
-                                            <a href="codes.html">增加座位</a>
+                                            <a asp-controller="Administrator" asp-action="">增加座位</a>
                                         </li>
 
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="Gallery.html" class="effect-3">查询预订记录</a>
+                                    <a asp-controller="Administrator" asp-action="GetOrderById">查询预订记录</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" class="effect-3">修改密码</a>
+                                    <a asp-controller="Administrator" asp-action="ChangePassword">修改密码</a>
                                 </li>
                             </ul>
                         </nav>

@@ -16,23 +16,23 @@ namespace LSS.UI.ViewModels
         public string password { get; set; }
     }
 
-    public class ReferSeatViewModel { 
-        
-        [Required]
+    public class ReferSeatViewModel
+    {
         public string libraryname { get; set; }
 
-        [Required]
         public int floor { get; set; }
+        //座位号
+        public string seatID { get; set; }
 
 
     }
 
-    public class BatchSeatStateViewModel { 
-    
-        public string[] checkID { get; set; }
+    public class BatchSeatStateViewModel
+    {
+
+        public List<string> list { get; set; }
 
         public int operation { get; set; }
-
     }
 
 }
