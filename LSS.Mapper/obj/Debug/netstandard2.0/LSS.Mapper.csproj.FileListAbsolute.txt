@@ -24,19 +24,6 @@ C:\Users\DELL\Desktop\c#文件\LSS\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mappe
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
 C:\Users\DELL\Desktop\c#文件\LSS\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csprojAssemblyReference.cache
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfoInputs.cache
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfo.cs
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.deps.json
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.dll
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.dll
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
-F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.deps.json
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.dll
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.pdb
@@ -50,3 +37,16 @@ D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
 D:\Program Code\LSS\Library-Seating-System\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.deps.json
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Mapper.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Data.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\bin\Debug\netstandard2.0\LSS.Infrastructure.pdb
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csprojAssemblyReference.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfoInputs.cache
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.AssemblyInfo.cs
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.csproj.CopyComplete
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.dll
+F:\XAUAT-Aoki\Library-Seating-System\LSS.Mapper\obj\Debug\netstandard2.0\LSS.Mapper.pdb

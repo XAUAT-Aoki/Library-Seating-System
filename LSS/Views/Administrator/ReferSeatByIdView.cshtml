@@ -1,257 +1,310 @@
-﻿
+﻿@using LSS.Infrastructure.Utility
 @{
     ViewData["Title"] = "adminManageSeatInfo";
     Layout = "_AdminIndexLayout";
 }
+@model List<LibraryToShow>
 
-
-    <div class="container" style="opacity: 0.6;">
-        <div class="services-breadcrumb">
-            <div class="inner_breadcrumb">
-                <ul class="short_ls">
-                    <li>
-                        <a asp-action="Index" asp-controller="Administrator">首页</a>
-                        <span>| |</span>
-                    </li>
-                    <li>查询座位</li>
-                </ul>
-            </div>
+<div class="container" style="opacity: 0.6;">
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a asp-action="Index" asp-controller="Administrator">首页</a>
+                    <span>| |</span>
+                </li>
+                <li>查询座位</li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <div class="container" style="margin-top: 15px;">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="panel panel-success leftSidebar" id="leftSidebar">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">快捷菜单</h3>
-                    </div>
-                    <div class="panel-body">
-                        <a id="" asp-controller="Administrator" asp-action="Index" class="list-group-item">返回首页</a>
-                        <a id="" href="" class="list-group-item">查看学生信息</a>
-                        <a id="" asp-controller="Administrator" asp-action="ChangePassword" class="list-group-item">密码修改</a>
-                        <a id="" asp-controller="Administrator" asp-action="GetOrderById" class="list-group-item">查询预订信息</a>
-                        <a id="" asp-controller="Administrator" asp-action="ReferSeatByIdView" class="list-group-item">查询座位</a>
-                        <a id="top" href="" class="list-group-item">回到顶部</a>
-                    </div>
+<div class="container" style="margin-top: 15px;">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="panel panel-success leftSidebar" id="leftSidebar">
+                <div class="panel-heading">
+                    <h3 class="panel-title">快捷菜单</h3>
                 </div>
-            </div>
-            <div class="col-md-10">
-                <div class="page-header" style="margin-top: 15px;">
-                    <h1><small>座位信息管理</small></h1>
+                <div class="panel-body">
+                    <a id="" asp-controller="Administrator" asp-action="Index" class="list-group-item">返回首页</a>
+                    <a id="" href="" class="list-group-item">查看学生信息</a>
+                    <a id="" asp-controller="Administrator" asp-action="ChangePassword" class="list-group-item">密码修改</a>
+                    <a id="" asp-controller="Administrator" asp-action="GetOrderById" class="list-group-item">查询预订信息</a>
+                    <a id="" asp-controller="Administrator" asp-action="ReferSeatByIdView" class="list-group-item">查询座位</a>
+                    <a id="top" href="" class="list-group-item">回到顶部</a>
                 </div>
-                <div class="panel panel-info">
-                    <div class="panel-heading" style="float: left;">
-                        <h3 class="panel-title">地点</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <select class="form-control" id="selectPlace" onchange="getValueOfPlace()">
-                                    <option value="南山图书馆">南山图书馆</option>
-                                    <option value="学府城图书馆">学府城图书馆</option>
-                                    <option value="本部图书馆">本部图书馆</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-2">
-                                <select class="form-control select" id="selectFloor" onchange="getValueOfFloor()">
-                                    <option value="1">1楼</option>
-                                    <option value="2">2楼</option>
-                                    <option value="3">3楼</option>
-                                    <option value="4">4楼</option>
-                                    <option value="5">5楼</option>
-                                </select>
-                            </div>
-                            <form id="" asp-controller="Administrator" asp-action="ReferSeatById" method="post">
-                                <div class="col-sm-2">
-                                    <input type="text" class="form-control" name="seatid" placeholder="请输入座位号">
-                                </div>
-                                <div class="col-sm-2">
-                                    <button class="btn btn-primary btn-sm">查询</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="panel panel-info">
-                            <div class="panel-heading" style="float: left;">
-                                <h3 class="panel-title">状态</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-sm-4">
-                                    <input type="radio" name="status">
-                                    <span class="label label-info">正在使用</span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <input type="radio" name="status">
-                                    <span class="label label-primary">未使用</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-
-                        <div class="panel panel-success">
-                            <div class="panel-heading" style="float: left;">
-                                <h3 class="panel-title">操作</h3>
-                            </div>
-                            <div class="panel-body" style="padding: 13px;">
-                                <div class="col-sm-4">
-                                    <button class="btn btn-primary btn-sm" id="closeSeat">关闭</button>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button class="btn btn-primary btn-sm" id="openSeat">开放</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="libraryList" data-example-id="hoverable-table">
-                    <table class="table table-hover table-bordered">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" id="selectAll"></th>
-                                <th>座位编号</th>
-                                <th>图书馆名</th>
-                                <th>楼层</th>
-                                <th>状态</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th><input type="checkbox" name="singleStatus" value="2-31"></th>
-                                <td>2-31</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class="label label-danger">正在使用</label></td>
-                                <td>
-                                    <button class="modify btn btn-success btn-sm"
-                                            onclick="modifyBtn(1,this)">
-                                        开放
-                                    </button>
-                                    <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type="checkbox" name="singleStatus" value="2-33"></<input>
-                                </th>
-                                <td>2-33</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class="label label-danger">正在使用</label></td>
-                                <td>
-                                    <button class="modify btn btn-success btn-sm"
-                                            onclick="modifyBtn(1,this)">
-                                        开放
-                                    </button>
-                                    <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type="checkbox" name="singleStatus" value="3-34"></<input>
-                                </th>
-                                <td>3-34</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class="label label-danger">正在使用</label></td>
-                                <td>
-                                    <button class="modify btn btn-success btn-sm"
-                                            onclick="modifyBtn(1,this)">
-                                        开放
-                                    </button>
-                                    <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type="checkbox" name="singleStatus" value="2-35"></<input>
-                                </th>
-                                <td>2-35</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class="label label-danger">正在使用</label></td>
-                                <td>
-                                    <button class="modify btn btn-success btn-sm"
-                                            onclick="modifyBtn(1,this)">
-                                        开放
-                                    </button>
-                                    <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <input type="checkbox" name="singleStatus" value="2-36"></<input>
-                                </th>
-                                <td>2-36</td>
-                                <td>南山图书馆</td>
-                                <td>5楼</td>
-                                <td><label class="label label-danger">正在使用</label></td>
-                                <td>
-                                    <button class="modify btn btn-success btn-sm"
-                                            onclick="modifyBtn(1,this)">
-                                        开放
-                                    </button>
-                                    <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
         </div>
-    </div>
+        <div class="col-md-10">
+            <div class="page-header" style="margin-top: 15px;">
+                <h1><small>座位信息管理</small></h1>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading" style="float: left;">
+                    <h3 class="panel-title">地点</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <select class="form-control" id="selectPlace" onchange="getValueOfPlace()">
+                                @for (var i = 0; i < Model.Count(); i++)
+                                {
+                                    <option value="@Model[i].libraryName">@Model[i].libraryName</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-sm-2" id="floor">
+                            <select class="form-control select" id="selectFloor" onchange="getValueOfFloor()">
+                                @for (var i = Model[0].startFloor; i <= (Model[0].endFloor - Model[0].startFloor + 1); i++)
+                                {
+                                    <option id="@i">@i 楼</option>
+                                }
+                            </select>
+                        </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="seatid" id="seatID" placeholder="请输入座位号">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-sm" id="SearchSeatBtn">查询</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" style="float: left;">
+                            <h3 class="panel-title">状态</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-sm-4">
+                                <input type="radio" name="status">
+                                <span class="label label-info">正在使用</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="radio" name="status">
+                                <span class="label label-primary">未使用</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
 
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/numscroller-1.0.js"></script>
-    <script src="~/js/jquery.flexisel.js"></script>
-    <script src="~/js/SmoothScroll.min.js"></script>
-    <script src="~/js/move-top.js"></script>
-    <script src="~/js/easing.js"></script>
-    <script src="~/js/checkStudentOrder.js"></script>
-    <script>
-        // 复选框的全选和全不选
-        // 获得上面的复选框
-        $("#selectAll").click(function () {
-            // alert($selectAll.prop("checked"));
-            if ($("#selectAll").prop("checked") == true) {
-                // 上面的复选框已被选中
-                $(":checkbox[name='singleStatus']").prop("checked", true);
-            } else {
-                // 上面的复选框没被选中
-                $(":checkbox[name='singleStatus']").prop("checked", false);
+                    <div class="panel panel-success">
+                        <div class="panel-heading" style="float: left;">
+                            <h3 class="panel-title">操作</h3>
+                        </div>
+                        <div class="panel-body" style="padding: 13px;">
+                            <div class="col-sm-4">
+                                <button class="btn btn-primary btn-sm" id="closeSeat">关闭</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="btn btn-primary btn-sm" id="openSeat">开放</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="libraryList" data-example-id="hoverable-table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>座位编号</th>
+                            <th>图书馆名</th>
+                            <th>楼层</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" name="singleStatus" value="2-31"></th>
+                            <td>2-31</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class="label label-danger">正在使用</label></td>
+                            <td>
+                                <button class="modify btn btn-success btn-sm"
+                                        onclick="modifyBtn(1,this)">
+                                    开放
+                                </button>
+                                <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="singleStatus" value="2-33"></<input>
+                            </th>
+                            <td>2-33</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class="label label-danger">正在使用</label></td>
+                            <td>
+                                <button class="modify btn btn-success btn-sm"
+                                        onclick="modifyBtn(1,this)">
+                                    开放
+                                </button>
+                                <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="singleStatus" value="3-34"></<input>
+                            </th>
+                            <td>3-34</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class="label label-danger">正在使用</label></td>
+                            <td>
+                                <button class="modify btn btn-success btn-sm"
+                                        onclick="modifyBtn(1,this)">
+                                    开放
+                                </button>
+                                <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="singleStatus" value="2-35"></<input>
+                            </th>
+                            <td>2-35</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class="label label-danger">正在使用</label></td>
+                            <td>
+                                <button class="modify btn btn-success btn-sm"
+                                        onclick="modifyBtn(1,this)">
+                                    开放
+                                </button>
+                                <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="singleStatus" value="2-36"></<input>
+                            </th>
+                            <td>2-36</td>
+                            <td>南山图书馆</td>
+                            <td>5楼</td>
+                            <td><label class="label label-danger">正在使用</label></td>
+                            <td>
+                                <button class="modify btn btn-success btn-sm"
+                                        onclick="modifyBtn(1,this)">
+                                    开放
+                                </button>
+                                <button class="delete btn btn-danger btn-sm" onclick="deleteBtn(1,this)">关闭</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/numscroller-1.0.js"></script>
+<script src="~/js/jquery.flexisel.js"></script>
+<script src="~/js/SmoothScroll.min.js"></script>
+<script src="~/js/move-top.js"></script>
+<script src="~/js/easing.js"></script>
+<script src="~/js/checkStudentOrder.js"></script>
+<script>
+    // 复选框的全选和全不选
+    // 获得上面的复选框
+    $("#selectAll").click(function () {
+        // alert($selectAll.prop("checked"));
+        if ($("#selectAll").prop("checked") == true) {
+            // 上面的复选框已被选中
+            $(":checkbox[name='singleStatus']").prop("checked", true);
+        } else {
+            // 上面的复选框没被选中
+            $(":checkbox[name='singleStatus']").prop("checked", false);
+        }
+    });
+
+
+    function getAllChecked() {
+        var checkID = []; //定义一个空数组
+        $("input[name='singleStatus']:checked").each(function (i) { //把所有被选中的复选框的值存入数组
+            checkID[i] = $(this).val();
+        });
+        return checkID;
+        console.log(checkID);
+    }
+    $("#closeSeat").click(function () {
+        var checkID = getAllChecked();
+        console.log(checkID);
+        //获取到数据，将数据抛到后端
+    });
+    $("#openSeat").click(function () {
+        var checkID = getAllChecked();
+        console.log(checkID);
+        //获取到数据，将数据抛到后端
+    });
+    var place;
+    var floor;
+    function getValueOfPlace() { //获取图书馆选择  GetLibraryFloor(string libraryName)
+        $(".form-control.select").hide();
+        var options = $("#selectPlace option:selected"); //获取选中的项
+        place = options.text();
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/GetLibraryFloor',
+            data: {
+                "libraryName": place
+            },
+            success: function (data) {
+                floorList = data;
+                var str = "<select class='form-control select' id='selectFloor' onchange='getValueOfFloor()'>";
+                var replaceBefore = "<option id='";
+                var replaceMiddle = "'>";
+                var replaceAfter = "楼</option>"
+                var replaceEnd = "</select>"
+
+                for (var i = floorList[0]; i < (floorList[1] - floorList[0] + 1); i++) {
+                    var tmp = replaceBefore + i + replaceMiddle + i + replaceAfter;
+                    str += tmp;
+                }
+                str += replaceEnd;
+                $("#floor").html(str);
+            },
+            error: function (data) {
+                alert("页面刷新失败");
             }
         });
 
+    }
 
-        function getAllChecked() {
-            var checkID = []; //定义一个空数组
-            $("input[name='singleStatus']:checked").each(function (i) { //把所有被选中的复选框的值存入数组
-                checkID[i] = $(this).val();
-            });
-            return checkID;
-            console.log(checkID);
-        }
-        $("#closeSeat").click(function () {
-            var checkID = getAllChecked();
-            console.log(checkID);
-            //获取到数据，将数据抛到后端
+    function getValueOfFloor() { //获取楼层选择
+        var options = $("#selectFloor option:selected"); //获取选中的项
+        floor = options.text();
+    }
+
+    $("#SearchSeatBtn").click(function () {
+        var seatId = $("#seatID").val();
+        $.ajax({
+            type: 'post',
+            url: '/Administrator/GetLibraryFloor',
+            data: {
+                "libraryname": place,
+                "floor": floor,
+                "seatID":seatId
+            },
+            success: function (data) {
+                alert(place+seatId+floor);
+            },
+            error: function (data) {
+                alert("");
+            }
         });
-        $("#openSeat").click(function () {
-            var checkID = getAllChecked();
-            console.log(checkID);
-            //获取到数据，将数据抛到后端
-        });
+    });
 
-    </script>
-</body>
 
-</html>
+</script>
 
